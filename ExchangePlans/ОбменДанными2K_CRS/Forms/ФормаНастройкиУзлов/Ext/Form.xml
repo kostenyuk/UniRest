@@ -1,0 +1,2707 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаписатьВУзелЦБ" id="114">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗаписатьВУзелЦБ</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьВУзелЦБРасширеннаяПодсказка" id="220"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СвязиСДругимиУзламиЦРС" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связи с другими узлами ЦРС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связи с другими узлами ЦРС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СвязиСДругимиУзламиЦРСРасширеннаяПодсказка" id="221"/>
+			<ChildItems>
+				<RadioButtonField name="РолевоеЗначениеЭтогоУзла" id="7">
+					<DataPath>РолевоеЗначениеЭтогоУзла</DataPath>
+					<Visible>false</Visible>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ItemHeight>1</ItemHeight>
+					<ColumnsCount>1</ColumnsCount>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Эта база автономная</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Эта база периферийная</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Эта база центральная</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">3</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<Font ref="sys:DefaultGUIFont" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="РолевоеЗначениеЭтогоУзлаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="РолевоеЗначениеЭтогоУзлаРасширеннаяПодсказка" id="222"/>
+					<Events>
+						<Event name="OnChange">РолевоеЗначениеЭтогоУзлаПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+				<Pages name="СтраницыРолейЗначенияЭтогоУзла" id="2">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы ролей значения этого узла</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы ролей значения этого узла</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="СтраницыРолейЗначенияЭтогоУзлаРасширеннаяПодсказка" id="223"/>
+					<ChildItems>
+						<Page name="ЭтаБазаЦентральная" id="5">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Эта база центральная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Эта база центральная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЭтаБазаЦентральнаяРасширеннаяПодсказка" id="224"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаБаз" id="89">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа баз</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа баз</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаБазРасширеннаяПодсказка" id="225"/>
+									<ChildItems>
+										<Table name="ДеревоЗначенийЭтоЦБ" id="17">
+											<Representation>Tree</Representation>
+											<TitleLocation>Top</TitleLocation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<Width>55</Width>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>ДеревоНастроекОбъектов</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройки обмена</v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<SearchStringLocation>None</SearchStringLocation>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<ContextMenu name="ДеревоЗначенийЭтоЦБКонтекстноеМеню" id="18"/>
+											<AutoCommandBar name="ДеревоЗначенийЭтоЦБКоманднаяПанель" id="19"/>
+											<ExtendedTooltip name="ДеревоЗначенийЭтоЦБРасширеннаяПодсказка" id="226"/>
+											<SearchStringAddition name="ДеревоЗначенийЭтоЦБСтрокаПоиска" id="227">
+												<AdditionSource>
+													<Item>ДеревоЗначенийЭтоЦБ</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДеревоЗначенийЭтоЦБСтрокаПоискаКонтекстноеМеню" id="228"/>
+												<ExtendedTooltip name="ДеревоЗначенийЭтоЦБСтрокаПоискаРасширеннаяПодсказка" id="229"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ДеревоЗначенийЭтоЦБСостояниеПросмотра" id="230">
+												<AdditionSource>
+													<Item>ДеревоЗначенийЭтоЦБ</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДеревоЗначенийЭтоЦБСостояниеПросмотраКонтекстноеМеню" id="231"/>
+												<ExtendedTooltip name="ДеревоЗначенийЭтоЦБСостояниеПросмотраРасширеннаяПодсказка" id="232"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ДеревоЗначенийЭтоЦБУправлениеПоиском" id="233">
+												<AdditionSource>
+													<Item>ДеревоЗначенийЭтоЦБ</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ДеревоЗначенийЭтоЦБУправлениеПоискомКонтекстноеМеню" id="234"/>
+												<ExtendedTooltip name="ДеревоЗначенийЭтоЦБУправлениеПоискомРасширеннаяПодсказка" id="235"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">ДеревоЗначенийЭтоЦБПриАктивизацииСтроки</Event>
+												<Event name="BeforeExpand">ДеревоЗначенийЭтоЦБПередРазворачиванием</Event>
+												<Event name="BeforeCollapse">ДеревоЗначенийЭтоЦБПередСворачиванием</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="ДеревоЗначенийНазвание1" id="26">
+													<DataPath>ДеревоНастроекОбъектов.ИдентификаторОбъектаНастройки</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Объекты обмена</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>15</Width>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="ДеревоЗначенийНазвание1КонтекстноеМеню" id="27"/>
+													<ExtendedTooltip name="ДеревоЗначенийНазвание1РасширеннаяПодсказка" id="236"/>
+												</InputField>
+												<ColumnGroup name="ДеревоЗначенийГруппа1" id="36">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Центральная РС</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<ShowInHeader>true</ShowInHeader>
+													<ExtendedTooltip name="ДеревоЗначенийГруппа1РасширеннаяПодсказка" id="237"/>
+													<ChildItems>
+														<CheckBoxField name="ДеревоЗначенийИсточникЗнач1" id="24">
+															<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач1</DataPath>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<EditMode>EnterOnInput</EditMode>
+															<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+															<ThreeState>true</ThreeState>
+															<BackColor>web:LightCyan</BackColor>
+															<ContextMenu name="ДеревоЗначенийИсточникЗнач1КонтекстноеМеню" id="25"/>
+															<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач1РасширеннаяПодсказка" id="238"/>
+															<Events>
+																<Event name="OnChange">ДеревоЗначенийИсточникЗнач1ПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+														<CheckBoxField name="ДеревоЗначенийИсточникЗнач3" id="30">
+															<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач3</DataPath>
+															<Visible>false</Visible>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<EditMode>EnterOnInput</EditMode>
+															<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+															<ThreeState>true</ThreeState>
+															<BackColor>web:LightCyan</BackColor>
+															<ContextMenu name="ДеревоЗначенийИсточникЗнач3КонтекстноеМеню" id="31"/>
+															<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач3РасширеннаяПодсказка" id="239"/>
+															<Events>
+																<Event name="OnChange">ДеревоЗначенийИсточникЗнач3ПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+														<CheckBoxField name="ДеревоЗначенийИсточникЗнач2" id="28">
+															<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач2</DataPath>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<EditMode>EnterOnInput</EditMode>
+															<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+															<ThreeState>true</ThreeState>
+															<BackColor>web:LightCyan</BackColor>
+															<ContextMenu name="ДеревоЗначенийИсточникЗнач2КонтекстноеМеню" id="29"/>
+															<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач2РасширеннаяПодсказка" id="240"/>
+															<Events>
+																<Event name="OnChange">ДеревоЗначенийИсточникЗнач2ПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+													</ChildItems>
+												</ColumnGroup>
+												<ColumnGroup name="ДеревоЗначенийГруппа2" id="37">
+													<Visible>false</Visible>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ДеревоЗначенийГруппа2РасширеннаяПодсказка" id="241"/>
+													<ChildItems>
+														<CheckBoxField name="ДеревоЗначенийВидЗначимостиОбъектаЗнач1" id="32">
+															<DataPath>ДеревоНастроекОбъектов.ВидЗначимостиОбъектаЗнач1</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ОА</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<EditMode>EnterOnInput</EditMode>
+															<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДеревоЗначенийВидЗначимостиОбъектаЗнач1КонтекстноеМеню" id="33"/>
+															<ExtendedTooltip name="ДеревоЗначенийВидЗначимостиОбъектаЗнач1РасширеннаяПодсказка" id="242"/>
+														</CheckBoxField>
+														<CheckBoxField name="ДеревоЗначенийВидЗначимостиОбъектаЗнач2" id="34">
+															<DataPath>ДеревоНастроекОбъектов.ВидЗначимостиОбъектаЗнач2</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ЛА</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<EditMode>EnterOnInput</EditMode>
+															<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДеревоЗначенийВидЗначимостиОбъектаЗнач2КонтекстноеМеню" id="35"/>
+															<ExtendedTooltip name="ДеревоЗначенийВидЗначимостиОбъектаЗнач2РасширеннаяПодсказка" id="243"/>
+														</CheckBoxField>
+													</ChildItems>
+												</ColumnGroup>
+												<ColumnGroup name="ДеревоЗначенийЭтоЦБГруппаРестораны" id="103">
+													<Visible>false</Visible>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дерево значений это ЦБГруппа рестораны</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дерево значений это ЦБГруппа рестораны</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ДеревоЗначенийЭтоЦБГруппаРестораныРасширеннаяПодсказка" id="244"/>
+													<ChildItems>
+														<ColumnGroup name="ДеревоЗначенийЭтоЦБГруппаРесторан_1" id="104">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ресторан 1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ресторан 1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ShowInHeader>true</ShowInHeader>
+															<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+															<ExtendedTooltip name="ДеревоЗначенийЭтоЦБГруппаРесторан_1РасширеннаяПодсказка" id="245"/>
+															<ChildItems>
+																<CheckBoxField name="ДеревоЗначенийЭтоЦБИсточникЗнач1" id="105">
+																	<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач1</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ДеревоЗначенийЭтоЦБИсточникЗнач1КонтекстноеМеню" id="106"/>
+																	<ExtendedTooltip name="ДеревоЗначенийЭтоЦБИсточникЗнач1РасширеннаяПодсказка" id="246"/>
+																</CheckBoxField>
+																<CheckBoxField name="ДеревоЗначенийЭтоЦБИсточникЗнач3" id="107">
+																	<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач3</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ДеревоЗначенийЭтоЦБИсточникЗнач3КонтекстноеМеню" id="108"/>
+																	<ExtendedTooltip name="ДеревоЗначенийЭтоЦБИсточникЗнач3РасширеннаяПодсказка" id="247"/>
+																</CheckBoxField>
+																<CheckBoxField name="ДеревоЗначенийЭтоЦБИсточникЗнач2" id="109">
+																	<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач2</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ДеревоЗначенийЭтоЦБИсточникЗнач2КонтекстноеМеню" id="110"/>
+																	<ExtendedTooltip name="ДеревоЗначенийЭтоЦБИсточникЗнач2РасширеннаяПодсказка" id="248"/>
+																</CheckBoxField>
+															</ChildItems>
+														</ColumnGroup>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</Table>
+										<UsualGroup name="ГруппаРестораны" id="90">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа рестораны</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа рестораны</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаРестораныРасширеннаяПодсказка" id="249"/>
+											<ChildItems>
+												<Table name="ДеревоЗначенийЭтоЦБ_Ресторан" id="72">
+													<Representation>Tree</Representation>
+													<TitleLocation>Top</TitleLocation>
+													<CommandBarLocation>None</CommandBarLocation>
+													<ChangeRowSet>false</ChangeRowSet>
+													<ChangeRowOrder>false</ChangeRowOrder>
+													<Width>14</Width>
+													<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+													<VerticalScrollBar>DontUse</VerticalScrollBar>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<FileDragMode>AsFile</FileDragMode>
+													<DataPath>ДеревоНастроекОбъектов</DataPath>
+													<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+													<SearchStringLocation>None</SearchStringLocation>
+													<ViewStatusLocation>None</ViewStatusLocation>
+													<SearchControlLocation>None</SearchControlLocation>
+													<ContextMenu name="ДеревоЗначенийЭтоЦБ_РесторанКонтекстноеМеню" id="73"/>
+													<AutoCommandBar name="ДеревоЗначенийЭтоЦБ_РесторанКоманднаяПанель" id="74"/>
+													<ExtendedTooltip name="ДеревоЗначенийЭтоЦБ_РесторанРасширеннаяПодсказка" id="250"/>
+													<SearchStringAddition name="ДеревоЗначенийЭтоЦБ_РесторанСтрокаПоиска" id="251">
+														<AdditionSource>
+															<Item>ДеревоЗначенийЭтоЦБ_Ресторан</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДеревоЗначенийЭтоЦБ_РесторанСтрокаПоискаКонтекстноеМеню" id="252"/>
+														<ExtendedTooltip name="ДеревоЗначенийЭтоЦБ_РесторанСтрокаПоискаРасширеннаяПодсказка" id="253"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ДеревоЗначенийЭтоЦБ_РесторанСостояниеПросмотра" id="254">
+														<AdditionSource>
+															<Item>ДеревоЗначенийЭтоЦБ_Ресторан</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДеревоЗначенийЭтоЦБ_РесторанСостояниеПросмотраКонтекстноеМеню" id="255"/>
+														<ExtendedTooltip name="ДеревоЗначенийЭтоЦБ_РесторанСостояниеПросмотраРасширеннаяПодсказка" id="256"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ДеревоЗначенийЭтоЦБ_РесторанУправлениеПоиском" id="257">
+														<AdditionSource>
+															<Item>ДеревоЗначенийЭтоЦБ_Ресторан</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ДеревоЗначенийЭтоЦБ_РесторанУправлениеПоискомКонтекстноеМеню" id="258"/>
+														<ExtendedTooltip name="ДеревоЗначенийЭтоЦБ_РесторанУправлениеПоискомРасширеннаяПодсказка" id="259"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<InputField name="ДеревоЗначенийНазвание4" id="75">
+															<Visible>false</Visible>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Объекты обмена</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ДеревоЗначенийНазвание4КонтекстноеМеню" id="76"/>
+															<ExtendedTooltip name="ДеревоЗначенийНазвание4РасширеннаяПодсказка" id="260"/>
+														</InputField>
+														<ColumnGroup name="ДеревоЗначенийГруппа7" id="77">
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ДеревоЗначенийГруппа7РасширеннаяПодсказка" id="261"/>
+															<ChildItems>
+																<CheckBoxField name="ДеревоЗначенийИсточникЗнач10" id="78">
+																	<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач1</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Авт</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<BackColor>web:LightCyan</BackColor>
+																	<ContextMenu name="ДеревоЗначенийИсточникЗнач10КонтекстноеМеню" id="79"/>
+																	<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач10РасширеннаяПодсказка" id="262"/>
+																</CheckBoxField>
+																<CheckBoxField name="ДеревоЗначенийИсточникЗнач11" id="80">
+																	<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач3</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ЦБ</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<BackColor>web:LightCyan</BackColor>
+																	<ContextMenu name="ДеревоЗначенийИсточникЗнач11КонтекстноеМеню" id="81"/>
+																	<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач11РасширеннаяПодсказка" id="263"/>
+																</CheckBoxField>
+																<CheckBoxField name="ДеревоЗначенийИсточникЗнач12" id="82">
+																	<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач2</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Бух</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<BackColor>web:LightCyan</BackColor>
+																	<ContextMenu name="ДеревоЗначенийИсточникЗнач12КонтекстноеМеню" id="83"/>
+																	<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач12РасширеннаяПодсказка" id="264"/>
+																</CheckBoxField>
+															</ChildItems>
+														</ColumnGroup>
+														<ColumnGroup name="ДеревоЗначенийГруппа8" id="84">
+															<Visible>false</Visible>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ДеревоЗначенийГруппа8РасширеннаяПодсказка" id="265"/>
+															<ChildItems>
+																<CheckBoxField name="ДеревоЗначенийВидЗначимостиОбъектаЗнач7" id="85">
+																	<DataPath>ДеревоНастроекОбъектов.ВидЗначимостиОбъектаЗнач1</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ОА</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ДеревоЗначенийВидЗначимостиОбъектаЗнач7КонтекстноеМеню" id="86"/>
+																	<ExtendedTooltip name="ДеревоЗначенийВидЗначимостиОбъектаЗнач7РасширеннаяПодсказка" id="266"/>
+																</CheckBoxField>
+																<CheckBoxField name="ДеревоЗначенийВидЗначимостиОбъектаЗнач8" id="87">
+																	<DataPath>ДеревоНастроекОбъектов.ВидЗначимостиОбъектаЗнач2</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ЛА</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<EditMode>EnterOnInput</EditMode>
+																	<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ДеревоЗначенийВидЗначимостиОбъектаЗнач8КонтекстноеМеню" id="88"/>
+																	<ExtendedTooltip name="ДеревоЗначенийВидЗначимостиОбъектаЗнач8РасширеннаяПодсказка" id="267"/>
+																</CheckBoxField>
+															</ChildItems>
+														</ColumnGroup>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="ЭтаБазаПериферийная" id="4">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Эта база периферийная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Эта база периферийная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЭтаБазаПериферийнаяРасширеннаяПодсказка" id="268"/>
+							<ChildItems>
+								<Table name="ДеревоЗначенийЭтоПБ" id="55">
+									<Representation>Tree</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ДеревоНастроекОбъектов</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="ДеревоЗначенийЭтоПБКонтекстноеМеню" id="56"/>
+									<AutoCommandBar name="ДеревоЗначенийЭтоПБКоманднаяПанель" id="57"/>
+									<ExtendedTooltip name="ДеревоЗначенийЭтоПБРасширеннаяПодсказка" id="269"/>
+									<SearchStringAddition name="ДеревоЗначенийЭтоПБСтрокаПоиска" id="270">
+										<AdditionSource>
+											<Item>ДеревоЗначенийЭтоПБ</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗначенийЭтоПБСтрокаПоискаКонтекстноеМеню" id="271"/>
+										<ExtendedTooltip name="ДеревоЗначенийЭтоПБСтрокаПоискаРасширеннаяПодсказка" id="272"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДеревоЗначенийЭтоПБСостояниеПросмотра" id="273">
+										<AdditionSource>
+											<Item>ДеревоЗначенийЭтоПБ</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗначенийЭтоПБСостояниеПросмотраКонтекстноеМеню" id="274"/>
+										<ExtendedTooltip name="ДеревоЗначенийЭтоПБСостояниеПросмотраРасширеннаяПодсказка" id="275"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДеревоЗначенийЭтоПБУправлениеПоиском" id="276">
+										<AdditionSource>
+											<Item>ДеревоЗначенийЭтоПБ</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗначенийЭтоПБУправлениеПоискомКонтекстноеМеню" id="277"/>
+										<ExtendedTooltip name="ДеревоЗначенийЭтоПБУправлениеПоискомРасширеннаяПодсказка" id="278"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ДеревоЗначенийНазвание3" id="58">
+											<DataPath>ДеревоНастроекОбъектов.ИдентификаторОбъектаНастройки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Объекты обмена</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоЗначенийНазвание3КонтекстноеМеню" id="59"/>
+											<ExtendedTooltip name="ДеревоЗначенийНазвание3РасширеннаяПодсказка" id="279"/>
+										</InputField>
+										<ColumnGroup name="ДеревоЗначенийГруппа5" id="60">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ДеревоЗначенийГруппа5РасширеннаяПодсказка" id="280"/>
+											<ChildItems>
+												<CheckBoxField name="ДеревоЗначенийИсточникЗнач7" id="61">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач1</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Авт</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДеревоЗначенийИсточникЗнач7КонтекстноеМеню" id="62"/>
+													<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач7РасширеннаяПодсказка" id="281"/>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийИсточникЗнач9" id="65">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач3</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЦБ</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДеревоЗначенийИсточникЗнач9КонтекстноеМеню" id="66"/>
+													<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач9РасширеннаяПодсказка" id="282"/>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийИсточникЗнач8" id="63">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач2</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Бух</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДеревоЗначенийИсточникЗнач8КонтекстноеМеню" id="64"/>
+													<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач8РасширеннаяПодсказка" id="283"/>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ДеревоЗначенийГруппа6" id="67">
+											<Visible>false</Visible>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ДеревоЗначенийГруппа6РасширеннаяПодсказка" id="284"/>
+											<ChildItems>
+												<InputField name="ДеревоЗначенийВидЗначимостиОбъектаЗнач5" id="68">
+													<DataPath>ДеревоНастроекОбъектов.ВидЗначимостиОбъектаЗнач1</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ОА</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ContextMenu name="ДеревоЗначенийВидЗначимостиОбъектаЗнач5КонтекстноеМеню" id="69"/>
+													<ExtendedTooltip name="ДеревоЗначенийВидЗначимостиОбъектаЗнач5РасширеннаяПодсказка" id="285"/>
+												</InputField>
+												<InputField name="ДеревоЗначенийВидЗначимостиОбъектаЗнач6" id="70">
+													<DataPath>ДеревоНастроекОбъектов.ВидЗначимостиОбъектаЗнач2</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЛА</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ContextMenu name="ДеревоЗначенийВидЗначимостиОбъектаЗнач6КонтекстноеМеню" id="71"/>
+													<ExtendedTooltip name="ДеревоЗначенийВидЗначимостиОбъектаЗнач6РасширеннаяПодсказка" id="286"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ЭтаБазаАвтономная" id="3">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Эта база автономная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Эта база автономная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЭтаБазаАвтономнаяРасширеннаяПодсказка" id="287"/>
+							<ChildItems>
+								<Table name="ДеревоЗначенийЭтоАБ" id="38">
+									<Representation>Tree</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ДеревоНастроекОбъектов</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="ДеревоЗначенийЭтоАБКонтекстноеМеню" id="39"/>
+									<AutoCommandBar name="ДеревоЗначенийЭтоАБКоманднаяПанель" id="40"/>
+									<ExtendedTooltip name="ДеревоЗначенийЭтоАБРасширеннаяПодсказка" id="288"/>
+									<SearchStringAddition name="ДеревоЗначенийЭтоАБСтрокаПоиска" id="289">
+										<AdditionSource>
+											<Item>ДеревоЗначенийЭтоАБ</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗначенийЭтоАБСтрокаПоискаКонтекстноеМеню" id="290"/>
+										<ExtendedTooltip name="ДеревоЗначенийЭтоАБСтрокаПоискаРасширеннаяПодсказка" id="291"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДеревоЗначенийЭтоАБСостояниеПросмотра" id="292">
+										<AdditionSource>
+											<Item>ДеревоЗначенийЭтоАБ</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗначенийЭтоАБСостояниеПросмотраКонтекстноеМеню" id="293"/>
+										<ExtendedTooltip name="ДеревоЗначенийЭтоАБСостояниеПросмотраРасширеннаяПодсказка" id="294"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДеревоЗначенийЭтоАБУправлениеПоиском" id="295">
+										<AdditionSource>
+											<Item>ДеревоЗначенийЭтоАБ</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗначенийЭтоАБУправлениеПоискомКонтекстноеМеню" id="296"/>
+										<ExtendedTooltip name="ДеревоЗначенийЭтоАБУправлениеПоискомРасширеннаяПодсказка" id="297"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ДеревоЗначенийНазвание2" id="41">
+											<DataPath>ДеревоНастроекОбъектов.ИдентификаторОбъектаНастройки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Объекты обмена</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоЗначенийНазвание2КонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="ДеревоЗначенийНазвание2РасширеннаяПодсказка" id="298"/>
+										</InputField>
+										<ColumnGroup name="ДеревоЗначенийГруппа3" id="43">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ДеревоЗначенийГруппа3РасширеннаяПодсказка" id="299"/>
+											<ChildItems>
+												<CheckBoxField name="ДеревоЗначенийИсточникЗнач4" id="44">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач1</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Авт</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоЗначенийИсточникЗнач4КонтекстноеМеню" id="45"/>
+													<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач4РасширеннаяПодсказка" id="300"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗнач4ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийИсточникЗнач5" id="46">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач2</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Бух</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоЗначенийИсточникЗнач5КонтекстноеМеню" id="47"/>
+													<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач5РасширеннаяПодсказка" id="301"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗнач5ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийИсточникЗнач6" id="48">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач3</DataPath>
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЦБ</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоЗначенийИсточникЗнач6КонтекстноеМеню" id="49"/>
+													<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач6РасширеннаяПодсказка" id="302"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗнач6ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ДеревоЗначенийГруппа4" id="50">
+											<Visible>false</Visible>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ДеревоЗначенийГруппа4РасширеннаяПодсказка" id="303"/>
+											<ChildItems>
+												<InputField name="ДеревоЗначенийВидЗначимостиОбъектаЗнач3" id="51">
+													<DataPath>ДеревоНастроекОбъектов.ВидЗначимостиОбъектаЗнач1</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ОА</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ContextMenu name="ДеревоЗначенийВидЗначимостиОбъектаЗнач3КонтекстноеМеню" id="52"/>
+													<ExtendedTooltip name="ДеревоЗначенийВидЗначимостиОбъектаЗнач3РасширеннаяПодсказка" id="304"/>
+												</InputField>
+												<InputField name="ДеревоЗначенийВидЗначимостиОбъектаЗнач4" id="53">
+													<DataPath>ДеревоНастроекОбъектов.ВидЗначимостиОбъектаЗнач2</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЛА</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ContextMenu name="ДеревоЗначенийВидЗначимостиОбъектаЗнач4КонтекстноеМеню" id="54"/>
+													<ExtendedTooltip name="ДеревоЗначенийВидЗначимостиОбъектаЗнач4РасширеннаяПодсказка" id="305"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ЭтоНастройкаНовогоУзла" id="115">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Эта база центральная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЭтоНастройкаНовогоУзлаРасширеннаяПодсказка" id="306"/>
+							<ChildItems>
+								<Table name="ДеревоЗначенийЭтоННУ" id="117">
+									<Representation>Tree</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Width>55</Width>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ДеревоНастроекОбъектов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки обмена</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="ДеревоЗначенийЭтоННУКонтекстноеМеню" id="118"/>
+									<AutoCommandBar name="ДеревоЗначенийЭтоННУКоманднаяПанель" id="119"/>
+									<ExtendedTooltip name="ДеревоЗначенийЭтоННУРасширеннаяПодсказка" id="307"/>
+									<SearchStringAddition name="ДеревоЗначенийЭтоННУСтрокаПоиска" id="308">
+										<AdditionSource>
+											<Item>ДеревоЗначенийЭтоННУ</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗначенийЭтоННУСтрокаПоискаКонтекстноеМеню" id="309"/>
+										<ExtendedTooltip name="ДеревоЗначенийЭтоННУСтрокаПоискаРасширеннаяПодсказка" id="310"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДеревоЗначенийЭтоННУСостояниеПросмотра" id="311">
+										<AdditionSource>
+											<Item>ДеревоЗначенийЭтоННУ</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗначенийЭтоННУСостояниеПросмотраКонтекстноеМеню" id="312"/>
+										<ExtendedTooltip name="ДеревоЗначенийЭтоННУСостояниеПросмотраРасширеннаяПодсказка" id="313"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДеревоЗначенийЭтоННУУправлениеПоиском" id="314">
+										<AdditionSource>
+											<Item>ДеревоЗначенийЭтоННУ</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗначенийЭтоННУУправлениеПоискомКонтекстноеМеню" id="315"/>
+										<ExtendedTooltip name="ДеревоЗначенийЭтоННУУправлениеПоискомРасширеннаяПодсказка" id="316"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">ДеревоЗначенийЭтоЦБПриАктивизацииСтроки</Event>
+										<Event name="BeforeExpand">ДеревоЗначенийЭтоЦБПередРазворачиванием</Event>
+										<Event name="BeforeCollapse">ДеревоЗначенийЭтоЦБПередСворачиванием</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ДеревоЗначенийНазвание5" id="120">
+											<DataPath>ДеревоНастроекОбъектов.ИдентификаторОбъектаНастройки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Объекты обмена</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>15</Width>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ДеревоЗначенийНазвание5КонтекстноеМеню" id="121"/>
+											<ExtendedTooltip name="ДеревоЗначенийНазвание5РасширеннаяПодсказка" id="317"/>
+										</InputField>
+										<ColumnGroup name="ДеревоЗначенийГруппа9" id="122">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Центральная РС</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<ShowInHeader>true</ShowInHeader>
+											<ExtendedTooltip name="ДеревоЗначенийГруппа9РасширеннаяПодсказка" id="318"/>
+											<ChildItems>
+												<CheckBoxField name="ДеревоЗначенийИсточникЗнач13" id="123">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач1</DataPath>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<BackColor>web:LightCyan</BackColor>
+													<ContextMenu name="ДеревоЗначенийИсточникЗнач13КонтекстноеМеню" id="124"/>
+													<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач13РасширеннаяПодсказка" id="319"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗнач13ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийИсточникЗнач14" id="125">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач3</DataPath>
+													<Visible>false</Visible>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<BackColor>web:LightCyan</BackColor>
+													<ContextMenu name="ДеревоЗначенийИсточникЗнач14КонтекстноеМеню" id="126"/>
+													<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач14РасширеннаяПодсказка" id="320"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗнач14ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийИсточникЗнач15" id="127">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗнач2</DataPath>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<BackColor>web:LightCyan</BackColor>
+													<ContextMenu name="ДеревоЗначенийИсточникЗнач15КонтекстноеМеню" id="128"/>
+													<ExtendedTooltip name="ДеревоЗначенийИсточникЗнач15РасширеннаяПодсказка" id="321"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗнач15ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ДеревоЗначенийЭтоЦБГруппаРесторан" id="135">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Новый ресторан</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ресторан 1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ShowInHeader>true</ShowInHeader>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<ExtendedTooltip name="ДеревоЗначенийЭтоЦБГруппаРесторанРасширеннаяПодсказка" id="322"/>
+											<ChildItems>
+												<CheckBoxField name="ДеревоЗначенийЭтоЦБИсточникЗнач4" id="136">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗначДляНового1</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоЗначенийЭтоЦБИсточникЗнач4КонтекстноеМеню" id="137"/>
+													<ExtendedTooltip name="ДеревоЗначенийЭтоЦБИсточникЗнач4РасширеннаяПодсказка" id="323"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийЭтоЦБИсточникЗнач4ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийЭтоЦБИсточникЗнач5" id="138">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗначДляНового3</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоЗначенийЭтоЦБИсточникЗнач5КонтекстноеМеню" id="139"/>
+													<ExtendedTooltip name="ДеревоЗначенийЭтоЦБИсточникЗнач5РасширеннаяПодсказка" id="324"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийЭтоЦБИсточникЗнач5ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийЭтоЦБИсточникЗнач6" id="140">
+													<DataPath>ДеревоНастроекОбъектов.ИсточникЗначДляНового2</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоЗначенийЭтоЦБИсточникЗнач6КонтекстноеМеню" id="141"/>
+													<ExtendedTooltip name="ДеревоЗначенийЭтоЦБИсточникЗнач6РасширеннаяПодсказка" id="325"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийЭтоЦБИсточникЗнач6ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<UsualGroup name="ИнформацияОСинхронизации" id="142">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация о синхронизации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация о синхронизации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ИнформацияОСинхронизацииРасширеннаяПодсказка" id="326"/>
+					<ChildItems>
+						<UsualGroup name="Группа6" id="143">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="327"/>
+							<ChildItems>
+								<PictureDecoration name="В" id="144">
+									<Width>4</Width>
+									<Height>2</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В</v8:content>
+										</v8:item>
+									</Title>
+									<PictureSize>AutoSize</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.FrontOfficeНазад</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:TransparentPixel x="25" y="5"/>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ВКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ВРасширеннаяПодсказка" id="328"/>
+								</PictureDecoration>
+								<PictureDecoration name="БД_В" id="146">
+									<Width>4</Width>
+									<Height>2</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Б д В</v8:content>
+										</v8:item>
+									</Title>
+									<PictureSize>AutoSize</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="БД_ВКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="БД_ВРасширеннаяПодсказка" id="329"/>
+								</PictureDecoration>
+								<LabelDecoration name="ИнформацияОСинхронизацииСправочников" id="148">
+									<Height>2</Height>
+									<Font ref="sys:DefaultGUIFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Справочники загружаются из ...</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИнформацияОСинхронизацииСправочниковКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="ИнформацияОСинхронизацииСправочниковРасширеннаяПодсказка" id="330"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ДеревоСправочников" id="150">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дерево справочников</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дерево справочников</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Height>9</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ДеревоСправочниковРасширеннаяПодсказка" id="331"/>
+							<ChildItems>
+								<Table name="ДеревоНастроекСправочников" id="185">
+									<Representation>Tree</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Width>55</Width>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ДеревоНастроекСправочников</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки обмена</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="ДеревоНастроекСправочниковКонтекстноеМеню" id="186"/>
+									<AutoCommandBar name="ДеревоНастроекСправочниковКоманднаяПанель" id="187"/>
+									<ExtendedTooltip name="ДеревоНастроекСправочниковРасширеннаяПодсказка" id="332"/>
+									<SearchStringAddition name="ДеревоНастроекСправочниковСтрокаПоиска" id="333">
+										<AdditionSource>
+											<Item>ДеревоНастроекСправочников</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоНастроекСправочниковСтрокаПоискаКонтекстноеМеню" id="334"/>
+										<ExtendedTooltip name="ДеревоНастроекСправочниковСтрокаПоискаРасширеннаяПодсказка" id="335"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДеревоНастроекСправочниковСостояниеПросмотра" id="336">
+										<AdditionSource>
+											<Item>ДеревоНастроекСправочников</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоНастроекСправочниковСостояниеПросмотраКонтекстноеМеню" id="337"/>
+										<ExtendedTooltip name="ДеревоНастроекСправочниковСостояниеПросмотраРасширеннаяПодсказка" id="338"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДеревоНастроекСправочниковУправлениеПоиском" id="339">
+										<AdditionSource>
+											<Item>ДеревоНастроекСправочников</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоНастроекСправочниковУправлениеПоискомКонтекстноеМеню" id="340"/>
+										<ExtendedTooltip name="ДеревоНастроекСправочниковУправлениеПоискомРасширеннаяПодсказка" id="341"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">ДеревоНастроекСправочниковПриАктивизацииСтроки</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="ДеревоСправочниковНазвание" id="188">
+											<DataPath>ДеревоНастроекСправочников.ИдентификаторОбъектаНастройки</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоСправочниковНазваниеКонтекстноеМеню" id="189"/>
+											<ExtendedTooltip name="ДеревоСправочниковНазваниеРасширеннаяПодсказка" id="342"/>
+										</LabelField>
+										<ColumnGroup name="ДеревоЗначенийСпрЦРС" id="196">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Центральная РС</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дерево значений спр ЦРС</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ShowInHeader>true</ShowInHeader>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<ExtendedTooltip name="ДеревоЗначенийСпрЦРСРасширеннаяПодсказка" id="343"/>
+											<ChildItems>
+												<CheckBoxField name="ДеревоЗначенийСправочникиИсточникЗнач1" id="190">
+													<DataPath>ДеревоНастроекСправочников.ИсточникЗнач1</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоЗначенийСправочникиИсточникЗнач1КонтекстноеМеню" id="191"/>
+													<ExtendedTooltip name="ДеревоЗначенийСправочникиИсточникЗнач1РасширеннаяПодсказка" id="344"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗначПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийСправочникиИсточникЗнач3" id="194">
+													<DataPath>ДеревоНастроекСправочников.ИсточникЗнач3</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоЗначенийСправочникиИсточникЗнач3КонтекстноеМеню" id="195"/>
+													<ExtendedTooltip name="ДеревоЗначенийСправочникиИсточникЗнач3РасширеннаяПодсказка" id="345"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗначПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоЗначенийСправочникиИсточникЗнач2" id="192">
+													<DataPath>ДеревоНастроекСправочников.ИсточникЗнач2</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоЗначенийСправочникиИсточникЗнач2КонтекстноеМеню" id="193"/>
+													<ExtendedTooltip name="ДеревоЗначенийСправочникиИсточникЗнач2РасширеннаяПодсказка" id="346"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗначПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ДеревоЗначенийСпрГруппаНовый" id="197">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Новый ресторан</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Новый ресторан</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ShowInHeader>true</ShowInHeader>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<ExtendedTooltip name="ДеревоЗначенийСпрГруппаНовыйРасширеннаяПодсказка" id="347"/>
+											<ChildItems>
+												<CheckBoxField name="ДеревоНастроекСправочниковИсточникЗначДляНового1" id="208">
+													<DataPath>ДеревоНастроекСправочников.ИсточникЗначДляНового1</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоНастроекСправочниковИсточникЗначДляНового1КонтекстноеМеню" id="209"/>
+													<ExtendedTooltip name="ДеревоНастроекСправочниковИсточникЗначДляНового1РасширеннаяПодсказка" id="348"/>
+													<Events>
+														<Event name="OnChange">ДеревоНастроекСправочниковИсточникЗначДляНового1ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоНастроекСправочниковИсточникЗначДляНового3" id="212">
+													<DataPath>ДеревоНастроекСправочников.ИсточникЗначДляНового3</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоНастроекСправочниковИсточникЗначДляНового3КонтекстноеМеню" id="213"/>
+													<ExtendedTooltip name="ДеревоНастроекСправочниковИсточникЗначДляНового3РасширеннаяПодсказка" id="349"/>
+													<Events>
+														<Event name="OnChange">ДеревоНастроекСправочниковИсточникЗначДляНового3ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоНастроекСправочниковИсточникЗначДляНового2" id="210">
+													<DataPath>ДеревоНастроекСправочников.ИсточникЗначДляНового2</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоНастроекСправочниковИсточникЗначДляНового2КонтекстноеМеню" id="211"/>
+													<ExtendedTooltip name="ДеревоНастроекСправочниковИсточникЗначДляНового2РасширеннаяПодсказка" id="350"/>
+													<Events>
+														<Event name="OnChange">ДеревоНастроекСправочниковИсточникЗначДляНового2ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа7" id="164">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="351"/>
+							<ChildItems>
+								<PictureDecoration name="ИЗ" id="165">
+									<Width>4</Width>
+									<Height>2</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<PictureSize>AutoSize</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.ОбменВперед</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ИЗКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ИЗРасширеннаяПодсказка" id="352"/>
+								</PictureDecoration>
+								<PictureDecoration name="БД_Из" id="167">
+									<Width>4</Width>
+									<Height>2</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="БД_ИзКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="БД_ИзРасширеннаяПодсказка" id="353"/>
+								</PictureDecoration>
+								<LabelDecoration name="ИнформацияОСинхронизацииДокументов" id="169">
+									<Height>2</Height>
+									<Font ref="sys:DefaultGUIFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документы выгружаются в ...</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИнформацияОСинхронизацииДокументовКонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="ИнформацияОСинхронизацииДокументовРасширеннаяПодсказка" id="354"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ДеревоДокументов" id="171">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дерево документов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дерево справочников</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Height>5</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ДеревоДокументовРасширеннаяПодсказка" id="355"/>
+							<ChildItems>
+								<Table name="ДеревоНастроекДокументов" id="172">
+									<Representation>Tree</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ДеревоНастроекДокументов</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="ДеревоНастроекДокументовКонтекстноеМеню" id="173"/>
+									<AutoCommandBar name="ДеревоНастроекДокументовКоманднаяПанель" id="174"/>
+									<ExtendedTooltip name="ДеревоНастроекДокументовРасширеннаяПодсказка" id="356"/>
+									<SearchStringAddition name="ДеревоНастроекДокументовСтрокаПоиска" id="357">
+										<AdditionSource>
+											<Item>ДеревоНастроекДокументов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоНастроекДокументовСтрокаПоискаКонтекстноеМеню" id="358"/>
+										<ExtendedTooltip name="ДеревоНастроекДокументовСтрокаПоискаРасширеннаяПодсказка" id="359"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДеревоНастроекДокументовСостояниеПросмотра" id="360">
+										<AdditionSource>
+											<Item>ДеревоНастроекДокументов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоНастроекДокументовСостояниеПросмотраКонтекстноеМеню" id="361"/>
+										<ExtendedTooltip name="ДеревоНастроекДокументовСостояниеПросмотраРасширеннаяПодсказка" id="362"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДеревоНастроекДокументовУправлениеПоиском" id="363">
+										<AdditionSource>
+											<Item>ДеревоНастроекДокументов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоНастроекДокументовУправлениеПоискомКонтекстноеМеню" id="364"/>
+										<ExtendedTooltip name="ДеревоНастроекДокументовУправлениеПоискомРасширеннаяПодсказка" id="365"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">ДеревоНастроекДокументовПриАктивизацииСтроки</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ДеревоДокументовНазвание" id="206">
+											<DataPath>ДеревоНастроекДокументов.ИдентификаторОбъектаНастройки</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоДокументовНазваниеКонтекстноеМеню" id="207"/>
+											<ExtendedTooltip name="ДеревоДокументовНазваниеРасширеннаяПодсказка" id="366"/>
+										</InputField>
+										<ColumnGroup name="ДеревоЗначенийДокЦРС" id="177">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Центральная РС</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дерево значений это ЦБГруппа рестораны</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ShowInHeader>true</ShowInHeader>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<ExtendedTooltip name="ДеревоЗначенийДокЦРСРасширеннаяПодсказка" id="367"/>
+											<ChildItems>
+												<CheckBoxField name="ДеревоНастроекДокументовИсточникЗнач1" id="200">
+													<DataPath>ДеревоНастроекДокументов.ИсточникЗнач1</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоНастроекДокументовИсточникЗнач1КонтекстноеМеню" id="201"/>
+													<ExtendedTooltip name="ДеревоНастроекДокументовИсточникЗнач1РасширеннаяПодсказка" id="368"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗначПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоНастроекДокументовИсточникЗнач3" id="204">
+													<DataPath>ДеревоНастроекДокументов.ИсточникЗнач3</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоНастроекДокументовИсточникЗнач3КонтекстноеМеню" id="205"/>
+													<ExtendedTooltip name="ДеревоНастроекДокументовИсточникЗнач3РасширеннаяПодсказка" id="369"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗначПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоНастроекДокументовИсточникЗнач2" id="202">
+													<DataPath>ДеревоНастроекДокументов.ИсточникЗнач2</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоНастроекДокументовИсточникЗнач2КонтекстноеМеню" id="203"/>
+													<ExtendedTooltip name="ДеревоНастроекДокументовИсточникЗнач2РасширеннаяПодсказка" id="370"/>
+													<Events>
+														<Event name="OnChange">ДеревоЗначенийИсточникЗначПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ДеревоЗначенийДокГруппаНовый" id="184">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Новый ресторан</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Новый ресторан</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ShowInHeader>true</ShowInHeader>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<ExtendedTooltip name="ДеревоЗначенийДокГруппаНовыйРасширеннаяПодсказка" id="371"/>
+											<ChildItems>
+												<CheckBoxField name="ДеревоНастроекДокументовИсточникЗначДляНового1" id="214">
+													<DataPath>ДеревоНастроекДокументов.ИсточникЗначДляНового1</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоНастроекДокументовИсточникЗначДляНового1КонтекстноеМеню" id="215"/>
+													<ExtendedTooltip name="ДеревоНастроекДокументовИсточникЗначДляНового1РасширеннаяПодсказка" id="372"/>
+													<Events>
+														<Event name="OnChange">ДеревоНастроекДокументовИсточникЗначДляНового1ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоНастроекДокументовИсточникЗначДляНового3" id="218">
+													<DataPath>ДеревоНастроекДокументов.ИсточникЗначДляНового3</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоНастроекДокументовИсточникЗначДляНового3КонтекстноеМеню" id="219"/>
+													<ExtendedTooltip name="ДеревоНастроекДокументовИсточникЗначДляНового3РасширеннаяПодсказка" id="373"/>
+													<Events>
+														<Event name="OnChange">ДеревоНастроекДокументовИсточникЗначДляНового3ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="ДеревоНастроекДокументовИсточникЗначДляНового2" id="216">
+													<DataPath>ДеревоНастроекДокументов.ИсточникЗначДляНового2</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="ДеревоНастроекДокументовИсточникЗначДляНового2КонтекстноеМеню" id="217"/>
+													<ExtendedTooltip name="ДеревоНастроекДокументовИсточникЗначДляНового2РасширеннаяПодсказка" id="374"/>
+													<Events>
+														<Event name="OnChange">ДеревоНастроекДокументовИсточникЗначДляНового2ПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="РолевоеЗначениеЭтогоУзла" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ролевое значение этого узла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоНастроекОбъектов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево настроек объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИсточникЗнач1" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗнач2" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗнач3" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦРС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидЗначимостиОбъектаЗнач1" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник знач1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидЗначимостиОбъектаЗнач2" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник знач1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторОбъектаНастройки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Узел" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ExchangePlanRef.ОбменДанными2K_CRS</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗначДляНового1" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗначДляНового2" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЛБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗначДляНового3" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦРС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СтруктураДереваНастроек" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура дерева настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КоличествоСтрокОбъектов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество строк объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УзлыОбмена" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Узлы обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:ExchangePlanRef.ОбменДанными2K_CRS</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="Контекст" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контекст</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ОписаниеКонтекста" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание контекста</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Реквизиты" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗагружаютсяИЗ_БК" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружаются из бухгалтерской базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИдентификаторОбъектаНастройки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗагружаютсяИЗ_ЛБР" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружаются из периферийной базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИдентификаторОбъектаНастройки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗагружаютсяИЗ_ЦБР" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружаются из центральной базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИдентификаторОбъектаНастройки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЭтоНастройкаНовогоУзла" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это настройка нового узла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоНастроекСправочников" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево настроек справочников</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИсточникЗнач1" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗнач2" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗнач3" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦРС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторОбъектаНастройки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Узел" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ExchangePlanRef.ОбменДанными2K_CRS</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступностьЛБР" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступность ЛБР</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступностьЦБР" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступность ЦБР</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступностьЛБК" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступность ЛБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступностьЦБК" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступность ЦБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗначДляНового1" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗначДляНового2" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЛБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗначДляНового3" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦРС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДеревоНастроекДокументов" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево настроек документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИсточникЗнач1" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗнач2" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗнач3" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦРС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторОбъектаНастройки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Узел" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ExchangePlanRef.ОбменДанными2K_CRS</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступностьЛБР" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступность ЛБР</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступностьЦБР" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступность ЦБР</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступностьЛБК" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступность ЛБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступностьЦБК" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступность ЦБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗначДляНового1" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗначДляНового2" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЛБК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИсточникЗначДляНового3" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦРС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗагружаютсяВ_БК" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружаются в бухгалтерскую базу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИдентификаторОбъектаНастройки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗагружаютсяВ_ЛБР" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружаются в периферийную базу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИдентификаторОбъектаНастройки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗагружаютсяВ_ЦБР" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружаются в центральную базу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИдентификаторОбъектаНастройки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НастройкиЗависимыхОбъектов" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зависимые</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИдентификаторОбъектаНастройки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Узел" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ExchangePlanRef.ОбменДанными2K_CRS</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторГлавногоОбъекта" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЗначенийСправочникиИсточникЗнач1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоНастроекСправочниковИсточникЗначДляНового1</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоНастроекСправочников.ДоступностьЛБР</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="xs:string">СДоступностьЛБР</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЗначенийСправочникиИсточникЗнач3</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоНастроекСправочниковИсточникЗначДляНового3</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоНастроекСправочников.ДоступностьЦБР</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="xs:string">СДоступностьЦБР</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоНастроекСправочниковИсточникЗначДляНового2</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоНастроекСправочников.ДоступностьЛБК</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="xs:string">СДоступностьЛБК</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЗначенийСправочникиИсточникЗнач2</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоНастроекСправочников.ДоступностьЛБК</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="xs:string">СДоступностьЦБК</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоНастроекДокументовИсточникЗнач1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоНастроекДокументовИсточникЗначДляНового1</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоНастроекДокументов.ДоступностьЛБР</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="xs:string">ДДоступностьЛБР</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоНастроекДокументовИсточникЗнач3</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоНастроекДокументовИсточникЗначДляНового3</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоНастроекДокументов.ДоступностьЦБР</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="xs:string">ДДоступностьЦБР</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоНастроекДокументовИсточникЗначДляНового2</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоНастроекДокументов.ДоступностьЛБК</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="xs:string">ДДоступностьЛБК</dcsset:presentation>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоНастроекДокументовИсточникЗнач2</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоНастроекДокументов.ДоступностьЦБК</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+				<dcsset:presentation xsi:type="xs:string">ДДоступностьЦБК</dcsset:presentation>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьПериферийнуюБазу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить периферийную базу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить периферийную базу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьПериферийнуюБазу</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОтвязатьБазуОтСети" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отвязать базу от сети</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отвязать базу от сети</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтвязатьБазуОтСети</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗаписатьВУзелЦБ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать в узел ЦБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаписатьВУзелЦБ</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

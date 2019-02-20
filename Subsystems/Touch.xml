@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Subsystem uuid="f85bc20f-752c-4f97-9e17-b40904c949dd">
+		<Properties>
+			<Name>Touch</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Touch</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветФонаКнопкиОтмены</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветФонаКнопкиПодтверждения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ШрифтТекстаКнопки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ШрифтТекстаКнопкиПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Style.Touch</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Touch1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchBackspace</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchEnter</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchShift</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchTab</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchВверх</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchВлево</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchВниз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchВопрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchВосклицание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchВправо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchИерархияГруппа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchИерархияРодитель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchИерархияЭлеменит</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchОчистить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchОшибка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПервый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПолностьюВверх</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПолностьюВлево</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПолностьюВниз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПолностьюВправо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПометкаИстина</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПометкаИстинаПросмотр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПометкаЛожь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПометкаЛожьПросмотр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПоследний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПредупреждение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchПредыдущий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchСледующий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchТекущаяДата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.TouchТекущееВремя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Touch</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchБиблиотекаКартинок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchВводЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchВыборЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchВыравнивание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchКнопкаКоманднойПанели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchКнопкиКоманднойПанели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchКолонкаТабличногоПоля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchКолонкиТабличногоПоля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchКоманднаяПанель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchОформлениеСтроки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchОформлениеЯчейки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchПоискЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchПредупреждение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchТабличноеПоле</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.TouchВыборЗначений</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

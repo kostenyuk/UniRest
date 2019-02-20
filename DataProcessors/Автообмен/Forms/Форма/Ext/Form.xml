@@ -1,0 +1,919 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Width>70</Width>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОтмена" id="15">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.FrontOfficeОтмена</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="186"/>
+			</Button>
+			<Button name="ФормаОбновитьТаблицы" id="183">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьТаблицы</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обновить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаОбновитьТаблицыРасширеннаяПодсказка" id="187"/>
+			</Button>
+			<Button name="Выполнить" id="14">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыполнитьОбработку</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.FrontOfficeOk</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ВыполнитьРасширеннаяПодсказка" id="188"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ГруппаКоманднаяПанель" id="25">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форма командная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CommandSource>Form</CommandSource>
+			<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="189"/>
+		</CommandBar>
+		<UsualGroup name="Основание" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="190"/>
+			<ChildItems>
+				<Pages name="ГруппаСтраницы" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="191"/>
+					<ChildItems>
+						<Page name="СтраницаДисконтныеКарты" id="9">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файлы дисконтные карты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница дисконтные карты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаДисконтныеКартыРасширеннаяПодсказка" id="192"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСписокФайловДисконтныеКарты" id="74">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа список файлов дисконтные карты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСписокФайловДисконтныеКартыРасширеннаяПодсказка" id="193"/>
+									<ChildItems>
+										<Table name="СписокДисконтныеКарты" id="138">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>СписокДисконтныеКарты</DataPath>
+											<RowPictureDataPath>СписокДисконтныеКарты.DefaultPicture</RowPictureDataPath>
+											<CommandSet>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Create</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+											</CommandSet>
+											<SearchStringLocation>None</SearchStringLocation>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="СписокДисконтныеКартыКонтекстноеМеню" id="139"/>
+											<AutoCommandBar name="СписокДисконтныеКартыКоманднаяПанель" id="140"/>
+											<ExtendedTooltip name="СписокДисконтныеКартыРасширеннаяПодсказка" id="194"/>
+											<SearchStringAddition name="СписокДисконтныеКартыСтрокаПоиска" id="195">
+												<AdditionSource>
+													<Item>СписокДисконтныеКарты</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокДисконтныеКартыСтрокаПоискаКонтекстноеМеню" id="196"/>
+												<ExtendedTooltip name="СписокДисконтныеКартыСтрокаПоискаРасширеннаяПодсказка" id="197"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СписокДисконтныеКартыСостояниеПросмотра" id="198">
+												<AdditionSource>
+													<Item>СписокДисконтныеКарты</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокДисконтныеКартыСостояниеПросмотраКонтекстноеМеню" id="199"/>
+												<ExtendedTooltip name="СписокДисконтныеКартыСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СписокДисконтныеКартыУправлениеПоиском" id="201">
+												<AdditionSource>
+													<Item>СписокДисконтныеКарты</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокДисконтныеКартыУправлениеПоискомКонтекстноеМеню" id="202"/>
+												<ExtendedTooltip name="СписокДисконтныеКартыУправлениеПоискомРасширеннаяПодсказка" id="203"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="СписокДисконтныеКартыСтандартнаяКартинка" id="149">
+													<DataPath>СписокДисконтныеКарты.DefaultPicture</DataPath>
+													<AutoCellHeight>true</AutoCellHeight>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<ContextMenu name="СписокДисконтныеКартыСтандартнаяКартинкаКонтекстноеМеню" id="150"/>
+													<ExtendedTooltip name="СписокДисконтныеКартыСтандартнаяКартинкаРасширеннаяПодсказка" id="204"/>
+												</LabelField>
+												<LabelField name="СписокДисконтныеКартыИмя" id="143">
+													<DataPath>СписокДисконтныеКарты.Имя</DataPath>
+													<ContextMenu name="СписокДисконтныеКартыИмяКонтекстноеМеню" id="144"/>
+													<ExtendedTooltip name="СписокДисконтныеКартыИмяРасширеннаяПодсказка" id="205"/>
+												</LabelField>
+												<LabelField name="СписокДисконтныеКартыРазмер" id="147">
+													<DataPath>СписокДисконтныеКарты.Размер</DataPath>
+													<ContextMenu name="СписокДисконтныеКартыРазмерКонтекстноеМеню" id="148"/>
+													<ExtendedTooltip name="СписокДисконтныеКартыРазмерРасширеннаяПодсказка" id="206"/>
+												</LabelField>
+												<LabelField name="СписокДисконтныеКартыВремяИзменения" id="141">
+													<DataPath>СписокДисконтныеКарты.ВремяИзменения</DataPath>
+													<ContextMenu name="СписокДисконтныеКартыВремяИзмененияКонтекстноеМеню" id="142"/>
+													<ExtendedTooltip name="СписокДисконтныеКартыВремяИзмененияРасширеннаяПодсказка" id="207"/>
+												</LabelField>
+												<LabelField name="СписокДисконтныеКартыПолноеИмяФайла" id="145">
+													<DataPath>СписокДисконтныеКарты.ПолноеИмяФайла</DataPath>
+													<ContextMenu name="СписокДисконтныеКартыПолноеИмяФайлаКонтекстноеМеню" id="146"/>
+													<ExtendedTooltip name="СписокДисконтныеКартыПолноеИмяФайлаРасширеннаяПодсказка" id="208"/>
+												</LabelField>
+												<LabelField name="СписокДисконтныеКартыСостояниеФайла" id="181">
+													<DataPath>СписокДисконтныеКарты.СостояниеФайла</DataPath>
+													<ContextMenu name="СписокДисконтныеКартыСостояниеФайлаКонтекстноеМеню" id="182"/>
+													<ExtendedTooltip name="СписокДисконтныеКартыСостояниеФайлаРасширеннаяПодсказка" id="209"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+										<InputField name="МаскаФайловДисконтныеКарты" id="77">
+											<DataPath>Объект.МаскаФайловДисконтныеКарты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Маска файлов</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="МаскаФайловДисконтныеКартыКонтекстноеМеню" id="78"/>
+											<ExtendedTooltip name="МаскаФайловДисконтныеКартыРасширеннаяПодсказка" id="210"/>
+										</InputField>
+										<InputField name="ВремяПоследнейЗагрузкиДисконтныхКарт" id="132">
+											<DataPath>Объект.ВремяПоследнейЗагрузкиДисконтныхКарт</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата последней загрузки</v8:content>
+												</v8:item>
+											</Title>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Л=uk; ДП='Нет даты'</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ВремяПоследнейЗагрузкиДисконтныхКартКонтекстноеМеню" id="133"/>
+											<ExtendedTooltip name="ВремяПоследнейЗагрузкиДисконтныхКартРасширеннаяПодсказка" id="211"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаВидыСертификатов" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файлы виды сертификатов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница виды сертификатов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаВидыСертификатовРасширеннаяПодсказка" id="212"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСписокФайловВидыСертификатов" id="75">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа список файлов дисконтные карты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСписокФайловВидыСертификатовРасширеннаяПодсказка" id="213"/>
+									<ChildItems>
+										<Table name="СписокВидыСертификатов" id="151">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>СписокВидыСертификатов</DataPath>
+											<RowPictureDataPath>СписокВидыСертификатов.DefaultPicture</RowPictureDataPath>
+											<CommandSet>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Create</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+											</CommandSet>
+											<SearchStringLocation>None</SearchStringLocation>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="СписокВидыСертификатовКонтекстноеМеню" id="152"/>
+											<AutoCommandBar name="СписокВидыСертификатовКоманднаяПанель" id="153"/>
+											<ExtendedTooltip name="СписокВидыСертификатовРасширеннаяПодсказка" id="214"/>
+											<SearchStringAddition name="СписокВидыСертификатовСтрокаПоиска" id="215">
+												<AdditionSource>
+													<Item>СписокВидыСертификатов</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокВидыСертификатовСтрокаПоискаКонтекстноеМеню" id="216"/>
+												<ExtendedTooltip name="СписокВидыСертификатовСтрокаПоискаРасширеннаяПодсказка" id="217"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СписокВидыСертификатовСостояниеПросмотра" id="218">
+												<AdditionSource>
+													<Item>СписокВидыСертификатов</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокВидыСертификатовСостояниеПросмотраКонтекстноеМеню" id="219"/>
+												<ExtendedTooltip name="СписокВидыСертификатовСостояниеПросмотраРасширеннаяПодсказка" id="220"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СписокВидыСертификатовУправлениеПоиском" id="221">
+												<AdditionSource>
+													<Item>СписокВидыСертификатов</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокВидыСертификатовУправлениеПоискомКонтекстноеМеню" id="222"/>
+												<ExtendedTooltip name="СписокВидыСертификатовУправлениеПоискомРасширеннаяПодсказка" id="223"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="СписокВидыСертификатовСтандартнаяКартинка" id="164">
+													<DataPath>СписокВидыСертификатов.DefaultPicture</DataPath>
+													<AutoCellHeight>true</AutoCellHeight>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<ContextMenu name="СписокВидыСертификатовСтандартнаяКартинкаКонтекстноеМеню" id="165"/>
+													<ExtendedTooltip name="СписокВидыСертификатовСтандартнаяКартинкаРасширеннаяПодсказка" id="224"/>
+												</LabelField>
+												<LabelField name="СписокВидыСертификатовИмя" id="156">
+													<DataPath>СписокВидыСертификатов.Имя</DataPath>
+													<ContextMenu name="СписокВидыСертификатовИмяКонтекстноеМеню" id="157"/>
+													<ExtendedTooltip name="СписокВидыСертификатовИмяРасширеннаяПодсказка" id="225"/>
+												</LabelField>
+												<LabelField name="СписокВидыСертификатовРазмер" id="160">
+													<DataPath>СписокВидыСертификатов.Размер</DataPath>
+													<ContextMenu name="СписокВидыСертификатовРазмерКонтекстноеМеню" id="161"/>
+													<ExtendedTooltip name="СписокВидыСертификатовРазмерРасширеннаяПодсказка" id="226"/>
+												</LabelField>
+												<LabelField name="СписокВидыСертификатовВремяИзменения" id="154">
+													<DataPath>СписокВидыСертификатов.ВремяИзменения</DataPath>
+													<ContextMenu name="СписокВидыСертификатовВремяИзмененияКонтекстноеМеню" id="155"/>
+													<ExtendedTooltip name="СписокВидыСертификатовВремяИзмененияРасширеннаяПодсказка" id="227"/>
+												</LabelField>
+												<LabelField name="СписокВидыСертификатовПолноеИмяФайла" id="158">
+													<DataPath>СписокВидыСертификатов.ПолноеИмяФайла</DataPath>
+													<ContextMenu name="СписокВидыСертификатовПолноеИмяФайлаКонтекстноеМеню" id="159"/>
+													<ExtendedTooltip name="СписокВидыСертификатовПолноеИмяФайлаРасширеннаяПодсказка" id="228"/>
+												</LabelField>
+												<LabelField name="СписокВидыСертификатовСостояниеФайла" id="162">
+													<DataPath>СписокВидыСертификатов.СостояниеФайла</DataPath>
+													<ContextMenu name="СписокВидыСертификатовСостояниеФайлаКонтекстноеМеню" id="163"/>
+													<ExtendedTooltip name="СписокВидыСертификатовСостояниеФайлаРасширеннаяПодсказка" id="229"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+										<InputField name="МаскаФайловВидыСертификатов" id="79">
+											<DataPath>Объект.МаскаФайловВидыСертификатов</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Маска файлов</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="МаскаФайловВидыСертификатовКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="МаскаФайловВидыСертификатовРасширеннаяПодсказка" id="230"/>
+										</InputField>
+										<InputField name="ВремяПоследнейЗагрузкиВидовСертификатов" id="134">
+											<DataPath>Объект.ВремяПоследнейЗагрузкиВидовСертификатов</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата последней загрузки</v8:content>
+												</v8:item>
+											</Title>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Л=uk_UA; ДП='Нет даты'</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ВремяПоследнейЗагрузкиВидовСертификатовКонтекстноеМеню" id="135"/>
+											<ExtendedTooltip name="ВремяПоследнейЗагрузкиВидовСертификатовРасширеннаяПодсказка" id="231"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаСертификаты" id="30">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файлы сертификаты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаСертификатыРасширеннаяПодсказка" id="232"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСписокФайловСертификаты" id="76">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа список файлов дисконтные карты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСписокФайловСертификатыРасширеннаяПодсказка" id="233"/>
+									<ChildItems>
+										<Table name="СписокСертификаты" id="166">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>СписокСертификаты</DataPath>
+											<RowPictureDataPath>СписокСертификаты.DefaultPicture</RowPictureDataPath>
+											<CommandSet>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Create</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+											</CommandSet>
+											<SearchStringLocation>None</SearchStringLocation>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="СписокСертификатыКонтекстноеМеню" id="167"/>
+											<AutoCommandBar name="СписокСертификатыКоманднаяПанель" id="168"/>
+											<ExtendedTooltip name="СписокСертификатыРасширеннаяПодсказка" id="234"/>
+											<SearchStringAddition name="СписокСертификатыСтрокаПоиска" id="235">
+												<AdditionSource>
+													<Item>СписокСертификаты</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокСертификатыСтрокаПоискаКонтекстноеМеню" id="236"/>
+												<ExtendedTooltip name="СписокСертификатыСтрокаПоискаРасширеннаяПодсказка" id="237"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СписокСертификатыСостояниеПросмотра" id="238">
+												<AdditionSource>
+													<Item>СписокСертификаты</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокСертификатыСостояниеПросмотраКонтекстноеМеню" id="239"/>
+												<ExtendedTooltip name="СписокСертификатыСостояниеПросмотраРасширеннаяПодсказка" id="240"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СписокСертификатыУправлениеПоиском" id="241">
+												<AdditionSource>
+													<Item>СписокСертификаты</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокСертификатыУправлениеПоискомКонтекстноеМеню" id="242"/>
+												<ExtendedTooltip name="СписокСертификатыУправлениеПоискомРасширеннаяПодсказка" id="243"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="СписокСертификатыСтандартнаяКартинка" id="177">
+													<DataPath>СписокСертификаты.DefaultPicture</DataPath>
+													<AutoCellHeight>true</AutoCellHeight>
+													<ShowInHeader>false</ShowInHeader>
+													<ShowInFooter>false</ShowInFooter>
+													<ContextMenu name="СписокСертификатыСтандартнаяКартинкаКонтекстноеМеню" id="178"/>
+													<ExtendedTooltip name="СписокСертификатыСтандартнаяКартинкаРасширеннаяПодсказка" id="244"/>
+												</LabelField>
+												<LabelField name="СписокСертификатыИмя" id="171">
+													<DataPath>СписокСертификаты.Имя</DataPath>
+													<ContextMenu name="СписокСертификатыИмяКонтекстноеМеню" id="172"/>
+													<ExtendedTooltip name="СписокСертификатыИмяРасширеннаяПодсказка" id="245"/>
+												</LabelField>
+												<LabelField name="СписокСертификатыРазмер" id="175">
+													<DataPath>СписокСертификаты.Размер</DataPath>
+													<ContextMenu name="СписокСертификатыРазмерКонтекстноеМеню" id="176"/>
+													<ExtendedTooltip name="СписокСертификатыРазмерРасширеннаяПодсказка" id="246"/>
+												</LabelField>
+												<LabelField name="СписокСертификатыВремяИзменения" id="169">
+													<DataPath>СписокСертификаты.ВремяИзменения</DataPath>
+													<ContextMenu name="СписокСертификатыВремяИзмененияКонтекстноеМеню" id="170"/>
+													<ExtendedTooltip name="СписокСертификатыВремяИзмененияРасширеннаяПодсказка" id="247"/>
+												</LabelField>
+												<LabelField name="СписокСертификатыПолноеИмяФайла" id="173">
+													<DataPath>СписокСертификаты.ПолноеИмяФайла</DataPath>
+													<ContextMenu name="СписокСертификатыПолноеИмяФайлаКонтекстноеМеню" id="174"/>
+													<ExtendedTooltip name="СписокСертификатыПолноеИмяФайлаРасширеннаяПодсказка" id="248"/>
+												</LabelField>
+												<LabelField name="СписокСертификатыСостояниеФайла" id="179">
+													<DataPath>СписокСертификаты.СостояниеФайла</DataPath>
+													<ContextMenu name="СписокСертификатыСостояниеФайлаКонтекстноеМеню" id="180"/>
+													<ExtendedTooltip name="СписокСертификатыСостояниеФайлаРасширеннаяПодсказка" id="249"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+										<InputField name="МаскаФайловСертификаты" id="81">
+											<DataPath>Объект.МаскаФайловСертификаты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Маска файлов</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="МаскаФайловСертификатыКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="МаскаФайловСертификатыРасширеннаяПодсказка" id="250"/>
+										</InputField>
+										<InputField name="ВремяПоследнейЗагрузкиСертификатов" id="136">
+											<DataPath>Объект.ВремяПоследнейЗагрузкиСертификатов</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата последней загрузки</v8:content>
+												</v8:item>
+											</Title>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Л=uk_UA; ДП='Нет даты'</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ВремяПоследнейЗагрузкиСертификатовКонтекстноеМеню" id="137"/>
+											<ExtendedTooltip name="ВремяПоследнейЗагрузкиСертификатовРасширеннаяПодсказка" id="251"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="Страница4" id="40">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="Страница4РасширеннаяПодсказка" id="252"/>
+							<ChildItems>
+								<InputField name="КаталогДляОбмненаДисконтнымиКартамиHTTP" id="3">
+									<DataPath>Объект.КаталогДляОбмена</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Каталог</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="КаталогДляОбмненаДисконтнымиКартамиHTTPКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="КаталогДляОбмненаДисконтнымиКартамиHTTPРасширеннаяПодсказка" id="253"/>
+									<Events>
+										<Event name="StartChoice">КаталогДляОбмненаДисконтнымиКартамиHTTPНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="УдалятьНеактуальныеФайлыОбменаHTTP" id="122">
+									<DataPath>Объект.УдалятьНеактуальныеФайлыОбменаHTTP</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Число дней хранения неактуальных файлов</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="УдалятьНеактуальныеФайлыОбменаHTTPКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="УдалятьНеактуальныеФайлыОбменаHTTPРасширеннаяПодсказка" id="254"/>
+								</InputField>
+								<InputField name="КоличествоПопытокПроверки" id="124">
+									<DataPath>Объект.КоличествоПопытокПроверки</DataPath>
+									<ContextMenu name="КоличествоПопытокПроверкиКонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="КоличествоПопытокПроверкиРасширеннаяПодсказка" id="255"/>
+								</InputField>
+								<InputField name="МаксимальноеКоличествоСтрокВТранзакции" id="184">
+									<ContextMenu name="МаксимальноеКоличествоСтрокВТранзакцииКонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="МаксимальноеКоличествоСтрокВТранзакцииРасширеннаяПодсказка" id="256"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Автообмен</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КаталогДляОбмнена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог для обмнена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокВидыСертификатов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список виды сертификатов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.ИмяФайла КАК Имя,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.Размер,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.ВремяИзменения,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.ПолноеИмяФайла,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.СостояниеФайла
+ИЗ
+	РегистрСведений.СписокФайловПриОбмене.СрезПоследних(
+			,
+			(НЕ СостояниеУдаления)
+				И ВидыОбъектовОбмена = ЗНАЧЕНИЕ(Перечисление.ВидыОбъектовОбмена.ВидыСертификатов)
+				И СостояниеФайла &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыСостоянийФайлов.УдаленФайл)) КАК РегистрСведенийСписокФайловПриОбменеСрезПоследних</QueryText>
+				<MainTable>InformationRegister.СписокФайловПриОбмене.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ВремяИзменения</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Имя</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеФайла</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыСостоянийФайлов.ЗаписанФайлСОшибкой</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:DarkSalmon</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеФайла</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыСостоянийФайлов.НовыйФайл</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:PaleGreen</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокДисконтныеКарты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список дисконтные карты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.ИмяФайла КАК Имя,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.Размер,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.ВремяИзменения,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.ПолноеИмяФайла,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.СостояниеФайла
+ИЗ
+	РегистрСведений.СписокФайловПриОбмене.СрезПоследних(
+			,
+			(НЕ СостояниеУдаления)
+				И ВидыОбъектовОбмена = ЗНАЧЕНИЕ(Перечисление.ВидыОбъектовОбмена.ДисконтныеКарты)
+				И СостояниеФайла &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыСостоянийФайлов.УдаленФайл)) КАК РегистрСведенийСписокФайловПриОбменеСрезПоследних</QueryText>
+				<MainTable>InformationRegister.СписокФайловПриОбмене.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ВремяИзменения</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Имя</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеФайла</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыСостоянийФайлов.НовыйФайл</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:PaleGreen</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеФайла</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыСостоянийФайлов.ЗаписанФайлСОшибкой</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:DarkSalmon</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСертификаты" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список сертификаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.ИмяФайла КАК Имя,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.Размер,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.ВремяИзменения КАК ВремяИзменения,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.ПолноеИмяФайла,
+	РегистрСведенийСписокФайловПриОбменеСрезПоследних.СостояниеФайла
+ИЗ
+	РегистрСведений.СписокФайловПриОбмене.СрезПоследних(
+			,
+			(НЕ СостояниеУдаления)
+				И ВидыОбъектовОбмена = ЗНАЧЕНИЕ(Перечисление.ВидыОбъектовОбмена.Сертификаты)
+				И СостояниеФайла &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыСостоянийФайлов.УдаленФайл)) КАК РегистрСведенийСписокФайловПриОбменеСрезПоследних</QueryText>
+				<MainTable>InformationRegister.СписокФайловПриОбмене.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ВремяИзменения</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Имя</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеФайла</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыСостоянийФайлов.ЗаписанФайлСОшибкой</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:DarkSalmon</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СостояниеФайла</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыСостоянийФайлов.НовыйФайл</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:PaleGreen</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьОбработку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обработку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обработку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОбработку</Action>
+		</Command>
+		<Command name="ОбновитьТаблицы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьТаблицы</Action>
+		</Command>
+	</Commands>
+</Form>

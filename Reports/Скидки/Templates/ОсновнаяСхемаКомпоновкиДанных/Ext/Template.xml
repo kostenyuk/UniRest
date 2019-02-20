@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Документ</dataPath>
+			<field>Документ</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументСкидки</dataPath>
+			<field>ДокументСкидки</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Карта</dataPath>
+			<field>Карта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолучательСкидки</dataPath>
+			<field>ПолучательСкидки</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ресторан</dataPath>
+			<field>Ресторан</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Скидка</dataPath>
+			<field>Скидка</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоминалБК</dataPath>
+			<field>НоминалБК</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоминалКК</dataPath>
+			<field>НоминалКК</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоминалЛК</dataPath>
+			<field>НоминалЛК</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПричинаСкидки</dataPath>
+			<field>ПричинаСкидки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСкидкиБК</dataPath>
+			<field>СуммаСкидкиБК</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСкидкиКК</dataPath>
+			<field>СуммаСкидкиКК</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСкидкиЛК</dataPath>
+			<field>СуммаСкидкиЛК</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаБезСкидок</dataPath>
+			<field>СуммаБезСкидок</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КОНЕЦПЕРИОДА(ПредоставленныеСкидкиОбороты.Период, ДЕНЬ) КАК Период,
+	ПредоставленныеСкидкиОбороты.Ресторан,
+	ПредоставленныеСкидкиОбороты.Скидка,
+	ПредоставленныеСкидкиОбороты.ДокументСкидки КАК Документ,
+	ПредоставленныеСкидкиОбороты.ДокументСкидки.ДисконтнаяКарта КАК Карта,
+	СУММА(ПредоставленныеСкидкиОбороты.ДокументСкидки.СуммаДокументаБезСкидок) КАК СуммаБезСкидок,
+	СУММА(ПредоставленныеСкидкиОбороты.ДокументСкидки.СуммаДокумента) КАК Сумма,
+	СУММА(ВЫБОР
+			КОГДА ПредоставленныеСкидкиОбороты.Скидка.Условие = ЗНАЧЕНИЕ(Перечисление.УсловияСкидкиНаценки.ПоВидуДисконтныхКарт)
+					И ПредоставленныеСкидкиОбороты.ДокументСкидки.ДисконтнаяКарта.ВидДисконтнойКарты.OnLine
+				ТОГДА ПредоставленныеСкидкиОбороты.Скидка.ПроцентСкидкиНаценки
+			ИНАЧЕ 0
+		КОНЕЦ) КАК НоминалКК,
+	СУММА(ВЫБОР
+			КОГДА ПредоставленныеСкидкиОбороты.Скидка.Условие = ЗНАЧЕНИЕ(Перечисление.УсловияСкидкиНаценки.ПоВидуДисконтныхКарт)
+					И ПредоставленныеСкидкиОбороты.ДокументСкидки.ДисконтнаяКарта.ВидДисконтнойКарты.OnLine
+				ТОГДА ПредоставленныеСкидкиОбороты.СуммаСкидкиОборот
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаСкидкиКК,
+	СУММА(ВЫБОР
+			КОГДА ПредоставленныеСкидкиОбороты.Скидка.Условие = ЗНАЧЕНИЕ(Перечисление.УсловияСкидкиНаценки.ПоВидуДисконтныхКарт)
+					И ПредоставленныеСкидкиОбороты.ДокументСкидки.ДисконтнаяКарта.ВидДисконтнойКарты.Локальная
+				ТОГДА ПредоставленныеСкидкиОбороты.Скидка.ПроцентСкидкиНаценки
+			ИНАЧЕ 0
+		КОНЕЦ) КАК НоминалЛК,
+	СУММА(ВЫБОР
+			КОГДА ПредоставленныеСкидкиОбороты.Скидка.Условие = ЗНАЧЕНИЕ(Перечисление.УсловияСкидкиНаценки.ПоВидуДисконтныхКарт)
+					И ПредоставленныеСкидкиОбороты.ДокументСкидки.ДисконтнаяКарта.ВидДисконтнойКарты.Локальная
+				ТОГДА ПредоставленныеСкидкиОбороты.СуммаСкидкиОборот
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаСкидкиЛК,
+	СУММА(ВЫБОР
+			КОГДА ПредоставленныеСкидкиОбороты.Скидка.Условие = ЗНАЧЕНИЕ(Перечисление.УсловияСкидкиНаценки.РучнаяСкидка)
+					ИЛИ ПредоставленныеСкидкиОбороты.Скидка.Условие = ЗНАЧЕНИЕ(Перечисление.УсловияСкидкиНаценки.БезУсловий)
+				ТОГДА ПредоставленныеСкидкиОбороты.Скидка.ПроцентСкидкиНаценки
+			ИНАЧЕ 0
+		КОНЕЦ) КАК НоминалБК,
+	СУММА(ВЫБОР
+			КОГДА ПредоставленныеСкидкиОбороты.Скидка.Условие = ЗНАЧЕНИЕ(Перечисление.УсловияСкидкиНаценки.РучнаяСкидка)
+					ИЛИ ПредоставленныеСкидкиОбороты.Скидка.Условие = ЗНАЧЕНИЕ(Перечисление.УсловияСкидкиНаценки.БезУсловий)
+				ТОГДА ПредоставленныеСкидкиОбороты.СуммаСкидкиОборот
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СуммаСкидкиБК,
+	ВЫБОР
+		КОГДА ПредоставленныеСкидкиОбороты.ДокументСкидки.ПричинаСкидки = ЗНАЧЕНИЕ(Справочник.ПричиныРучныхСкидок.ПустаяСсылка)
+				И ПредоставленныеСкидкиОбороты.ДокументСкидки.ДисконтнаяКарта &lt;&gt; ЗНАЧЕНИЕ(Справочник.ИнформационныеКарты.ПустаяСсылка)
+			ТОГДА " Дисконтная карта"
+		ИНАЧЕ ПредоставленныеСкидкиОбороты.ДокументСкидки.ПричинаСкидки
+	КОНЕЦ КАК ПричинаСкидки
+ИЗ
+	РегистрНакопления.ПредоставленныеСкидки.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, ) КАК ПредоставленныеСкидкиОбороты
+
+СГРУППИРОВАТЬ ПО
+	КОНЕЦПЕРИОДА(ПредоставленныеСкидкиОбороты.Период, ДЕНЬ),
+	ПредоставленныеСкидкиОбороты.Ресторан,
+	ПредоставленныеСкидкиОбороты.ДокументСкидки,
+	ПредоставленныеСкидкиОбороты.ДокументСкидки.ДисконтнаяКарта,
+	ВЫБОР
+		КОГДА ПредоставленныеСкидкиОбороты.ДокументСкидки.ПричинаСкидки = ЗНАЧЕНИЕ(Справочник.ПричиныРучныхСкидок.ПустаяСсылка)
+			ТОГДА "Дисконтная карта"
+		ИНАЧЕ ПредоставленныеСкидкиОбороты.ДокументСкидки.ПричинаСкидки
+	КОНЕЦ,
+	ПредоставленныеСкидкиОбороты.Скидка,
+	ВЫБОР
+		КОГДА ПредоставленныеСкидкиОбороты.ДокументСкидки.ПричинаСкидки = ЗНАЧЕНИЕ(Справочник.ПричиныРучныхСкидок.ПустаяСсылка)
+				И ПредоставленныеСкидкиОбороты.ДокументСкидки.ДисконтнаяКарта &lt;&gt; ЗНАЧЕНИЕ(Справочник.ИнформационныеКарты.ПустаяСсылка)
+			ТОГДА " Дисконтная карта"
+		ИНАЧЕ ПредоставленныеСкидкиОбороты.ДокументСкидки.ПричинаСкидки
+	КОНЕЦ</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>НоминалИтого</dataPath>
+		<expression>НоминалКК + НоминалЛК + НоминалБК</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Номинал итого</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СуммаСкидкиИтого</dataPath>
+		<expression>СуммаСкидкиКК + СуммаСкидкиЛК + СуммаСкидкиБК</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сумма скидки итого</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоЧеков</dataPath>
+		<expression>Документ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество чеков</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>НоминалБК</dataPath>
+		<expression>Сумма(НоминалБК)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НоминалКК</dataPath>
+		<expression>Сумма(НоминалКК)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НоминалЛК</dataPath>
+		<expression>Сумма(НоминалЛК)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСкидкиБК</dataPath>
+		<expression>Сумма(СуммаСкидкиБК)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСкидкиКК</dataPath>
+		<expression>Сумма(СуммаСкидкиКК)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСкидкиЛК</dataPath>
+		<expression>Сумма(СуммаСкидкиЛК)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Сумма</dataPath>
+		<expression>Сумма(Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаБезСкидок</dataPath>
+		<expression>Сумма(СуммаБезСкидок)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НоминалИтого</dataPath>
+		<expression>Сумма(НоминалИтого)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСкидкиИтого</dataPath>
+		<expression>Сумма(СуммаСкидкиИтого)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоЧеков</dataPath>
+		<expression>Количество(Различные КоличествоЧеков)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоЧеков</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаБезСкидок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаСкидкиИтого</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма скидки</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сумма</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Ресторан</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>19925169-0e20-4b0f-9fec-183957c5f10c</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>4ebce3f8-4317-4829-9b3a-287eba6b9381</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Скидка</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

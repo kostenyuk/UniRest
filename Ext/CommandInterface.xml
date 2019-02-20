@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<SubsystemsVisibility>
+		<Subsystem name="Subsystem.РестораннаяПодсистема">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЗаказПокупателя">false</xr:Value>
+				<xr:Value name="Role.Server">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Продажи">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ЗаказПокупателя">false</xr:Value>
+				<xr:Value name="Role.Server">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Номенклатура">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ЗаказПокупателя">false</xr:Value>
+				<xr:Value name="Role.Server">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.CRM">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ЗаказПокупателя">false</xr:Value>
+				<xr:Value name="Role.Server">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.НормативноСправочнаяИнформация">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ЗаказПокупателя">false</xr:Value>
+				<xr:Value name="Role.Server">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Администрирование">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ЗаказПокупателя">false</xr:Value>
+				<xr:Value name="Role.Server">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Отчеты">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ЗаказПокупателя">false</xr:Value>
+				<xr:Value name="Role.Server">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="68c3c915-2fbe-4557-9fea-ca95936795bc">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ЗаказПокупателя">false</xr:Value>
+				<xr:Value name="Role.Server">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+	</SubsystemsVisibility>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.РестораннаяПодсистема</Subsystem>
+		<Subsystem>Subsystem.Продажи</Subsystem>
+		<Subsystem>Subsystem.Номенклатура</Subsystem>
+		<Subsystem>Subsystem.CRM</Subsystem>
+		<Subsystem>Subsystem.НормативноСправочнаяИнформация</Subsystem>
+		<Subsystem>Subsystem.Администрирование</Subsystem>
+		<Subsystem>Subsystem.Отчеты</Subsystem>
+		<Subsystem>68c3c915-2fbe-4557-9fea-ca95936795bc</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

@@ -1,0 +1,2093 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.7">
+	<Item id="a49c8f99-eb36-4886-adf3-257e5a7e445b">
+		<Name>FrontOffice</Name>
+		<Code>0000000014</Code>
+		<Description>Front-office режим</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="5bb8d69e-43b7-435e-aa4d-424a711cd165">
+				<Name>FrontOfficeАутентификация</Name>
+				<Code>0000000071</Code>
+				<Description>Аутентификация</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="bbbeb440-917e-4362-9b2f-3ad9a46b68f4">
+						<Name>FrontOfficeАвтоматическаяАутентификация</Name>
+						<Code>0000000072</Code>
+						<Description>Автоматическая аутентификация</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="5b2bc71a-57a8-4ce3-a94b-b09f6d18df95">
+						<Name>FrontOfficeАвтоматическиВходитьВИтерфейс</Name>
+						<Code>0000010022</Code>
+						<Description>Автоматически входить в интерфейс</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="16f98c46-a14e-4b8e-a9fb-12a0917b3d86">
+						<Name>FrontOfficeАвтоматическоеСозданиеЗаказаПриВходеВСистему</Name>
+						<Code>0004000031</Code>
+						<Description>Автоматическое создание заказа при входе в систему</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1fe32f00-58e5-4969-8c80-81e473fd7b50">
+						<Name>FrontOfficeВходВИнтерфейс</Name>
+						<Code>0000010023</Code>
+						<Description>Вход в интерфейс</Description>
+						<Type>
+							<v8:Type xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d8p1:EnumRef.Интерфейсы</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4097c5cd-b7aa-4578-97c2-bb9482c49a41">
+						<Name>FrontOfficeГруппаПользователейАвтоматическойАутентификации</Name>
+						<Code>0000000074</Code>
+						<Description>Группа пользователей автоматической аутентификации</Description>
+						<Type>
+							<v8:Type xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d8p1:CatalogRef.ГруппыПользователей</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="03c39df1-962d-4c8c-b56b-d0b73f14364b">
+						<Name>FrontOfficeПользовательАвтоматическойАутентификации</Name>
+						<Code>0000000073</Code>
+						<Description>Пользователь автоматической аутентификации</Description>
+						<Type>
+							<v8:Type xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d8p1:CatalogRef.Пользователи</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="428447f0-5076-4764-8402-a81733cd2e49">
+				<Name>Интерфейс</Name>
+				<Code>0000010012</Code>
+				<Description>Интерфейс</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="36939aa0-896e-4ba4-bff9-2e1c1ba90942">
+						<Name>Меню</Name>
+						<Code>0000010013</Code>
+						<Description>Меню</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="04ad5e93-cd17-4df3-a5ba-b476d23f5d4c">
+								<Name>ВыводитьКартинкиГруппМеню</Name>
+								<Code>0000010018</Code>
+								<Description>Выводить картинки групп</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="be41bdf8-1026-4731-b655-db59439c2633">
+								<Name>ВыводитьКартинкиПутиМеню</Name>
+								<Code>0000010014</Code>
+								<Description>Выводить картинки пути</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="c445120e-aed6-4aae-b90d-78e18b4b284a">
+								<Name>ВыводитьКартинкиЭлементовМеню</Name>
+								<Code>0000010019</Code>
+								<Description>Выводить картинки элементов</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="d9e8dc4f-c6e7-4798-b7b7-5245fdaa42e8">
+								<Name>ВыводитьЦеныМеню</Name>
+								<Code>0000010016</Code>
+								<Description>Выводить цены</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="d201895b-5a1a-4d0b-9884-ddc7d27ac18b">
+								<Name>КомпактноеПредставлениеМеню</Name>
+								<Code>0000010015</Code>
+								<Description>Компактное представление</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="1b0231b6-1187-43b2-b907-6affe7406030">
+								<Name>РазмерЭлементовМеню</Name>
+								<Code>0000010017</Code>
+								<Description>Размер элементов</Description>
+								<Type>
+									<v8:Type>xs:string</v8:Type>
+									<v8:StringQualifiers>
+										<v8:Length>10</v8:Length>
+										<v8:AllowedLength>Variable</v8:AllowedLength>
+									</v8:StringQualifiers>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="990c06ee-8c36-4fbe-a785-d0d569b811fd">
+						<Name>Столы</Name>
+						<Code>0004000025</Code>
+						<Description>Столы</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="24b20328-a6e4-4758-b62a-5c530d585586">
+								<Name>РазмерЭлементовСтолов</Name>
+								<Code>0004000026</Code>
+								<Description>Размер элементов</Description>
+								<Type>
+									<v8:Type>xs:string</v8:Type>
+									<v8:StringQualifiers>
+										<v8:Length>10</v8:Length>
+										<v8:AllowedLength>Variable</v8:AllowedLength>
+									</v8:StringQualifiers>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="907f7f5d-1765-42a4-a633-1e9111765db0">
+						<Name>ВыводитьКоментарииИнформационныхКарт</Name>
+						<Code>0004000016</Code>
+						<Description>Выводить коментарии информационных карт</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3eb347ec-aceb-46f7-9808-e50b7d09cb27">
+						<Name>ИспользоватьДниРождения</Name>
+						<Code>0004000017</Code>
+						<Description>Использовать дни рождения</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="bd162a37-f2dc-4fb7-92d4-74e30e762929">
+				<Name>FrontOfficeМодулиИПодсистемы</Name>
+				<Code>0000000112</Code>
+				<Description>Модули и подсистемы</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="4819f21e-38a7-4715-a102-da9e0c65e3a0">
+						<Name>FrontOfficeИспользоватьМодульАдминистрирование</Name>
+						<Code>0004000028</Code>
+						<Description>Использовать модуль «Администрирование»</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="d3470940-bb2f-470b-8a3d-d641a3ec95db">
+						<Name>FrontOfficeИспользоватьМодульДоставка</Name>
+						<Code>0000000113</Code>
+						<Description>Использовать модуль «Доставка»</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="0c92f0a1-39d2-4684-877a-82e95a6898a7">
+						<Name>FrontOfficeИспользоватьМодульПроизводство</Name>
+						<Code>0000000111</Code>
+						<Description>Использовать модуль «Производство»</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="c0cf9fa0-afe7-4648-b1c5-b0d194232323">
+						<Name>FrontOfficeИспользоватьМодульРесторан</Name>
+						<Code>0000000114</Code>
+						<Description>Использовать модуль «Ресторан»</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1320e2eb-dfaf-41ae-a685-2311ac867920">
+						<Name>FrontOfficeИспользоватьМодульСписание</Name>
+						<Code>0004000021</Code>
+						<Description>Использовать модуль «Списание»</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="e29680ba-7db6-435d-a152-6b89bf954b98">
+						<Name>FrontOfficeИспользоватьМодульУчетРабочегоВремени</Name>
+						<Code>0000000067</Code>
+						<Description>Использовать модуль «Учет рабочего времени»</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="c573dbce-f9e0-4952-abbd-e004481a61bc">
+				<Name>FrontOfficeСервисноеОбслуживание</Name>
+				<Code>0000000015</Code>
+				<Description>Сервисное обслуживание</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="d03ef933-2b5f-4bc4-af5e-3c3b88d9473e">
+						<Name>FrontOfficeСервисноеОбслуживаниеАдресИнтернет</Name>
+						<Code>0000000018</Code>
+						<Description>Контактный интернет адрес сотрудника</Description>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>50</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4db1967c-c5f6-4b44-bb4a-d435e5d8d12d">
+						<Name>FrontOfficeСервисноеОбслуживаниеТелефоны</Name>
+						<Code>0000000017</Code>
+						<Description>Контактный телефон сотрудника</Description>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>25</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="75dc8a5f-92b2-4eaf-94c0-f60ff1f15613">
+						<Name>FrontOfficeСервисноеОбслуживаниеСотрудник</Name>
+						<Code>0000000016</Code>
+						<Description>Сотрудник обслуживающий данную копию программы</Description>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>50</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="0782a051-aa3b-48f8-851a-e2b7a04215ac">
+				<Name>FrontOfficeУправлениеЗаказами</Name>
+				<Code>0000000019</Code>
+				<Description>Управление заказами</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="0b41ce22-bd0b-4d6b-b8ed-69a944118bb5">
+						<Name>FrontOfficeЗакрытиеЗаказаГруппа</Name>
+						<Code>0000000036</Code>
+						<Description>Закрытие заказа</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="7a9817ac-8898-4f11-8e5b-5522fa52de04">
+								<Name>FrontOfficeПечатьПречекаГруппаЗаказа</Name>
+								<Code>0000000050</Code>
+								<Description>Печать пречека</Description>
+								<Type/>
+								<IsFolder>true</IsFolder>
+								<ChildItems>
+									<Item id="bfa1327b-8502-4dbe-b46b-348862090231">
+										<Name>FrontOfficeВыводитьИмяСотрудника</Name>
+										<Code>0004000084</Code>
+										<Description>Выводить имя сотрудника</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="7bbf6ce6-30d1-478c-aca0-73edbf46bb28">
+										<Name>FrontOfficeВыводитьПодпись</Name>
+										<Code>0004000079</Code>
+										<Description>Выводить подпись</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="6967b2c9-3789-427f-a050-ac6d35ad9d44">
+										<Name>FrontOfficeВыводитьПречекНаПечатьЗаказа</Name>
+										<Code>0000000064</Code>
+										<Description>Выводить пречек на печать</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="addf3abb-30ab-40a2-ad93-a628b1dd2c25">
+										<Name>FrontOfficeВыводитьСуммуАкцизногоНалога</Name>
+										<Code>0004000077</Code>
+										<Description>Выводить сумму акцизного налога</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="8c2a42d3-6c58-4729-a5f7-012380f865b5">
+										<Name>FrontOfficeВыводитьСуммуБлюдаСоСкидкой</Name>
+										<Code>0004000060</Code>
+										<Description>Выводить сумму блюда со скидкой при печати</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="55b79ebc-9394-463f-8022-b0bcffe48fcd">
+										<Name>FrontOfficeВыводитьСуммуНаценкиПоКаждойПозиции</Name>
+										<Code>0004000076</Code>
+										<Description>Выводить сумму наценки по каждой позиции</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="2156114f-d854-45ce-aeb4-e2575c996bed">
+										<Name>FrontOfficeВыводитьСуммуНДС</Name>
+										<Code>0004000071</Code>
+										<Description>Выводить сумму НДС</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="ab1d99a3-ea66-405b-b94b-90b4d2bfad85">
+										<Name>FrontOfficeВыводитьСуммуСертификатаПоКаждойПозиции</Name>
+										<Code>0004000075</Code>
+										<Description>Выводить сумму сертификата по каждой позиции</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="17e9feb2-da8b-4178-9808-aef60e19593b">
+										<Name>FrontOfficeВыводитьСуммуСкидкиПоКаждойПозиции</Name>
+										<Code>0004000061</Code>
+										<Description>Выводить сумму скидки по каждой позиции</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="5e7c45bc-0b06-4a25-ab84-350e30faaabd">
+										<Name>FrontOfficeВыводитьЧаевыеНаПечать</Name>
+										<Code>0004000033</Code>
+										<Description>Выводить чаевые на печать</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="54bd379a-cce0-452c-8bbf-e5e613859afe">
+										<Name>FrontOfficeГруппироватьБлюдаСоСкидкойБезСкидки</Name>
+										<Code>0004000072</Code>
+										<Description>Группировать блюда со скидкой/без скидки</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="61f636a1-df97-4903-a1f5-4368a823e155">
+										<Name>FrontOfficeГруппироватьНоменклатуруВПречеке</Name>
+										<Code>0004000019</Code>
+										<Description>Группировать номенклатуру в пречеке</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="37b4a3f7-9d15-49f6-b10e-def16dc78443">
+										<Name>FrontOfficeЗапрашиватьАктивностьПриПечати</Name>
+										<Code>0004000078</Code>
+										<Description>Запрашивать активность при печати</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="e201e2f5-9250-4e32-b46c-edc0076714d5">
+										<Name>FrontOfficeЗапрашиватьИсточникОбращения</Name>
+										<Code>0004000054</Code>
+										<Description>Запрашивать источник обращения клиента при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="7ab004a6-f191-464c-bed6-ece9fdeb445d">
+										<Name>FrontOfficeЗапрашиватьПодтверждениеПриОтменеПречекаЗаказа</Name>
+										<Code>0000000043</Code>
+										<Description>Запрашивать подтверждение при отмене пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="945ce77f-e522-48c2-9e8f-6b30311c1742">
+										<Name>FrontOfficeЗапрашиватьПодтверждениеПриПечатиПречекаЗаказа</Name>
+										<Code>0000000039</Code>
+										<Description>Запрашивать подтверждение при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="39d817af-9e68-4bb7-9063-4312e6acbdc1">
+										<Name>FrontOfficeНеПечататьШтрихкодВПречеке</Name>
+										<Code>0004000010</Code>
+										<Description>Не печатать штрихкод в пречеке</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="4c2dee06-1b78-4177-95d7-1b5f752a4bc3">
+										<Name>FrontOfficeПечатьВЗаказеСтрокуСоСкидками</Name>
+										<Code>0004000023</Code>
+										<Description>Печатать в заказе строку "Сумма без скидок"</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="4d10ff6e-2ab2-4741-bf6f-aad8761ca167">
+										<Name>FrontOfficeПечатьПречекаПоОрганизациям</Name>
+										<Code>0004000015</Code>
+										<Description>Печать пречека по организациям</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="be330e40-9d7d-4898-8a08-20cb0261bd6a">
+										<Name>FrontOfficeРазбиениеБлюдПоОрганизациям</Name>
+										<Code>0004000056</Code>
+										<Description>Печать пречека с разбивкой блюд по организациям</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="377bf85a-40b0-4d6a-b840-7404eab3ce0e">
+										<Name>FrontOfficeПодвалПречекаЗаказа</Name>
+										<Code>0004000013</Code>
+										<Description>Подвал пречека</Description>
+										<Type>
+											<v8:Type>xs:string</v8:Type>
+											<v8:StringQualifiers>
+												<v8:Length>300</v8:Length>
+												<v8:AllowedLength>Variable</v8:AllowedLength>
+											</v8:StringQualifiers>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="2b84b8a5-c179-4527-9168-d9219de44c55">
+										<Name>FrontOfficeРаздельнаяПечатьПречековПоГостям</Name>
+										<Code>0004000037</Code>
+										<Description>Раздельная печать пречеков по гостям</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="f0c80776-5d68-4951-a1c2-fe300ea05119">
+										<Name>FrontOfficeСкрыватьВПречекеСтрокуСНомеромЧека</Name>
+										<Code>0004000009</Code>
+										<Description>Скрывать в пречеке строку с номером чека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="7514683b-1c5a-47fc-98ee-a545a3e982e5">
+										<Name>FrontOfficeТребоватьНаличиеДисконтнойКартыПриПечатиПречекаЗаказа</Name>
+										<Code>0000000052</Code>
+										<Description>Требовать наличие дисконтной карты при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="b7874641-3f92-4459-ad21-8703a397594a">
+										<Name>FrontOfficeТребоватьНаличиеКатегорииКлиентовПриПечатиПречекаЗаказа</Name>
+										<Code>0000000053</Code>
+										<Description>Требовать наличие категории клиентов при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="3e197897-390e-438c-a00b-c0f4a7a56949">
+										<Name>FrontOfficeТребоватьНаличиеКатегорииДокументаПриПечатиПречекаЗаказа</Name>
+										<Code>0000000054</Code>
+										<Description>Требовать наличие категория документа при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="aed7d871-b74c-4239-8010-82f81a636182">
+										<Name>FrontOfficeТребоватьНаличиеКоличестваКлиентовПриПечатиПречекаЗаказа</Name>
+										<Code>0000000056</Code>
+										<Description>Требовать наличие количества клиентов при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="640d1704-42a7-4d10-90de-dd555e066578">
+										<Name>FrontOfficeТребоватьНаличиеТоваровПриПечатиПречекаЗаказа</Name>
+										<Code>0000000055</Code>
+										<Description>Требовать наличие товаров при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="ad73ebd2-c596-4a4a-84f7-3f3b4786b817">
+										<Name>FrontOfficeТребоватьУточнениеКоличестваВесовыхТоваровПриПечатиПречекаЗаказа</Name>
+										<Code>0000000047</Code>
+										<Description>Требовать уточнение количества весовых товаров при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="c4265aa8-e47b-4fdd-bc34-934323d4d895">
+										<Name>FrontOfficeШапкаПречекаЗаказа</Name>
+										<Code>0004000035</Code>
+										<Description>Шапка пречека</Description>
+										<Type>
+											<v8:Type>xs:string</v8:Type>
+											<v8:StringQualifiers>
+												<v8:Length>300</v8:Length>
+												<v8:AllowedLength>Variable</v8:AllowedLength>
+											</v8:StringQualifiers>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+								</ChildItems>
+							</Item>
+							<Item id="e942d35e-fc7d-467f-8e41-3bb9a79269a8">
+								<Name>FrontOfficeПриемОплатыГруппаЗаказа</Name>
+								<Code>0000000051</Code>
+								<Description>Прием оплаты заказа</Description>
+								<Type/>
+								<IsFolder>true</IsFolder>
+								<ChildItems>
+									<Item id="f0171923-0b13-44e7-a2ae-03bf221269cf">
+										<Name>FrontOfficeВидОплатыПоУмолчаниюЗаказа</Name>
+										<Code>0000000038</Code>
+										<Description>Вид оплаты по умолчанию</Description>
+										<Type>
+											<v8:Type xmlns:d12p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d12p1:CatalogRef.ВидыОплатЧекаККМ</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="3d876d39-4983-4104-8322-35cb60534968">
+										<Name>FrontOfficeЗапрашиватьПечатьПречекаПриПриемеОплатыЗаказа</Name>
+										<Code>0004000050</Code>
+										<Description>Запрашивать печать пречека при приеме оплаты</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="f13ce68b-5195-40f1-a542-24117e7a2851">
+										<Name>FrontOfficeЗапрашиватьПодтверждениеПриОтменеОплатыЗаказа</Name>
+										<Code>0000000045</Code>
+										<Description>Запрашивать подтверждение при отмене оплаты</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="8c59f632-4147-4dd8-a45d-67946206dd47">
+										<Name>FrontOfficeЗапрашиватьПодтверждениеПриПриемеОплатыЗаказа</Name>
+										<Code>0000000044</Code>
+										<Description>Запрашивать подтверждение при приеме оплаты</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="a590f90c-5750-4c50-bb25-7ab90fea70d7">
+										<Name>FrontOfficeТребоватьНаличиеКатегорииКлиентовПриПриемеОплатыЗаказа</Name>
+										<Code>0000000057</Code>
+										<Description>Требовать наличие категории клиентов при приеме оплаты</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="88338547-4957-40ec-866f-eb22869a00e3">
+										<Name>FrontOfficeТребоватьНаличиеКатегорииДокументаПриПриемеОплатыЗаказа</Name>
+										<Code>0000000058</Code>
+										<Description>Требовать наличие категория документа при приеме оплаты</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+								</ChildItems>
+							</Item>
+							<Item id="a16f75ff-abdd-4ef6-89bf-3d001824d538">
+								<Name>FrontOfficeНеРазделятьПечатьПречекаИПриемОплатыВоВремениЗаказа</Name>
+								<Code>0000000046</Code>
+								<Description>Не разделять печать пречека и прием оплаты во времени</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="d4249de3-d1be-4769-80dd-72af44632ee9">
+						<Name>FrontOfficeИзменениеГруппаЗаказа</Name>
+						<Code>0000000030</Code>
+						<Description>Изменение заказа</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="aeea54c8-d142-4cba-8606-f2b7da3eb552">
+								<Name>FrontOfficeАвтоматическиСписыватьБлюдаПриУдалении</Name>
+								<Code>0004000034</Code>
+								<Description>Автоматически списывать блюда при удалении</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="6d04ccaa-c251-471e-a3e5-1a3398e1c235">
+								<Name>FrontOfficeВыводитьВстречкуНаОтменуПриПереносе</Name>
+								<Code>0004000011</Code>
+								<Description>Выводить встречку на отмену при переносе позиций</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="d703f660-7e2c-4661-aef4-878114453ff2">
+								<Name>FrontOfficeВыводитьВстречкуНаПечатьЗаказа</Name>
+								<Code>0000000065</Code>
+								<Description>Выводить встречку на печать</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="ff351632-2215-4269-914b-82846ec83ab6">
+								<Name>FrontOfficeВыводитьВстречкуПриПереносе</Name>
+								<Code>0004000012</Code>
+								<Description>Выводить встречку при переносе позиций</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="0974b434-b46b-47a1-9764-e162ee974db0">
+								<Name>FrontOfficeВыводитьСотрудниковНаСменеПриИзмененииСотрудникаЗаказа</Name>
+								<Code>0004000029</Code>
+								<Description>Выводить сотрудников на смене при изменении сотрудника заказа</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="9465fc40-7ad9-44b6-bcfe-19677636e859">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеКоличестваПриДобавленииТовараЗаказа</Name>
+								<Code>0000000059</Code>
+								<Description>Запрашивать подтверждение количества при добавлении товара</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="2ef3ab88-7620-4b5a-868a-2668d6488350">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриИзмененииКлиентаЗаказа</Name>
+								<Code>0000000128</Code>
+								<Description>Запрашивать подтверждение при изменении клиента</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="daafbf64-4c87-4a66-bdb5-1841d6b35a44">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриИзмененииНомераСтолаЗаказа</Name>
+								<Code>0000000097</Code>
+								<Description>Запрашивать подтверждение при изменении номера стола</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="c8cbfe50-5f73-4c69-930c-763722f33ea6">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриИзмененииСотрудникаЗаказа</Name>
+								<Code>0000000098</Code>
+								<Description>Запрашивать подтверждение при изменении сотрудника</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="7c3f3547-6995-489b-a6fb-cdbc64105664">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриОтменеДисконтнойКартыЗаказа</Name>
+								<Code>0000000062</Code>
+								<Description>Запрашивать подтверждение при отмене дисконтной карты</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="b8cd750f-3468-4f9f-8274-ed12ff7d86af">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриПримененииДисконтнойКартыЗаказа</Name>
+								<Code>0000000061</Code>
+								<Description>Запрашивать подтверждение при применении дисконтной карты</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="ed7a2437-9981-44ee-8a04-8e58ff14d152">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриУдаленииКлиентаЗаказа</Name>
+								<Code>0000000129</Code>
+								<Description>Запрашивать подтверждение при удалении клиента</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="65dc0941-d16b-46a4-9bde-4d81c8e75049">
+								<Name>FrontOfficeЗапрашиватьПричинуПримененияРучнойСкидки</Name>
+								<Code>0004000074</Code>
+								<Description>Запрашивать причину применения ручной скидки</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="ad4fd37e-93e7-4e74-a4ce-85a2fdf42113">
+								<Name>FrontOfficeИзменениеДисконтнойКартыЗаказа</Name>
+								<Code>0000000060</Code>
+								<Description>Изменение дисконтной карты</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="d9134118-d9c2-4d1c-95e1-8fbfc1cf66a3">
+								<Name>FrontOfficeИзменениеКатегорииДокументаЗаказа</Name>
+								<Code>0000000031</Code>
+								<Description>Изменение категории документа</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="5dc8c18e-d395-4ff5-992d-3c878d3cd93a">
+								<Name>FrontOfficeИзменениеКатегорииКлиентовЗаказа</Name>
+								<Code>0000000033</Code>
+								<Description>Изменение категории клиентов</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="eb5c6ecb-4213-4585-aa4f-bfd2afb2db3e">
+								<Name>FrontOfficeИзменениеКоличестваКлиентовЗаказа</Name>
+								<Code>0000000034</Code>
+								<Description>Изменение количества клиентов</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="fe81c21f-cd53-4c3e-b5b9-b68216a54561">
+								<Name>FrontOfficeИзменениеНомераСтолаЗаказа</Name>
+								<Code>0000000032</Code>
+								<Description>Изменение номера стола</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="bbb58453-aeb6-4326-8584-a5fc0df9e5f1">
+								<Name>FrontOfficeИзменениеСкидокЗаказа</Name>
+								<Code>0000000063</Code>
+								<Description>Изменение скидок</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="98dd2c1e-b693-4f42-8dac-531767f4fbb7">
+								<Name>FrontOfficeИзменениеСотрудникаЗаказа</Name>
+								<Code>0000000035</Code>
+								<Description>Изменение сотрудника</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="bba342ce-798a-4973-9534-703cf5e9260c">
+								<Name>ИспользоватьКомнаты</Name>
+								<Code>0004000018</Code>
+								<Description>Использовать комнаты</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="8fbd32d0-a26a-4542-b091-6b250f82d766">
+								<Name>FrontOfficeНеОбъединятьОдинаковыетоварыПриДобавленииТовараЗаказа</Name>
+								<Code>0000010011</Code>
+								<Description>Не объединять одинаковые товары при добавлении товара заказа</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="e7a0a53f-3019-4129-b4ea-c9740485de12">
+								<Name>FrontOfficeПериодНеактивностиЗаказа</Name>
+								<Code>0004000024</Code>
+								<Description>Период неактивности заказа (мин.)</Description>
+								<Type>
+									<v8:Type>xs:decimal</v8:Type>
+									<v8:NumberQualifiers>
+										<v8:Digits>4</v8:Digits>
+										<v8:FractionDigits>0</v8:FractionDigits>
+										<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+									</v8:NumberQualifiers>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="78e67831-56e0-45c1-ac55-148738178c7a">
+								<Name>FrontOfficeПечатьВстречекПоПодачам</Name>
+								<Code>0004000055</Code>
+								<Description>Печать встречек по подачам</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="d94c571d-1e32-4816-8f23-e1c2f152bdbd">
+								<Name>FrontOfficeРегистрироватьУдалениеБлюдаВОткрытомЗаказе</Name>
+								<Code>0004000030</Code>
+								<Description>Регистрировать удаление блюда в открытом заказе</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="ec1cb5c6-98ac-408b-97da-703362310f84">
+								<Name>FrontOfficeТребоватьНаличиеДисконтнойКартыПриИзмененииЗаказа</Name>
+								<Code>0000000049</Code>
+								<Description>Требовать наличие дисконтной карты при изменении</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="7297f754-e733-407f-952f-09e4952526c3">
+						<Name>FrontOfficeГруппаПросмотрСпискаЗаказов</Name>
+						<Code>0000000118</Code>
+						<Description>Просмотр списка заказов</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="a6f97f1a-a7dd-4dd5-804a-3d3ab8268c06">
+								<Name>FrontOfficeПросмотрСпискаЗаказовВМодулеДоставка</Name>
+								<Code>0000000119</Code>
+								<Description>Просмотр списка заказов в модуле «Доставка»</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="9661589e-1f64-4a34-974a-cec245ed2f22">
+								<Name>FrontOfficeПросмотрСпискаЗаказовВМодулеРесторан</Name>
+								<Code>0000000121</Code>
+								<Description>Просмотр списка заказов в модуле «Ресторан»</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="5575a0d4-a5e8-4aff-9f02-ae7019ee3cb0">
+						<Name>FrontOfficeПрочиеНастройкиЗаказа</Name>
+						<Code>0004000052</Code>
+						<Description>Прочие настройки заказа</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="1ce4390f-9ba0-4f61-b991-eba7b81cc5e0">
+								<Name>FrontOfficeПереходитьНаСтраницуОплатыПриПрокаткеКарты</Name>
+								<Code>0004000053</Code>
+								<Description>Переходить на страницу оплаты при прокатке карты</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="fc789dea-6121-4e20-a4b8-7fba6ca2a750">
+						<Name>FrontOfficeСозадниеГруппаЗаказа</Name>
+						<Code>0000000020</Code>
+						<Description>Создание заказа</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="0c00050a-8501-452f-9beb-f5a7f4f67013">
+								<Name>FrontOfficeЗапрашиватьАктивность</Name>
+								<Code>0004000059</Code>
+								<Description>Ввод активности</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="ec231bd6-3ae4-486d-972c-93706de5a854">
+								<Name>FrontOfficeВводДисконтнойКартыЗаказа</Name>
+								<Code>0000000048</Code>
+								<Description>Ввод дисконтной карты</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="3bff7c6a-b6ea-4080-ab27-088a1405f5c1">
+								<Name>FrontOfficeВводКатегорииДокументаЗаказа</Name>
+								<Code>0000000026</Code>
+								<Description>Ввод категории документа</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="34ceebcb-798d-4b13-ab5a-255e47a03637">
+								<Name>FrontOfficeВводКатегорииКонтрагентаЗаказа</Name>
+								<Code>0000000024</Code>
+								<Description>Ввод категории контрагента</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="b2f06611-1667-447b-aa84-b93239cee00f">
+								<Name>FrontOfficeВводКоличетсваКлиентовЗаказа</Name>
+								<Code>0000000023</Code>
+								<Description>Ввод количетсва клиентов</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="d3fa42a9-09b5-42fe-9e27-0a1fd614656d">
+								<Name>FrontOfficeВводНомераСтолаЗаказа</Name>
+								<Code>0000000021</Code>
+								<Description>Ввод номера стола</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="43c67248-ee7e-4003-94ff-f78199658b4d">
+								<Name>FrontOfficeВводНомераСтолаЗаказаПриПереносе</Name>
+								<Code>0004000022</Code>
+								<Description>Ввод номера стола при переносе</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="75339e8b-d36c-4a3d-962e-b8a4fb1f1013">
+								<Name>FrontOfficeЗапросНаОткрытиеСтолаСНеуникальнымНомером</Name>
+								<Code>0004000073</Code>
+								<Description>Запрос на открытие стола с неуникальным номером</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="4c2094a3-029c-42ec-9745-424440092554">
+								<Name>FrontOfficeКатегорияДокументаПоУмолчаниюЗаказа</Name>
+								<Code>0000000027</Code>
+								<Description>Категория заказа по умолчанию</Description>
+								<Type>
+									<v8:Type xmlns:d10p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d10p1:CatalogRef.КатегорииДокументов</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="8be54aea-43e3-47fe-b834-66586464e6ae">
+								<Name>FrontOfficeКатегорияКонтрагентаПоУмолчаниюЗаказа</Name>
+								<Code>0000000025</Code>
+								<Description>Категория контрагента по умолчанию</Description>
+								<Type>
+									<v8:Type xmlns:d10p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d10p1:CatalogRef.КатегорииКонтрагентов</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="32fd87e1-e35c-40e1-932b-1bae08e03a91">
+								<Name>FrontOfficeНомерСтолаПоУмолчаниюЗаказа</Name>
+								<Code>0000000022</Code>
+								<Description>Номер стола по умолчанию</Description>
+								<Type>
+									<v8:Type xmlns:d10p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d10p1:CatalogRef.Столы</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="0528fd0f-2650-4003-9c07-f2a0c56f5666">
+				<Name>FrontOfficeУправлениеККМ</Name>
+				<Code>0000000100</Code>
+				<Description>Управление ККМ</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="ec016b95-a21b-402a-8f1d-352076395f2f">
+						<Name>FrontOfficeКассовыеДаты</Name>
+						<Code>0000000102</Code>
+						<Description>Кассовые даты</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="74276dec-ea8f-4772-b5b6-c73fff3d36f1">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриИзмененииДатыКассовойДаты</Name>
+								<Code>0000000103</Code>
+								<Description>Запрашивать подтверждение при изменении даты кассовой даты</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="c5d7ea79-a659-49fe-9f40-5d83a2132c90">
+								<Name>FrontOfficeТребоватьИстеченияУказанногоВремениПриИзмененииДатыКассовойДаты</Name>
+								<Code>0000000104</Code>
+								<Description>Требовать истечения указанного времени (мин.) при изменении даты кассовой даты</Description>
+								<Type>
+									<v8:Type>xs:decimal</v8:Type>
+									<v8:NumberQualifiers>
+										<v8:Digits>4</v8:Digits>
+										<v8:FractionDigits>0</v8:FractionDigits>
+										<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+									</v8:NumberQualifiers>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="121a75aa-392b-46c6-b6d4-055d20927eb5">
+						<Name>FrontOfficeККМ</Name>
+						<Code>0000000101</Code>
+						<Description>Контрольно-кассовые машины</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="740707ac-b638-4ec4-925d-90d42e981cec">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриZОтчетеККМ</Name>
+								<Code>0000000105</Code>
+								<Description>Запрашивать подтверждение при Z-отчете</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="708a0814-8977-4923-8c38-478848c7331c">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриСлужебномВносеККМ</Name>
+								<Code>0000000107</Code>
+								<Description>Запрашивать подтверждение при выполнении служебного вноса</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="1b1957bc-57f7-4bf9-be73-b685701efd47">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриСлужебномВыносеККМ</Name>
+								<Code>0000000109</Code>
+								<Description>Запрашивать подтверждение при выполнении служебного выноса</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="21b7d331-3a5d-4ada-bbe1-366a3a6d0f8f">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриИзмененииДатыВремениККМ</Name>
+								<Code>0000000106</Code>
+								<Description>Запрашивать подтверждение при изменении даты и времени</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="395e676d-1dad-4707-b09f-d3484b68fad2">
+				<Name>FrontOfficeУправлениеОтчетамиПроизводства</Name>
+				<Code>0004000038</Code>
+				<Description>Управление отчетами производства</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="5a296201-90c7-4fab-a5bb-a4cf76c68d9f">
+						<Name>FrontOfficeЗакрытиеОтчетовПроизводстваГруппа</Name>
+						<Code>0004000039</Code>
+						<Description>Закрытие отчетов производства</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="7d0db710-560e-4ffd-bff1-452829a23d13">
+								<Name>FrontOfficeГруппаПодтверждениеОтчетовПроизводства</Name>
+								<Code>0004000040</Code>
+								<Description>Подтверждение отчетов производства</Description>
+								<Type/>
+								<IsFolder>true</IsFolder>
+								<ChildItems>
+									<Item id="b75716f3-71ee-4ad3-a799-b17d28d6a51d">
+										<Name>FrontOfficeЗапрашиватьПодтверждениеПриОтменеПодтверждения</Name>
+										<Code>0004000049</Code>
+										<Description>Запрашивать подтверждение при отмене подтверждения</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="d30facca-0709-4b35-9136-c306b3f116fa">
+										<Name>FrontOfficeТребоватьУточнениеКоличестваВесовыхТоваровПриПечатиОтчетаПроизводства</Name>
+										<Code>0004000043</Code>
+										<Description>Требовать уточнение количества весовых товаров при печати документа</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+								</ChildItems>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="5e831387-09e2-4200-961c-bd7c905f3e92">
+						<Name>FrontOfficeИзменениеГруппаОтчетовПроизводства</Name>
+						<Code>0004000044</Code>
+						<Description>Изменение отчетов производства</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="6ef09b3e-0358-4065-a8bd-2a8137194758">
+								<Name>FrontOfficeВыводитьСотрудниковНаСменеПриИзмененииСотрудникаОтчетаПроизводства</Name>
+								<Code>0004000045</Code>
+								<Description>Выводить сотрудников на смене при изменении сотрудника отчета производства</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="798f6759-cc55-42d7-8ae6-3dec821b24af">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеКоличестваПриДобавленииТовараОтчетаПроизводства</Name>
+								<Code>0004000046</Code>
+								<Description>Запрашивать подтверждение количества при добавлении товара</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="01271dda-40d4-49c2-879f-3bb6b25035e4">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриИзмененииСотрудникаОтчетаПроизводства</Name>
+								<Code>0004000047</Code>
+								<Description>Запрашивать подтверждение при изменении сотрудника</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="82e8985d-7de4-478a-90dc-2f779ccd9164">
+								<Name>FrontOfficeИзменениеСотрудникаОтчетаПроизводства</Name>
+								<Code>0004000048</Code>
+								<Description>Изменение сотрудника</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="1f77085b-ce6d-45c0-907e-63cd77a497ef">
+						<Name>FrontOfficeГруппаСозданиеОтчетовПроизводства</Name>
+						<Code>0004000057</Code>
+						<Description>Создание отчетов производства</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="f6cc9bac-89c3-4a9a-a653-6ab5fc55f6a8">
+								<Name>FrontOfficeЗапрашиватьВидОперацииОтчетаПроизводства</Name>
+								<Code>0004000058</Code>
+								<Description>Запрашивать вид операции</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="97a8e9a0-540a-40b2-98cb-8905706cd783">
+				<Name>FrontOfficeУправлениеПроизводством</Name>
+				<Code>0000000110</Code>
+				<Description>Управление производством</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="2cd2f121-3dd9-40b3-8bd0-9278ee89f419">
+						<Name>FrontOfficeЗапрашиватьПодтверждениеПриНачалеПроизводства</Name>
+						<Code>0000000115</Code>
+						<Description>Запрашивать подтверждение при начале производства</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="fda8a980-b225-4280-9e45-3ba1037eaad9">
+						<Name>FrontOfficeЗапрашиватьПодтверждениеПриОкончанииПроизводства</Name>
+						<Code>0000000116</Code>
+						<Description>Запрашивать подтверждение при окончании производства</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="eae33c15-36fb-480e-a6f6-43ca77a9db9c">
+						<Name>FrontOfficeЗапрашиватьПодтверждениеПриОтменеПроизводства</Name>
+						<Code>0000000117</Code>
+						<Description>Запрашивать подтверждение при отмене производства</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="2818086a-e678-4ff6-8013-6bcd27945d78">
+						<Name>FrontOfficeЗапрашиватьПодтверждениеПриСчитыванииШтрихкода</Name>
+						<Code>0000010008</Code>
+						<Description>Запрашивать подтверждение при считывании штрихкода</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="548657ff-581b-4ad4-9e24-b1c3c8168115">
+				<Name>FrontOfficeУправлениеСписаниями</Name>
+				<Code>0000000077</Code>
+				<Description>Управление списаниями</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="e2d492db-7ca6-4ccf-be8a-53da3e428b11">
+						<Name>FrontOfficeЗакрытиеСписанияГруппа</Name>
+						<Code>0000000080</Code>
+						<Description>Закрытие списания</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="9cd1eeb3-2a61-4e02-8562-409f266b4739">
+								<Name>FrontOfficeПечатьПречекаГруппаСписания</Name>
+								<Code>0000000088</Code>
+								<Description>Печать пречека</Description>
+								<Type/>
+								<IsFolder>true</IsFolder>
+								<ChildItems>
+									<Item id="b4536ab9-c230-4e78-8559-898c2a59e1ea">
+										<Name>FrontOfficeВыводитьПречекНаПечатьСписания</Name>
+										<Code>0000000089</Code>
+										<Description>Выводить пречек на печать</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="ffdcd4b2-d257-455d-bb35-30eb9a276724">
+										<Name>FrontOfficeТребоватьНаличиеТоваровПриПечатиПречекаСписания</Name>
+										<Code>0000000090</Code>
+										<Description>Требовать наличие товаров при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="e92de024-fb69-42cf-83bd-f15812fe1f9d">
+										<Name>FrontOfficeТребоватьУточнениеКоличестваВесовыхТоваровПриПечатиПречекаСписания</Name>
+										<Code>0000000091</Code>
+										<Description>Требовать уточнение количества весовых товаров при печати пречека</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+								</ChildItems>
+							</Item>
+							<Item id="a473e7bb-9b0c-4e6b-9698-5527f851fcff">
+								<Name>FrontOfficeПриемОплатыГруппаСписания</Name>
+								<Code>0000000081</Code>
+								<Description>Прием оплаты списания</Description>
+								<Type/>
+								<IsFolder>true</IsFolder>
+								<ChildItems>
+									<Item id="25ecb33f-dafa-4155-8f0c-9cd97dc16aaf">
+										<Name>FrontOfficeВидОплатыПоУмолчаниюСписания</Name>
+										<Code>0000000082</Code>
+										<Description>Вид оплаты по умолчанию</Description>
+										<Type>
+											<v8:Type xmlns:d12p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d12p1:CatalogRef.ВидыОплатЧекаККМ</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="f0f05a69-3f95-43e2-80a9-3bc02d255a2f">
+										<Name>FrontOfficeЗапрашиватьПодтверждениеПриОтменеОплатыСписания</Name>
+										<Code>0000000083</Code>
+										<Description>Запрашивать подтверждение при отмене оплаты</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="648e49ed-f148-4628-abe0-1ca9d4eb368c">
+										<Name>FrontOfficeЗапрашиватьПодтверждениеПриПриемеОплатыСписания</Name>
+										<Code>0000000084</Code>
+										<Description>Запрашивать подтверждение при приеме оплаты</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="161ff1f5-ec86-4bdb-842f-f51f14c1c556">
+										<Name>FrontOfficeТребоватьНаличиеКатегорииДокументаПриПриемеОплатыСписания</Name>
+										<Code>0000000087</Code>
+										<Description>Требовать наличие категория документа при приеме оплаты</Description>
+										<Type>
+											<v8:Type>xs:boolean</v8:Type>
+										</Type>
+										<IsFolder>false</IsFolder>
+									</Item>
+								</ChildItems>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="9ea5a0cf-6080-4c26-81ad-669580d41041">
+						<Name>FrontOfficeИзменениеГруппаСписания</Name>
+						<Code>0000000092</Code>
+						<Description>Изменение заказа</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="534acfda-98d9-4530-a0b1-549887f1cdc7">
+								<Name>FrontOfficeВыводитьСотрудниковНаСменеПриИзмененииСотрудникаСписания</Name>
+								<Code>0004000036</Code>
+								<Description>Выводить сотрудников на смене при изменении сотрудника списания</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="9316aa9e-ad45-4426-8196-d8d03fc7cc20">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеКоличестваПриДобавленииТовараСписания</Name>
+								<Code>0000000093</Code>
+								<Description>Запрашивать подтверждение количества при добавлении товара</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="fbb0c645-5f16-4570-8e22-ccfefef20ee6">
+								<Name>FrontOfficeЗапрашиватьПодтверждениеПриИзмененииСотрудникаСписания</Name>
+								<Code>0000000099</Code>
+								<Description>Запрашивать подтверждение при изменении сотрудника</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="73797cbe-3d2a-469a-adae-24682fb8f948">
+								<Name>FrontOfficeИзменениеКатегорииДокументаСписания</Name>
+								<Code>0000000095</Code>
+								<Description>Изменение категории документа</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="12d0c1b7-4b47-42cd-9ac2-ef8a6d72ebcb">
+								<Name>FrontOfficeИзменениеСотрудникаСписания</Name>
+								<Code>0000000094</Code>
+								<Description>Изменение сотрудника</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="4c2d5ae5-d4ef-44f4-b7fa-826023fae91b">
+						<Name>FrontOfficeГруппаПросмотрСпискаСписаний</Name>
+						<Code>0000000123</Code>
+						<Description>Просмотр списка списаний</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="b9d2276d-effa-497f-84c1-ecb5f2be0fc8">
+								<Name>FrontOfficeПросмотрСпискаСписанийВМодулеДоставка</Name>
+								<Code>0000000126</Code>
+								<Description>Просмотр списка списаний в модуле «Доставка»</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="3ae5e06e-889e-4121-a56d-ecaad98a6022">
+								<Name>FrontOfficeПросмотрСпискаСписанийВМодулеРесторан</Name>
+								<Code>0000000127</Code>
+								<Description>Просмотр списка списаний в модуле «Ресторан»</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="095f128e-0e45-40e2-b244-bc4ec869d8d1">
+						<Name>FrontOfficeСозадниеГруппаСписания</Name>
+						<Code>0000000076</Code>
+						<Description>Создание списания</Description>
+						<Type/>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="aee66345-aa45-4127-9274-0506afd80e03">
+								<Name>FrontOfficeВводКатегорииДокументаСписания</Name>
+								<Code>0000000078</Code>
+								<Description>Ввод категории документа</Description>
+								<Type>
+									<v8:Type>xs:boolean</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="3006af5f-2e92-4696-9f16-7e09a21b2a40">
+								<Name>FrontOfficeКатегорияДокументаПоУмолчаниюСписания</Name>
+								<Code>0000000079</Code>
+								<Description>Категория документа по умолчанию</Description>
+								<Type>
+									<v8:Type xmlns:d10p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d10p1:CatalogRef.КатегорииДокументов</v8:Type>
+								</Type>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="e1aa0c1d-9a22-4d77-b586-79fac9aa2134">
+				<Name>FrontOfficeУправлениеУчетомРабочегоВремени</Name>
+				<Code>0000000066</Code>
+				<Description>Управление учетом рабочего времени</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="e96c8a95-c782-4af1-b050-d9a8d5c99838">
+						<Name>FrontOfficeЗапрашиватьДолжность</Name>
+						<Code>0004000082</Code>
+						<Description>Запрашивать должность сотрудника</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="721e11b0-c872-4e0e-8aad-693a7c508e66">
+						<Name>FrontOfficeИспользоватьУчетРабочегоВремениВнештатныхСотрудников</Name>
+						<Code>0000000069</Code>
+						<Description>Использовать учет рабочего времени внештатных сотрудников</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="77c59aee-5bb6-47c4-bcfb-35ee01239d08">
+						<Name>FrontOfficeОсновнаяДолжность</Name>
+						<Code>0004000081</Code>
+						<Description>Основная должность сотрудников</Description>
+						<Type>
+							<v8:Type xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d8p1:CatalogRef.Должности</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="7d880603-7e38-4057-8a2e-0557e5bce985">
+						<Name>FrontOfficeОсновнаяОрганизацияВнештатныхСотрудников</Name>
+						<Code>0000000070</Code>
+						<Description>Основная организация внештатных сотрудников</Description>
+						<Type>
+							<v8:Type xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d8p1:CatalogRef.Организации</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ff3d0089-6467-4c98-9019-2dedb5c7e0ad">
+						<Name>FrontOfficeОсновнаяРабочаяСмена</Name>
+						<Code>0004000080</Code>
+						<Description>Основная рабочая смена</Description>
+						<Type>
+							<v8:Type xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d8p1:CatalogRef.РабочиеСмены</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="b4fbbc61-4a86-46ae-9491-2faeee39f108">
+						<Name>FrontOfficeОсновнойВидИспользованияРабочегоВремени</Name>
+						<Code>0004000020</Code>
+						<Description>Основной вид использования рабочего времени</Description>
+						<Type>
+							<v8:Type xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d8p1:CatalogRef.КлассификаторИспользованияРабочегоВремени</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="e2d58da3-061e-45f0-9630-0637ccbbfc66">
+						<Name>FrontOfficeТребоватьПрисутсвиеСотрудникаНаСменеПриАвторизации</Name>
+						<Code>0000000068</Code>
+						<Description>Требовать присутсвие сотрудника на смене при авторизации</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="56d35745-8955-4e76-8726-ef79139cc94b">
+		<Name>НастройкиПечати</Name>
+		<Code>0000010020</Code>
+		<Description>Настройки печати</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="047fd716-df22-42f9-9864-c06b57643fbb">
+				<Name>ПечатьИспользоватьОтступПослеНоменклатуры</Name>
+				<Code>0004000027</Code>
+				<Description>Использовать отступ после товаров</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e4af356a-af8a-4526-bd84-bf550c1d6e6e">
+				<Name>ПечатьИспользоватьНомераСокращенные</Name>
+				<Code>0000010021</Code>
+				<Description>Использовать сокращенные номера</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="a2169ef9-e576-4481-abff-07dda98bae03">
+		<Name>ГруппаЗаказыПокупателей</Name>
+		<Code>0004000062</Code>
+		<Description>Настройки резервирования</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="56a93aca-16e7-4f72-b5ac-b0aed29ebb41">
+				<Name>ГруппаЗаказыПокупателейИнтервалВыбораВремени</Name>
+				<Code>0004000063</Code>
+				<Description>Основной период резервирования </Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="aaba33be-9b45-477b-897c-b8664066c891">
+						<Name>ЗаказыПокупателейИнтервалВыбораВремениМаксимальноеВремя</Name>
+						<Code>0004000065</Code>
+						<Description>Максимальное время</Description>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Time</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="29b86544-f1ee-423f-afc9-0dada45a7a82">
+						<Name>ЗаказыПокупателейИнтервалВыбораВремениМинимальноеВремя</Name>
+						<Code>0004000064</Code>
+						<Description>Минимальное время</Description>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Time</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="3518174f-342b-4f37-86d3-f2f7a0e88b2c">
+				<Name>ГруппаЗаказыПокупателейГраницыИзмененияСтатусов</Name>
+				<Code>0004000066</Code>
+				<Description>Периоды изменения статусов резервов</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="aaf4178f-4ac7-4e5e-8689-a5355525c624">
+						<Name>ЗаказыПокупателейГраницаПросроченныхЗаказовПокупателейВремя</Name>
+						<Code>0004000068</Code>
+						<Description>Время установки статуса «Просроченный» резервов</Description>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Time</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="6e464aa6-1172-4922-917d-ab045bc4aa7f">
+						<Name>ЗаказыПокупателейГраницаТекущихЗаказовПокупателейВремя</Name>
+						<Code>0004000067</Code>
+						<Description>Время установки статуса «Текущий» резервов</Description>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Time</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="3ca4191e-f3e7-49ea-baab-66ca0e11d44a">
+				<Name>ГруппаЗаказыПокупателейРекомендации</Name>
+				<Code>0004000069</Code>
+				<Description>Предупреждения и рекомендации</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="3c6000cb-aa7f-47f2-a696-d0998fba3860">
+						<Name>ЗаказыПокупателейГраницаПредупрежденияНераспределенныхВремя</Name>
+						<Code>0004000070</Code>
+						<Description>Время предупреждения о нераспределенных резервах</Description>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Time</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="4b2bf187-42c9-4d6d-8f86-d63fc30575fb">
+		<Name>ОсновныеЗначенияДляПодстановки</Name>
+		<Code>0000000004</Code>
+		<Description>Основные значения для подстановки в документы и справочники</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="0b4d295b-e669-4a9d-b2b5-b3e3d129c168">
+				<Name>ОсновнаяВалютаВзаиморасчетов</Name>
+				<Code>0000010001</Code>
+				<Description>Основная валюта взаиморасчетов</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Валюты</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="fa99192e-8250-4b6d-88e2-32766ac546fb">
+				<Name>ОсновнаяКассаККМ</Name>
+				<Code>0000000000</Code>
+				<Description>Основная касса ККМ</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.КассыККМ</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ff877f6a-f391-4727-acd3-49a289dd2b81">
+				<Name>ОсновнаяОрганизация</Name>
+				<Code>0000000002</Code>
+				<Description>Основная организация</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Организации</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="92c2de25-ef3b-4625-97ca-668bc264c55f">
+				<Name>ОсновнаяСтавкаНДС</Name>
+				<Code>0003000001</Code>
+				<Description>Основная ставка НДС</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.СтавкиНДС</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5b38ed27-5b0e-4e13-96a0-10df9bd2de3f">
+				<Name>ОсновнойВидОплатыЧекаККМ</Name>
+				<Code>0000000010</Code>
+				<Description>Основной вид оплаты чека ККМ</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ВидыОплатЧекаККМ</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0f907098-112d-4bc6-8b59-3d8d10f11a14">
+				<Name>ОсновнойГородАдреса</Name>
+				<Code>0000010006</Code>
+				<Description>Основной город адреса</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.КлассификаторУлиц</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e3f7f063-a8fa-4fd6-afb2-1560d63dc680">
+				<Name>ОсновнойКодГородаТелефона</Name>
+				<Code>0000000007</Code>
+				<Description>Основной код города телефона</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>100</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="63f86bb7-ef3c-462d-809a-b67e2b77d958">
+				<Name>ОсновнойКодСтраныТелефона</Name>
+				<Code>0000002009</Code>
+				<Description>Основной код страны телефона</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>100</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b2163c3b-f413-4190-ac4b-6963ae521ed8">
+				<Name>ОсновнойМодуль</Name>
+				<Code>0000010009</Code>
+				<Description>Основной модуль</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.МодулиИПодсистемы</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e93229d3-b7e1-4068-aeff-669dcd47097d">
+				<Name>ОсновнойОтветственный</Name>
+				<Code>0002000000</Code>
+				<Description>Основной ответственный</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Пользователи</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5a073d49-48a4-4e40-b7fc-ab61f700f972">
+				<Name>ОсновнойРесторан</Name>
+				<Code>0000010004</Code>
+				<Description>Основной ресторан</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Рестораны</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a2954384-24a6-4ac2-9dff-080abdc4fdb2">
+				<Name>ОтражатьДокументыВБухгалтерскомУчете</Name>
+				<Code>0004000005</Code>
+				<Description>Отражать документы в бухгалтерском учете</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e3057403-6216-46b8-aac2-07c46ece4c60">
+				<Name>ОтражатьДокументыВНалоговомУчете</Name>
+				<Code>0003000005</Code>
+				<Description>Отражать документы в налоговом учете</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0aa29724-4989-4c84-95db-b06bed651ee9">
+				<Name>ОтражатьДокументыВУправленческомУчете</Name>
+				<Code>0000000005</Code>
+				<Description>Отражать документы в управленческом учете</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="08547d5b-9240-4b1a-913a-561823096a8c">
+		<Name>ОсновныеНастройкиРежимаРаботы</Name>
+		<Code>0000010010</Code>
+		<Description>Основные настройки режима работы</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="046de9a2-43b7-42d7-9b6c-ffc205194bd8">
+				<Name>FrontOfficeОсновнаяКассоваяДата</Name>
+				<Code>0000000075</Code>
+				<Description>Основная кассовая дата</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.КассовыеДаты</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="86e7fbe0-84c2-4273-808c-47bd473d6044">
+				<Name>FrontOfficeОсновнаяРестораннаяЗона</Name>
+				<Code>0000000029</Code>
+				<Description>Основная ресторанная зона</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Столы</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6a44cda6-210e-4faa-8c65-40433650fa8c">
+				<Name>FrontOfficeОсновнойВидМеню</Name>
+				<Code>0000000096</Code>
+				<Description>Основной вид меню</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ВидыМеню</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ef8ef84d-1554-47ab-91d4-b778cc3f5a1a">
+				<Name>FrontOfficeОсновнойРабочийЦентр</Name>
+				<Code>0000010007</Code>
+				<Description>Основной рабочий центр</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.РабочиеЦентры</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="13974271-2e96-434b-96c4-68a558a3d5ab">
+				<Name>FrontOfficeОсновнойРесторан</Name>
+				<Code>0000000028</Code>
+				<Description>Основной ресторан</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Рестораны</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="ef6fd868-f3cf-4e73-aced-29a260520ff4">
+		<Name>ДругиеНастройки</Name>
+		<Code>0002000006</Code>
+		<Description>Прочие настройки</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="224d28c2-5021-4d7c-8b67-4e1237c5f78a">
+				<Name>АвтооткрытиеМонитораМоментальныхПоказателейПриЗапускеПрограммы</Name>
+				<Code>0004000083</Code>
+				<Description>Автооткрытие монитора моментальных показателей при запуске программы</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f4d7b49a-5a54-4455-b360-77f28b70ed38">
+				<Name>АвтооткрытиеФормыРабочегоМестаМенеджераПоПродажамПриЗапускеПрограммы</Name>
+				<Code>0000100005</Code>
+				<Description>Автооткрытие формы рабочего места менеджера по продажам при запуске программы</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="eaf128cd-1038-4f13-ad2c-ce0ceebe4aa0">
+				<Name>ЗапрашиватьПодтверждениеПриЗакрытии</Name>
+				<Code>0000100004</Code>
+				<Description>Запрашивать подтверждение при закрытии программы</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d7a12a75-142e-44af-a1af-2cd3dca04b61">
+				<Name>ЗапретитьОткрытиеНесколькихСеансов</Name>
+				<Code>0000000012</Code>
+				<Description>Запретить открытие нескольких сеансов</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c6ef1a9f-38a6-4402-a8ae-25f0d7050815">
+				<Name>КартинкаРабочегоСтола</Name>
+				<Code>0004000032</Code>
+				<Description>Картинка рабочего стола</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.__Изображения</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="811d92ac-bc75-403a-80c6-a975c599820d">
+				<Name>ОсновнаяДатаНачалаОтчетов</Name>
+				<Code>0000000001</Code>
+				<Description>Основная дата начала отчетов</Description>
+				<Type>
+					<v8:Type>xs:dateTime</v8:Type>
+					<v8:DateQualifiers>
+						<v8:DateFractions>Date</v8:DateFractions>
+					</v8:DateQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="9dce035e-c2fd-47f9-befe-ad0d5eaa5713">
+				<Name>ОсновнойКаталогФайлов</Name>
+				<Code>0000100001</Code>
+				<Description>Основной каталог файлов пользователя</Description>
+				<Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>300</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1c0f5898-c594-47f0-8c72-01f80cd333b7">
+				<Name>ОтображитьВУправляемыхФормахПанельБуквОтбора</Name>
+				<Code>0004000008</Code>
+				<Description>Отображить в управляемых формах панель букв отбора</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0e934dd4-8d40-4e4e-8327-832a572dd5ee">
+				<Name>ПечатьДокументовБезПредварительногоПросмотра</Name>
+				<Code>0000000003</Code>
+				<Description>Печать документов без предварительного просмотра</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5e5650ce-906e-4068-ac28-b49ad1e016e9">
+				<Name>РасширеннаяФормаНастройкиОтчетов</Name>
+				<Code>0000000009</Code>
+				<Description>Расширенная форма настройки отчетов</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4cd7cb2e-de0a-41d3-995e-ab028a6b9f6f">
+				<Name>РежимФормированияПечатныхФорм</Name>
+				<Code>0000100007</Code>
+				<Description>Режим формирования печатных форм</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.РежимФормированияПечатныхФорм</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="e63dfcce-f3c7-4aa4-9807-62d7e2294626">
+		<Name>ФискальныйеРегистраторы</Name>
+		<Code>0000010005</Code>
+		<Description>Фискальныйе регистраторы</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="a35d6cb6-33e8-4c70-8916-bcb309619419">
+				<Name>ВыводитьНаПечатьНомерТоварногоЧека</Name>
+				<Code>0004000051</Code>
+				<Description>Выводить на печать номер товарного чека</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="dbd53d7d-184c-41e1-8b60-2b0be0bd24fb">
+				<Name>НомерКассираФискальногоРегистратора</Name>
+				<Code>0000000013</Code>
+				<Description>Номер кассира фискального регистратора</Description>
+				<Type>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>2</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="07d9142a-81ac-4237-87f9-efd50a9126df">
+				<Name>ПарольАдминистратораФискальногоРегистратора</Name>
+				<Code>0000100006</Code>
+				<Description>Пароль администратора фискального регистратора</Description>
+				<Type>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>6</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="623c0ac1-6ebe-44af-ab7e-882d8765b2ef">
+				<Name>ПарольКассираФискальногоРегистратора</Name>
+				<Code>0000001006</Code>
+				<Description>Пароль кассира фискального регистратора</Description>
+				<Type>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>6</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

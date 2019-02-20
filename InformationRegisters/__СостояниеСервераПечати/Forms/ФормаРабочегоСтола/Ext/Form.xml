@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСеансыВебСервиса" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сеансы web-сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаСеансыВебСервисаРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<Table name="СеансыВебСервиса" id="1">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>СеансыВебСервиса</DataPath>
+					<RowPictureDataPath>СеансыВебСервиса.DefaultPicture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Create</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СеансыВебСервисаКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="СеансыВебСервисаКоманднаяПанель" id="3">
+						<ChildItems>
+							<ButtonGroup name="ГруппаПодробныйРежим" id="44">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Разделитель</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Роздільник</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ГруппаПодробныйРежимРасширеннаяПодсказка" id="60"/>
+								<ChildItems>
+									<Button name="СеансыВебСервисаПодробныйРежим" id="45">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СеансыВебСервисаПодробныйРежим</CommandName>
+										<ExtendedTooltip name="СеансыВебСервисаПодробныйРежимРасширеннаяПодсказка" id="61"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<Button name="СеансыВебСервисаНастройка" id="46">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Command.СеансыВебСервисаНастройка</CommandName>
+								<ExtendedTooltip name="СеансыВебСервисаНастройкаРасширеннаяПодсказка" id="62"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СеансыВебСервисаРасширеннаяПодсказка" id="63"/>
+					<SearchStringAddition name="СеансыВебСервисаСтрокаПоиска" id="64">
+						<AdditionSource>
+							<Item>СеансыВебСервиса</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СеансыВебСервисаСтрокаПоискаКонтекстноеМеню" id="65"/>
+						<ExtendedTooltip name="СеансыВебСервисаСтрокаПоискаРасширеннаяПодсказка" id="66"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СеансыВебСервисаСостояниеПросмотра" id="67">
+						<AdditionSource>
+							<Item>СеансыВебСервиса</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СеансыВебСервисаСостояниеПросмотраКонтекстноеМеню" id="68"/>
+						<ExtendedTooltip name="СеансыВебСервисаСостояниеПросмотраРасширеннаяПодсказка" id="69"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СеансыВебСервисаУправлениеПоиском" id="70">
+						<AdditionSource>
+							<Item>СеансыВебСервиса</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СеансыВебСервисаУправлениеПоискомКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="СеансыВебСервисаУправлениеПоискомРасширеннаяПодсказка" id="72"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="СеансыВебСервисаПользователь" id="4">
+							<DataPath>СеансыВебСервиса.Пользователь</DataPath>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.User</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<ContextMenu name="СеансыВебСервисаПользовательКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="СеансыВебСервисаПользовательРасширеннаяПодсказка" id="73"/>
+						</LabelField>
+						<LabelField name="СеансыВебСервисаГруппаПользователей" id="6">
+							<DataPath>СеансыВебСервиса.ГруппаПользователей</DataPath>
+							<ContextMenu name="СеансыВебСервисаГруппаПользователейКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="СеансыВебСервисаГруппаПользователейРасширеннаяПодсказка" id="74"/>
+						</LabelField>
+						<LabelField name="СеансыВебСервисаРежимРаботы" id="8">
+							<DataPath>СеансыВебСервиса.РежимРаботы</DataPath>
+							<ContextMenu name="СеансыВебСервисаРежимРаботыКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="СеансыВебСервисаРежимРаботыРасширеннаяПодсказка" id="75"/>
+						</LabelField>
+						<LabelField name="СеансыВебСервисаКомпьютер" id="10">
+							<DataPath>СеансыВебСервиса.Компьютер</DataPath>
+							<ContextMenu name="СеансыВебСервисаКомпьютерКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СеансыВебСервисаКомпьютерРасширеннаяПодсказка" id="76"/>
+						</LabelField>
+						<LabelField name="СеансыВебСервисаИдентификатор" id="16">
+							<DataPath>СеансыВебСервиса.Идентификатор</DataPath>
+							<ContextMenu name="СеансыВебСервисаИдентификаторКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="СеансыВебСервисаИдентификаторРасширеннаяПодсказка" id="77"/>
+						</LabelField>
+						<ColumnGroup name="СеансыВебСервисаГруппаВосстановление" id="58">
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Восстановление</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відновлення</v8:content>
+								</v8:item>
+							</Title>
+							<ShowInHeader>true</ShowInHeader>
+							<ExtendedTooltip name="СеансыВебСервисаГруппаВосстановлениеРасширеннаяПодсказка" id="78"/>
+							<ChildItems>
+								<CheckBoxField name="СеансыВебСервисаВосстановление" id="56">
+									<DataPath>СеансыВебСервиса.Восстановление</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СеансыВебСервисаВосстановлениеКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="СеансыВебСервисаВосстановлениеРасширеннаяПодсказка" id="79"/>
+								</CheckBoxField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="СеансыВебСервисаПериод" id="18">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Період</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<ExtendedTooltip name="СеансыВебСервисаПериодРасширеннаяПодсказка" id="80"/>
+							<ChildItems>
+								<LabelField name="СеансыВебСервисаДатаНачалаПериода" id="12">
+									<DataPath>СеансыВебСервиса.ДатаНачалаПериода</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<ContextMenu name="СеансыВебСервисаДатаНачалаПериодаКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="СеансыВебСервисаДатаНачалаПериодаРасширеннаяПодсказка" id="81"/>
+								</LabelField>
+								<LabelField name="СеансыВебСервисаДатаОкончанияПериода" id="14">
+									<DataPath>СеансыВебСервиса.ДатаОкончанияПериода</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<ContextMenu name="СеансыВебСервисаДатаОкончанияПериодаКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="СеансыВебСервисаДатаОкончанияПериодаРасширеннаяПодсказка" id="82"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗаданияСервераПечати" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задания печати</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаЗаданияСервераПечатиРасширеннаяПодсказка" id="83"/>
+			<ChildItems>
+				<Table name="ЗаданияСервераПечати" id="21">
+					<HeightInTableRows>5</HeightInTableRows>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ЗаданияСервераПечати</DataPath>
+					<RowPictureDataPath>ЗаданияСервераПечати.DefaultPicture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Create</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ЗаданияСервераПечатиКонтекстноеМеню" id="22"/>
+					<AutoCommandBar name="ЗаданияСервераПечатиКоманднаяПанель" id="23">
+						<ChildItems>
+							<ButtonGroup name="ЗаданияСервераПечатиГруппаПодробныйРежим" id="51">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Разделитель</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Роздільник</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ЗаданияСервераПечатиГруппаПодробныйРежимРасширеннаяПодсказка" id="84"/>
+								<ChildItems>
+									<Button name="ЗаданияСервераПечатиПодробныйРежим" id="52">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаданияСервераПечатиПодробныйРежим</CommandName>
+										<ExtendedTooltip name="ЗаданияСервераПечатиПодробныйРежимРасширеннаяПодсказка" id="85"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="ЗаданияСервераПечатиГруппаВыполнить" id="53">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Разделитель</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Роздільник</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ЗаданияСервераПечатиГруппаВыполнитьРасширеннаяПодсказка" id="86"/>
+								<ChildItems>
+									<Button name="ЗаданияСервераПечатиВыполнитьЗадания" id="48">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ЗаданияСервераПечатиВыполнитьЗадания</CommandName>
+										<ExtendedTooltip name="ЗаданияСервераПечатиВыполнитьЗаданияРасширеннаяПодсказка" id="87"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<Button name="ЗаданияСервераПечатиИнформация" id="49">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗаданияСервераПечатиИнформация</CommandName>
+								<ExtendedTooltip name="ЗаданияСервераПечатиИнформацияРасширеннаяПодсказка" id="88"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ЗаданияСервераПечатиРасширеннаяПодсказка" id="89"/>
+					<SearchStringAddition name="ЗаданияСервераПечатиСтрокаПоиска" id="90">
+						<AdditionSource>
+							<Item>ЗаданияСервераПечати</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЗаданияСервераПечатиСтрокаПоискаКонтекстноеМеню" id="91"/>
+						<ExtendedTooltip name="ЗаданияСервераПечатиСтрокаПоискаРасширеннаяПодсказка" id="92"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЗаданияСервераПечатиСостояниеПросмотра" id="93">
+						<AdditionSource>
+							<Item>ЗаданияСервераПечати</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЗаданияСервераПечатиСостояниеПросмотраКонтекстноеМеню" id="94"/>
+						<ExtendedTooltip name="ЗаданияСервераПечатиСостояниеПросмотраРасширеннаяПодсказка" id="95"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЗаданияСервераПечатиУправлениеПоиском" id="96">
+						<AdditionSource>
+							<Item>ЗаданияСервераПечати</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЗаданияСервераПечатиУправлениеПоискомКонтекстноеМеню" id="97"/>
+						<ExtendedTooltip name="ЗаданияСервераПечатиУправлениеПоискомРасширеннаяПодсказка" id="98"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ЗаданияСервераПечатиПользователь" id="26">
+							<DataPath>ЗаданияСервераПечати.Пользователь</DataPath>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.User</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<ContextMenu name="ЗаданияСервераПечатиПользовательКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ЗаданияСервераПечатиПользовательРасширеннаяПодсказка" id="99"/>
+						</LabelField>
+						<LabelField name="ЗаданияСервераПечатиГруппаПользователей" id="28">
+							<DataPath>ЗаданияСервераПечати.ГруппаПользователей</DataPath>
+							<ContextMenu name="ЗаданияСервераПечатиГруппаПользователейКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ЗаданияСервераПечатиГруппаПользователейРасширеннаяПодсказка" id="100"/>
+						</LabelField>
+						<LabelField name="ЗаданияСервераПечатиРежимРаботы" id="30">
+							<DataPath>ЗаданияСервераПечати.РежимРаботы</DataPath>
+							<ContextMenu name="ЗаданияСервераПечатиРежимРаботыКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ЗаданияСервераПечатиРежимРаботыРасширеннаяПодсказка" id="101"/>
+						</LabelField>
+						<LabelField name="ЗаданияСервераПечатиКомпьютер" id="24">
+							<DataPath>ЗаданияСервераПечати.Компьютер</DataPath>
+							<ContextMenu name="ЗаданияСервераПечатиКомпьютерКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ЗаданияСервераПечатиКомпьютерРасширеннаяПодсказка" id="102"/>
+						</LabelField>
+						<LabelField name="ЗаданияСервераПечатиДокумент" id="54">
+							<DataPath>ЗаданияСервераПечати.Документ</DataPath>
+							<Width>32</Width>
+							<ContextMenu name="ЗаданияСервераПечатиДокументКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ЗаданияСервераПечатиДокументРасширеннаяПодсказка" id="103"/>
+						</LabelField>
+						<LabelField name="ЗаданияСервераПечатиВид" id="34">
+							<DataPath>ЗаданияСервераПечати.Вид</DataPath>
+							<Width>16</Width>
+							<ContextMenu name="ЗаданияСервераПечатиВидКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ЗаданияСервераПечатиВидРасширеннаяПодсказка" id="104"/>
+						</LabelField>
+						<CheckBoxField name="ЗаданияСервераПечатиРаспечатан" id="32">
+							<DataPath>ЗаданияСервераПечати.Распечатан</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.Print</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗаданияСервераПечатиРаспечатанКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ЗаданияСервераПечатиРаспечатанРасширеннаяПодсказка" id="105"/>
+						</CheckBoxField>
+						<LabelField name="ЗаданияСервераПечатиИмяПринтера" id="36">
+							<DataPath>ЗаданияСервераПечати.ИмяПринтера</DataPath>
+							<Width>32</Width>
+							<ContextMenu name="ЗаданияСервераПечатиИмяПринтераКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ЗаданияСервераПечатиИмяПринтераРасширеннаяПодсказка" id="106"/>
+						</LabelField>
+						<ColumnGroup name="ЗаданияСервераПечатиПериод" id="42">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Період</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<ExtendedTooltip name="ЗаданияСервераПечатиПериодРасширеннаяПодсказка" id="107"/>
+							<ChildItems>
+								<LabelField name="ЗаданияСервераПечатиДатаНачалаПериода" id="38">
+									<DataPath>ЗаданияСервераПечати.ДатаНачалаПериода</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<ContextMenu name="ЗаданияСервераПечатиДатаНачалаПериодаКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ЗаданияСервераПечатиДатаНачалаПериодаРасширеннаяПодсказка" id="108"/>
+								</LabelField>
+								<LabelField name="ЗаданияСервераПечатиДатаОкончанияПериода" id="40">
+									<DataPath>ЗаданияСервераПечати.ДатаОкончанияПериода</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<ContextMenu name="ЗаданияСервераПечатиДатаОкончанияПериодаКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ЗаданияСервераПечатиДатаОкончанияПериодаРасширеннаяПодсказка" id="109"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СеансыВебСервиса" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сеансы web-сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СеансыВебСервиса.ДатаОкончанияПериода</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.__СостояниеСеансовВебСервиса</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаНачалаПериода</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЗаданияСервераПечати" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задания сервера печати</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ЗаданияСервераПечати.Распечатан</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.__СостояниеЗаданийСервераПечати</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаНачалаПериода</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ГраницаНеактивностиСеансов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Граница неактивности сеансов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СеансыВебСервисаПодробныйРежим" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сеансы веб сервиса подробный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Докладний режим</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>СеансыВебСервисаПодробныйРежим</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗаданияСервераПечатиПодробныйРежим" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Докладний режим</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ЗаданияСервераПечатиПодробныйРежим</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СерверПечатиИнтервалПечатиЗаданий" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер печати интервал печати заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СерверПечатиПриостановленность" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер печати приостановленность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СерверПечатиНеобходимостьПерезапуска" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер печати приостановлен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СеансыВебСервиса</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СеансыВебСервиса.ДатаОкончанияПериода</dcsset:left>
+						<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ГраницаНеактивностиСеансов</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:BorderColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСервераПечати</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЗаданияСервераПечати.Распечатан</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:BorderColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СеансыВебСервисаГруппаПользователей</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СеансыВебСервисаРежимРаботы</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СеансыВебСервисаКомпьютер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>СеансыВебСервисаИдентификатор</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СеансыВебСервисаПодробныйРежим</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСервераПечатиГруппаПользователей</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСервераПечатиРежимРаботы</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСервераПечатиКомпьютер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСервераПечатиДокумент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ЗаданияСервераПечатиИмяПринтера</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЗаданияСервераПечатиПодробныйРежим</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="СеансыВебСервисаПодробныйРежим" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Докладний режим</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сеансы веб сервиса подробный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Докладний режим</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодробныйРежим</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СеансыВебСервисаПодробныйРежим</Action>
+		</Command>
+		<Command name="СеансыВебСервисаНастройка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сеансы веб сервиса настройка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.__Настройки</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="13" y="1"/>
+			</Picture>
+			<Action>СеансыВебСервисаНастройка</Action>
+		</Command>
+		<Command name="ЗаданияСервераПечатиВыполнитьЗадания" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаданияСервераПечатиВыполнитьЗадания</Action>
+		</Command>
+		<Command name="ЗаданияСервераПечатиИнформация" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.__Информация</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаданияСервераПечатиИнформация</Action>
+		</Command>
+		<Command name="ЗаданияСервераПечатиПодробныйРежим" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Докладний режим</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Докладний режим</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодробныйРежим</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаданияСервераПечатиПодробныйРежим</Action>
+		</Command>
+	</Commands>
+</Form>

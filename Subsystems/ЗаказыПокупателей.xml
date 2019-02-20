@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Subsystem uuid="eecabc77-635f-4b3f-a8f7-7cbc92c850ed">
+		<Properties>
+			<Name>ЗаказыПокупателей</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Резерви</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПокупателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостояниеЗаказовПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделительКоманд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьАвтокорректировкуНаименованийКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьАвтокорректировкуНаименованийКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Столы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеКонтрагентамиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеДокументамиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеКонтактнойИнформациейПовторно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ШаблоныТелефонныхНомеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__УправлениеДаннымиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__УправлениеДаннымиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УпрощенныйПериод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture._ПерейтиВперед</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture._ПерейтиНазад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипыСтолов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СхемыСтолов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостояниеЗаказовПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПустаяКартинка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПричиныОтказов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЖурналЗаказовПокупателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СостояниеДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДействияЖурналаЗаказовПокупателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостояниеСтолов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДвунаправленнаяСортировка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НаправлениеСортировкиСпискаПоВозрастанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НаправлениеСортировкиСпискаПоУбыванию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗаказПокупателяРаспечатан</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтилиСхемСтолов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Рестораны</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УпрощеннаяДата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УпрощенныеДатаПериодКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостояниеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ОбщегоНазначенияПовторно</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>Reread</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="ЗаписатьИЗакрыть" id="22">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>OK</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>OK</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ЗаписатьИЗакрытьРасширеннаяПодсказка" id="32"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="23">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Відміна</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="33"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="Состояние" id="1">
+			<DataPath>Запись.Состояние</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ContextMenu name="СостояниеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="34"/>
+		</LabelField>
+		<UsualGroup name="ГруппаСхема" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Схема</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Схема</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаСхемаРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="СхемаЦветТекста" id="30">
+					<DataPath>СхемаЦветТекста</DataPath>
+					<Enabled>false</Enabled>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СхемаЦветТекстаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СхемаЦветТекстаРасширеннаяПодсказка" id="36"/>
+					<Events>
+						<Event name="OnChange">ПриИзменении</Event>
+						<Event name="Clearing">СхемаЦветТекстаОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="СхемаЦветФона" id="11">
+					<DataPath>СхемаЦветФона</DataPath>
+					<Enabled>false</Enabled>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СхемаЦветФонаКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="СхемаЦветФонаРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ПриИзменении</Event>
+						<Event name="Clearing">СхемаЦветФонаОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="СхемаЦветРамки" id="4">
+					<DataPath>СхемаЦветРамки</DataPath>
+					<Enabled>false</Enabled>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СхемаЦветРамкиКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="СхемаЦветРамкиРасширеннаяПодсказка" id="38"/>
+					<Events>
+						<Event name="OnChange">ПриИзменении</Event>
+						<Event name="Clearing">СхемаЦветРамкиОчистка</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="СхемаВерхнийОтступ" id="13">
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отступ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відступ</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="СхемаВерхнийОтступКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="СхемаВерхнийОтступРасширеннаяПодсказка" id="39"/>
+				</PictureDecoration>
+				<InputField name="СхемаПример" id="9">
+					<DataPath>Пример</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<Height>2</Height>
+					<VerticalStretch>false</VerticalStretch>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="СхемаПримерКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="СхемаПримерРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="OnChange">ПримерПриИзменении</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="СхемаНижнийОтступ" id="15">
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отступ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відступ</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="СхемаНижнийОтступКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="СхемаНижнийОтступРасширеннаяПодсказка" id="41"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСписок" id="17">
+			<Enabled>false</Enabled>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Журнал</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<InputField name="СписокЦветТекста" id="18">
+					<DataPath>СписокЦветТекста</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокЦветТекстаКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СписокЦветТекстаРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">ПриИзменении</Event>
+						<Event name="Clearing">СписокЦветТекстаОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="СписокЦветФона" id="20">
+					<DataPath>СписокЦветФона</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СписокЦветФонаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокЦветФонаРасширеннаяПодсказка" id="44"/>
+					<Events>
+						<Event name="OnChange">ПриИзменении</Event>
+						<Event name="Clearing">СписокЦветФонаОчистка</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="СписокВерхнийОтступ" id="24">
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отступ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відступ</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="СписокВерхнийОтступКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="СписокВерхнийОтступРасширеннаяПодсказка" id="45"/>
+				</PictureDecoration>
+				<InputField name="СписокПример" id="26">
+					<DataPath>Пример</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<Height>2</Height>
+					<VerticalStretch>false</VerticalStretch>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="СписокПримерКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокПримерРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="OnChange">ПримерПриИзменении</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="СписокНижнийОтступ" id="28">
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отступ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відступ</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="СписокНижнийОтступКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СписокНижнийОтступРасширеннаяПодсказка" id="47"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.СтилиСхемСтолов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СхемаЦветРамки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет рамки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Колір рамки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СхемаЦветФона" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет фона</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Колір фону</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Пример" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пример</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЦветФона" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет фона</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Колір фону</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЦветТекста" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет текста</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Колір тексту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СхемаЦветТекста" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет текста</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Колір тексту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

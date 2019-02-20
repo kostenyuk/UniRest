@@ -1,0 +1,1394 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименованиеКод" id="70">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование и код</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Найменування і код</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеКодРасширеннаяПодсказка" id="103"/>
+			<ChildItems>
+				<InputField name="Наименование" id="71">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>32</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="104"/>
+					<Events>
+						<Event name="OnChange">НаименованиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Код" id="73">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="105"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="НаименованиеПолное" id="4">
+			<DataPath>Объект.НаименованиеПолное</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Wrap>false</Wrap>
+			<ChoiceListButton>true</ChoiceListButton>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="106"/>
+			<Events>
+				<Event name="OnChange">НаименованиеПолноеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Pages name="Странницы" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры прописи валюты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Параметри пропису валюти</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтранницыРасширеннаяПодсказка" id="107"/>
+			<ChildItems>
+				<Page name="ГруппаСуммаПрописьюНаУкраинском" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Украинский</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Український</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сумма прописью на украинском</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСуммаПрописьюНаУкраинскомРасширеннаяПодсказка" id="108"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПрописанийЦелойЧастиНаУкраинском" id="76">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Целая часть</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ціла частина</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа прописаний целой части на украинском</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры прописи целой части для русского языка</v8:content>
+								</v8:item>
+							</Format>
+							<ExtendedTooltip name="ГруппаПрописанийЦелойЧастиНаУкраинскомРасширеннаяПодсказка" id="109"/>
+							<ChildItems>
+								<InputField name="ПолеПрописи4наУкраинском" id="77">
+									<DataPath>ПолеПрописи4наУкраинском</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Род</v8:content>
+										</v8:item>
+									</Title>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Мужской</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Чоловічий</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Мужской</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Женский</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Жіночий</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Женский</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Средний</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Середній</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Средний</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ПолеПрописи4наУкраинскомКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ПолеПрописи4наУкраинскомРасширеннаяПодсказка" id="110"/>
+									<Events>
+										<Event name="OnChange">ПолеПрописи4наРусскомПриИзменении</Event>
+										<Event name="AutoComplete">ПолеПрописи4наРусскомАвтоПодбор</Event>
+										<Event name="Clearing">ПолеПрописиОчистка</Event>
+										<Event name="TextEditEnd">ПолеПрописи4наРусскомОкончаниеВводаТекста</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПолеПрописи1наУкраинском" id="79">
+									<DataPath>ПолеПрописи1наУкраинском</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>один</v8:content>
+										</v8:item>
+									</Title>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>10</Width>
+									<Wrap>false</Wrap>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ПолеПрописи1наУкраинскомКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ПолеПрописи1наУкраинскомРасширеннаяПодсказка" id="111"/>
+									<Events>
+										<Event name="OnChange">ПолеПрописи1наРусскомПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПолеПрописи2наУкраинском" id="81">
+									<DataPath>ПолеПрописи2наУкраинском</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>два</v8:content>
+										</v8:item>
+									</Title>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>10</Width>
+									<Wrap>false</Wrap>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ПолеПрописи2наУкраинскомКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ПолеПрописи2наУкраинскомРасширеннаяПодсказка" id="112"/>
+									<Events>
+										<Event name="OnChange">ПолеПрописи2наРусскомПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПолеПрописи3наУкраинском" id="83">
+									<DataPath>ПолеПрописи3наУкраинском</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>пять</v8:content>
+										</v8:item>
+									</Title>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>10</Width>
+									<Wrap>false</Wrap>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ПолеПрописи3наУкраинскомКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ПолеПрописи3наУкраинскомРасширеннаяПодсказка" id="113"/>
+									<Events>
+										<Event name="OnChange">ПолеПрописи3наРусскомПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПараметрыДробнойЧастиНаУкраинском" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дробная часть</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дрібна частина</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаПараметрыДробнойЧастиНаУкраинскомРасширеннаяПодсказка" id="114"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПрописанийДробнойЧаНаУкраинском" id="86">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дробная часть</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дрібна частина</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры прописи дробной части для русского языка</v8:content>
+										</v8:item>
+									</Format>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПрописанийДробнойЧаНаУкраинскомРасширеннаяПодсказка" id="115"/>
+									<ChildItems>
+										<InputField name="ПолеПрописи8наУкраинском" id="87">
+											<DataPath>ПолеПрописи8наУкраинском</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Род</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>10</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Wrap>false</Wrap>
+											<ListChoiceMode>true</ListChoiceMode>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Мужской</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Чоловічий</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Мужской</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Женский</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Жіночий</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Женский</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Средний</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Середній</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Средний</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ПолеПрописи8наУкраинскомКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="ПолеПрописи8наУкраинскомРасширеннаяПодсказка" id="116"/>
+											<Events>
+												<Event name="OnChange">ПолеПрописи8наРусскомПриИзменении</Event>
+												<Event name="AutoComplete">ПолеПрописи8наРусскомАвтоПодбор</Event>
+												<Event name="Clearing">ПолеПрописиОчистка</Event>
+												<Event name="TextEditEnd">ПолеПрописи8наРусскомОкончаниеВводаТекста</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПолеПрописи5наУкраинском" id="89">
+											<DataPath>ПолеПрописи5наУкраинском</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>один</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>10</Width>
+											<Wrap>false</Wrap>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ПолеПрописи5наУкраинскомКонтекстноеМеню" id="90"/>
+											<ExtendedTooltip name="ПолеПрописи5наУкраинскомРасширеннаяПодсказка" id="117"/>
+											<Events>
+												<Event name="OnChange">ПолеПрописи5наРусскомПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПолеПрописи6наУкраинском" id="91">
+											<DataPath>ПолеПрописи6наУкраинском</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>два</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>10</Width>
+											<Wrap>false</Wrap>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ПолеПрописи6наУкраинскомКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="ПолеПрописи6наУкраинскомРасширеннаяПодсказка" id="118"/>
+											<Events>
+												<Event name="OnChange">ПолеПрописи6наРусскомПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПолеПрописи7наУкраинском" id="93">
+											<DataPath>ПолеПрописи7наУкраинском</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>пять</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>10</Width>
+											<Wrap>false</Wrap>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ПолеПрописи7наУкраинскомКонтекстноеМеню" id="94"/>
+											<ExtendedTooltip name="ПолеПрописи7наУкраинскомРасширеннаяПодсказка" id="119"/>
+											<Events>
+												<Event name="OnChange">ПолеПрописи7наРусскомПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЧислоРазрядовДробнойЧастиНаУкраинском" id="95">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество разрядов при выводе дробной части в виде числа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Кількість розрядів при виведенні дробової частини у вигляді числа</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЧислоРазрядовДробнойЧастиНаУкраинскомРасширеннаяПодсказка" id="120"/>
+									<ChildItems>
+										<InputField name="ДлинаДробнойЧастиНаУкраинском" id="96">
+											<DataPath>ДлинаДробнойЧасти</DataPath>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>15</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Wrap>false</Wrap>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<TypeDomainEnabled>false</TypeDomainEnabled>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>2 знака</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>2 знака</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">2</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>1 знак</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>1 знак</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>3 знака</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>3 знака</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">3</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ДлинаДробнойЧастиНаУкраинскомКонтекстноеМеню" id="97"/>
+											<ExtendedTooltip name="ДлинаДробнойЧастиНаУкраинскомРасширеннаяПодсказка" id="121"/>
+											<Events>
+												<Event name="OnChange">ДлинаДробнойЧастиПриИзменении</Event>
+												<Event name="AutoComplete">ДлинаДробнойЧастиАвтоПодбор</Event>
+												<Event name="Clearing">ПолеПрописиОчистка</Event>
+												<Event name="TextEditEnd">ДлинаДробнойЧастиОкончаниеВводаТекста</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПримерПрописиНаУкраинском" id="98">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пример</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Приклад</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ГруппаПримерПрописиНаУкраинскомРасширеннаяПодсказка" id="122"/>
+									<ChildItems>
+										<InputField name="СуммаЧислоНаУкраинском" id="99">
+											<DataPath>СуммаЧисло</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сумма</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="СуммаЧислоНаУкраинскомКонтекстноеМеню" id="100"/>
+											<ExtendedTooltip name="СуммаЧислоНаУкраинскомРасширеннаяПодсказка" id="123"/>
+											<Events>
+												<Event name="OnChange">СуммаЧислоПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelField name="СуммаПрописьюНаУкраинском" id="101">
+											<DataPath>СуммаПрописьюНаУкраинском</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TextColor>style:FieldSelectionBackColor</TextColor>
+											<ContextMenu name="СуммаПрописьюНаУкраинскомКонтекстноеМеню" id="102"/>
+											<ExtendedTooltip name="СуммаПрописьюНаУкраинскомРасширеннаяПодсказка" id="124"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСуммаПрописьюНаРусском" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Русский</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Російський</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСуммаПрописьюНаРусскомРасширеннаяПодсказка" id="125"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПрописанийЦелойЧастиНаРусском" id="9">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Целая часть</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ціла частина</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры прописи целой части для русского языка</v8:content>
+								</v8:item>
+							</Format>
+							<ExtendedTooltip name="ГруппаПрописанийЦелойЧастиНаРусскомРасширеннаяПодсказка" id="126"/>
+							<ChildItems>
+								<InputField name="ПолеПрописи4наРусском" id="13">
+									<DataPath>ПолеПрописи4наРусском</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Род</v8:content>
+										</v8:item>
+									</Title>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Мужской</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Чоловічий</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Мужской</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Женский</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Жіночий</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Женский</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Средний</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Середній</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Средний</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ПолеПрописи4наРусскомКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ПолеПрописи4наРусскомРасширеннаяПодсказка" id="127"/>
+									<Events>
+										<Event name="OnChange">ПолеПрописи4наРусскомПриИзменении</Event>
+										<Event name="AutoComplete">ПолеПрописи4наРусскомАвтоПодбор</Event>
+										<Event name="Clearing">ПолеПрописиОчистка</Event>
+										<Event name="TextEditEnd">ПолеПрописи4наРусскомОкончаниеВводаТекста</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПолеПрописи1наРусском" id="10">
+									<DataPath>ПолеПрописи1наРусском</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>один</v8:content>
+										</v8:item>
+									</Title>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>10</Width>
+									<Wrap>false</Wrap>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ПолеПрописи1наРусскомКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ПолеПрописи1наРусскомРасширеннаяПодсказка" id="128"/>
+									<Events>
+										<Event name="OnChange">ПолеПрописи1наРусскомПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПолеПрописи2наРусском" id="11">
+									<DataPath>ПолеПрописи2наРусском</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>два</v8:content>
+										</v8:item>
+									</Title>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>10</Width>
+									<Wrap>false</Wrap>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ПолеПрописи2наРусскомКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ПолеПрописи2наРусскомРасширеннаяПодсказка" id="129"/>
+									<Events>
+										<Event name="OnChange">ПолеПрописи2наРусскомПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПолеПрописи3наРусском" id="12">
+									<DataPath>ПолеПрописи3наРусском</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>пять</v8:content>
+										</v8:item>
+									</Title>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>10</Width>
+									<Wrap>false</Wrap>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ПолеПрописи3наРусскомКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ПолеПрописи3наРусскомРасширеннаяПодсказка" id="130"/>
+									<Events>
+										<Event name="OnChange">ПолеПрописи3наРусскомПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПараметрыДробнойЧастиНаРусском" id="55">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дробная часть</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дрібна частина</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаПараметрыДробнойЧастиНаРусскомРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПрописанийДробнойЧаНаРусскомсти" id="14">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дробная часть</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дрібна частина</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры прописи дробной части для русского языка</v8:content>
+										</v8:item>
+									</Format>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПрописанийДробнойЧаНаРусскомстиРасширеннаяПодсказка" id="132"/>
+									<ChildItems>
+										<InputField name="ПолеПрописи8наРусском" id="18">
+											<DataPath>ПолеПрописи8наРусском</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Род</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>10</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Wrap>false</Wrap>
+											<ListChoiceMode>true</ListChoiceMode>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Мужской</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Чоловічий</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Мужской</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Женский</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Жіночий</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Женский</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Средний</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Середній</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Средний</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ПолеПрописи8наРусскомКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ПолеПрописи8наРусскомРасширеннаяПодсказка" id="133"/>
+											<Events>
+												<Event name="OnChange">ПолеПрописи8наРусскомПриИзменении</Event>
+												<Event name="AutoComplete">ПолеПрописи8наРусскомАвтоПодбор</Event>
+												<Event name="Clearing">ПолеПрописиОчистка</Event>
+												<Event name="TextEditEnd">ПолеПрописи8наРусскомОкончаниеВводаТекста</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПолеПрописи5наРусском" id="17">
+											<DataPath>ПолеПрописи5наРусском</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>один</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>10</Width>
+											<Wrap>false</Wrap>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ПолеПрописи5наРусскомКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="ПолеПрописи5наРусскомРасширеннаяПодсказка" id="134"/>
+											<Events>
+												<Event name="OnChange">ПолеПрописи5наРусскомПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПолеПрописи6наРусском" id="16">
+											<DataPath>ПолеПрописи6наРусском</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>два</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>10</Width>
+											<Wrap>false</Wrap>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ПолеПрописи6наРусскомКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ПолеПрописи6наРусскомРасширеннаяПодсказка" id="135"/>
+											<Events>
+												<Event name="OnChange">ПолеПрописи6наРусскомПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПолеПрописи7наРусском" id="15">
+											<DataPath>ПолеПрописи7наРусском</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>пять</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>10</Width>
+											<Wrap>false</Wrap>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ПолеПрописи7наРусскомКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="ПолеПрописи7наРусскомРасширеннаяПодсказка" id="136"/>
+											<Events>
+												<Event name="OnChange">ПолеПрописи7наРусскомПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЧислоРазрядовДробнойЧастиНаРусском" id="56">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество разрядов при выводе дробной части в виде числа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Кількість розрядів при виведенні дробової частини у вигляді числа</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЧислоРазрядовДробнойЧастиНаРусскомРасширеннаяПодсказка" id="137"/>
+									<ChildItems>
+										<InputField name="ДлинаДробнойЧастиНаРусском" id="20">
+											<DataPath>ДлинаДробнойЧасти</DataPath>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Width>15</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Wrap>false</Wrap>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<TypeDomainEnabled>false</TypeDomainEnabled>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>2 знака</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>2 знака</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">2</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>1 знак</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>1 знак</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>3 знака</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>3 знака</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">3</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="ДлинаДробнойЧастиНаРусскомКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="ДлинаДробнойЧастиНаРусскомРасширеннаяПодсказка" id="138"/>
+											<Events>
+												<Event name="OnChange">ДлинаДробнойЧастиПриИзменении</Event>
+												<Event name="AutoComplete">ДлинаДробнойЧастиАвтоПодбор</Event>
+												<Event name="Clearing">ПолеПрописиОчистка</Event>
+												<Event name="TextEditEnd">ДлинаДробнойЧастиОкончаниеВводаТекста</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПримерПрописиНаРусском" id="61">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пример</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Приклад</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ГруппаПримерПрописиНаРусскомРасширеннаяПодсказка" id="139"/>
+									<ChildItems>
+										<InputField name="СуммаЧислоНаРусском" id="59">
+											<DataPath>СуммаЧисло</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сумма</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="СуммаЧислоНаРусскомКонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="СуммаЧислоНаРусскомРасширеннаяПодсказка" id="140"/>
+											<Events>
+												<Event name="OnChange">СуммаЧислоПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelField name="СуммаПрописьюНаРусском" id="62">
+											<DataPath>СуммаПрописьюНаРусском</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TextColor>style:FieldSelectionBackColor</TextColor>
+											<ContextMenu name="СуммаПрописьюНаРусскомКонтекстноеМеню" id="63"/>
+											<ExtendedTooltip name="СуммаПрописьюНаРусскомРасширеннаяПодсказка" id="141"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Валюты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи1наРусском" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи1на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи2наРусском" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи2на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи3наРусском" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи3на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи4наРусском" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи4на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи5наРусском" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи5на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи6наРусском" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи6на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи7наРусском" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи7на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи8наРусском" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи8на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДлинаДробнойЧасти" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество разрядов при выводе дробной части в виде числа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість розрядів при виведенні дробової частини у вигляді числа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЗависимыйКурсВалют" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Курс валюты зависит от курса другой валюты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СуммаЧисло" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сума</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаПрописьюНаРусском" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прописью</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Прописом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеПрописи1наУкраинском" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи1на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи2наУкраинском" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи2на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи3наУкраинском" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи3на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи4наУкраинском" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи4на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи5наУкраинском" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи5на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи6наУкраинском" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи6на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи7наУкраинском" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи7на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолеПрописи8наУкраинском" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле прописи8на русском</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СуммаПрописьюНаУкраинском" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прописью</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Прописом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФормироватьПолноеНаименованиеАвтоматически" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формировать полное наименование автоматически</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Формувати повне найменування автоматично</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСохранитьЗначения" id="15">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.StandardCommand.SaveValues</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьЗначенияРасширеннаяПодсказка" id="34"/>
+			</Button>
+			<Button name="ФормаВосстановитьЗначения" id="16">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+				<ExtendedTooltip name="ФормаВосстановитьЗначенияРасширеннаяПодсказка" id="35"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа" id="30">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВыбораДокументов" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор документов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выбора документов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
+					<ExtendedTooltip name="ГруппаВыбораДокументовРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<InputField name="ДатаНачала" id="28">
+							<DataPath>Объект.ДатаНачала</DataPath>
+							<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="ДатаКонец" id="26">
+							<DataPath>Объект.ДатаКонец</DataPath>
+							<ContextMenu name="ДатаКонецКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ДатаКонецРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<Button name="УстановитьИнтервал" id="31">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ОткрытьПериод</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить интервал</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="УстановитьИнтервалРасширеннаяПодсказка" id="40"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОснова" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры файла</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаОсноваРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<InputField name="ПолноеИмяФайла1" id="21">
+							<DataPath>Объект.ПолноеИмяФайла1</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ПолноеИмяФайла1КонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ПолноеИмяФайла1РасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="ПолноеИмяФайла" id="9">
+							<DataPath>Объект.ПолноеИмяФайла2</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ПолноеИмяФайлаКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ПолноеИмяФайлаРасширеннаяПодсказка" id="43"/>
+						</InputField>
+						<InputField name="СписокКодировка" id="13">
+							<DataPath>Объект.Кодировка</DataPath>
+							<ChoiceButton>false</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<SpinButton>false</SpinButton>
+							<OpenButton>false</OpenButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="СписокКодировкаКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="СписокКодировкаРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<UsualGroup name="ГруппаИмяФайла" id="23">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа имя файла</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа имя файла</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИмяФайлаРасширеннаяПодсказка" id="45"/>
+							<ChildItems>
+								<InputField name="УстановкаИмениФайла" id="24">
+									<DataPath>УстановкаИмениФайла</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для файла</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Файл 1</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Файл 1</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Файл 2</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Файл 2</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ChoiceListButton>true</ChoiceListButton>
+									<ContextMenu name="УстановкаИмениФайлаКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="УстановкаИмениФайлаРасширеннаяПодсказка" id="46"/>
+									<Events>
+										<Event name="OnChange">УстановкаИмениФайлаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ИмяФайла" id="3">
+									<DataPath>Объект.ИмяФайла2</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ИмяФайла</v8:content>
+										</v8:item>
+									</Title>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="47"/>
+									<Events>
+										<Event name="TextEditEnd">ИмяФайлаОкончаниеВводаТекста</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ПутьКФайлу" id="1">
+							<DataPath>Объект.ПутьКФайлу</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="48"/>
+							<Events>
+								<Event name="OnChange">ПутьКФайлуПриИзменении</Event>
+								<Event name="StartChoice">ПутьКФайлуНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="КоманднаяПанель" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="КоманднаяПанельРасширеннаяПодсказка" id="49"/>
+			<ChildItems>
+				<Popup name="ПросмотрМеню" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр меню</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.Magnifier</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Representation>PictureAndText</Representation>
+					<ExtendedTooltip name="ПросмотрМенюРасширеннаяПодсказка" id="50"/>
+					<ChildItems>
+						<Button name="Просмотр" id="19">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.Просмотр1</CommandName>
+							<ExtendedTooltip name="ПросмотрРасширеннаяПодсказка" id="51"/>
+						</Button>
+						<Button name="Просмотр2" id="33">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.Просмотр2</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файл 2</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="Просмотр2РасширеннаяПодсказка" id="52"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+				<Button name="ФормаВыполнить" id="7">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.Выполнить</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ФормаВыполнитьРасширеннаяПодсказка" id="53"/>
+				</Button>
+				<Button name="ФормаОК" id="5">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<OnlyInAllActions>true</OnlyInAllActions>
+					<CommandName>Form.StandardCommand.Abort</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Stop</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ФормаОКРасширеннаяПодсказка" id="54"/>
+				</Button>
+				<Button name="ФормаЗакрыть" id="8">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="55"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбработкаВыгрузкаДисконтныхКарт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>Объект.ДатаКонец</Field>
+				<Field>Объект.ДатаНачала</Field>
+				<Field>Объект.ИмяФайла1</Field>
+				<Field>Объект.ИмяФайла2</Field>
+				<Field>Объект.Кодировка</Field>
+				<Field>Объект.ПолноеИмяФайла1</Field>
+				<Field>Объект.ПолноеИмяФайла2</Field>
+				<Field>Объект.ПутьКФайлу</Field>
+				<Field>Объект.Фильтр</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="УстановкаИмениФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установка имени файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОбработку</Action>
+		</Command>
+		<Command name="Просмотр1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл 1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Просмотр</Action>
+		</Command>
+		<Command name="ОткрытьПериод" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПериод</Action>
+		</Command>
+		<Command name="Просмотр2" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Просмотр2</Action>
+		</Command>
+	</Commands>
+</Form>

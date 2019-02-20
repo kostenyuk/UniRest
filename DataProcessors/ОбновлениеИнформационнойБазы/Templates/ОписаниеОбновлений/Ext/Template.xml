@@ -1,0 +1,5595 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+		<languageInfo>
+			<id>uk</id>
+			<code>Украинский</code>
+			<description>Украинский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>6</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>1</index>
+			<column>
+				<formatIndex>2</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<row>
+			<formatIndex>3</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>1</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 2.0.5</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нове у версії 2.0.5</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>2</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Звіти</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Отчет "Продажи". Добавлены новые варианты:
+- Сотрудники/Категории документов
+2. Отчет "Расход блюд".
+2.1. Для вариантов "Основной" и "Официанты" добавлены новые показатели:
+- количество клиентов
+- КЦП(коэффициент целевого потока)
+- Средний чек
+- Себестоимость
+2.2. Изменен расчет среднего чека.
+2.3. Изменен расчет показателей для варината "Официанты".
+2.4. Добавлен новый вариант "По месяцам".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Звіт "Продажі". Додано нові варіанти: 
+- Співробітники/Категорія документів 
+2. Звіт "Витрата страв". Для варіантів "Основний" і "Офіціанти" додано нові показники: 
+- Кількість клієнтів 
+- КЦП (коефіцієнт цільового потоку)
+- Середній чек
+- Собівартість</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>4</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерфейс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інтерфейс</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>5</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В интерфейсе "Упрощенный" сокращен перечень выпадающего меню для разделов "Продажи" и "Расход блюд". Для выбора нужного варианта отчета необходимо в форме отчета нажать на кнопку "Выбрать вариант...".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>В інтерфейсі "Спрощений" скорочено перелік меню, що випадає для розділів "Продажі" і "Витрата страв". Для вибору потрібного варіанту звіту необхідно у формі звіту натиснути на кнопку "Вибрати варіант ...".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать встречек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Друк зустрічок</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>7</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реализован механизм вывода блюд "На вынос" при печати.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реалізований механізм виведення страв "На винос" при друку.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Замовлення</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>9</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реализован механизм добавления блюда посредством сканера штрих-кодов.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реалізовано механізм додавання страви за допомогою сканера штрих-кодів.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка чеков</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вивантаження чеків</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>11</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Выгрузка в Козырную Карту.
+Реализован механизм выгрузки чеков(по расписанию/ручной) в Козырную Карту. В настройках парамтеров учета на закладке "Обмен данными" добавлено новое поле:
+- Каталог сервера обмена чеками.
+Для автоматической выгрузки необходимо настроить регламентное задание "Выгрузка чеков". Для ручной выгрузки необходимо запустить обработку "Выгрузка чеков"(Обработки =&gt; Выгрузка чеков).
+В справочник "Рестораны" добавлен новый реквизит "Код КК" - это код ресторана в системе козырной карты, который необходимо заполнить для каждого ресторана.
+2. Выгрузка в Бухгалтерию 7.7.
+Реализован механизм выгрузки чеков(по расписанию/ручной) в Бухгалтерию 7.7. В настройках парамтеров учета на закладке "Обмен данными" добавлены новые поля:
+- Адрес ftp сервера
+- Пользователь
+- Пароль
+Для автоматической выгрузки необходимо настроить регламентное задание "Выгрузка чеков в Бухгалтерию 7.7". Для ручной выгрузки необходимо запустить обработку "Обмен данными с «2К:Бухгалтерия 7.7»"(Обработки =&gt; Обмен данными с «2К:Бухгалтерия 7.7»).</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник "Организации"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Довідник "Організації"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>13</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлен реквизит "Код по ЕДРПОУ"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Добавлен реквизит "Код по ЕДРПОУ"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>14</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен данными с БК</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>15</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В обработку "Обмен данными с «2К:Бухгалтерия 7.7»" добавлено:
+1) опция для загрузки себестоимости блюд из бухгалтерии, для ее включения необходимо включить флажок "Загружать себестоимость"
+2) вариант загрузки данных, за него отвечает переключатель "Режим загрузки"
+3) выгрузка категории документа
+4) выгрузка суммы акцизного налога</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>16</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Система скидок</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Система знижок</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>17</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Добавлена новая настройка "Ввод активности"(Настройки =&gt; Управление заказами =&gt; Создание заказа =&gt; Ввод активности), которая позволяет включать/отключать запрос ввода активности при создании заказа.
+2. В справочник «Активности» добавлено поле «Период действия», которое отвечает за период проведения акции.
+</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>18</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>11</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>19</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправлены ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлені помилки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>20</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Ошибки, возникавшие при работе с планшетами.
+2. Задвоение цены блюда при выгрузке в бухгалтерию.
+3. Изменение количества в заказе при удалении неприготовленных блюд.
+4. Зависание программы при изменении кассовой даты.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Помилки, що виникали при роботі з планшетами.
+2. Задвоєння ціни страви при вивантаженні в бухгалтерію.
+3. Зміна кількості в замовленні при видаленні неприготованих страв.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>21</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>22</index>
+		<row>
+			<formatIndex>3</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>23</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 2.0.4</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нове у версії 2.0.4</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>24</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Центральная Ресторанная Система (ЦРС)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Центральна Ресторанна Система (ЦРС)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>25</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автоматизирован первый запуск системы путем выделения из ЦРС:
+1) автоматическое обновление меню
+2) автоматическое заполнение предопределенных вариантов отчетов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Автоматизований перший запуск системи шляхом виділення з ЦРС:
+1) автоматичне оновлення меню
+2) автоматичне заповнення зумовлених варіантів звітів</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>26</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>27</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлена возможность группировки блюд со скидкой/без скидки("Настройки =&gt; Управление заказами =&gt; Закрытие заказа =&gt; Печать пречека =&gt; Группировать блюда со скидкой/без скидки")</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додана можливість угрупування страв зі знижкою/без знижки ("Налаштування =&gt; Управління замовленнями =&gt; Закриття замовлення =&gt; Друк пречеків =&gt; Групувати страви зі знижкою/без знижки")</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>28</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерфейс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інтерфейс</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>29</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Добавлен новый интерфейс "Упрощенный". Для назначения пользователю этого интерфейса, необходимо зайти в режиме конфигуратора и установить соответствующему пользователю.
+2. Изменен способ установки/снятия флага "Актуальность". Возможность редактирования в форме списка отключена с целью ошибочного нажатия на соответствующее поле. Для установки/снятия флага необходимо открыть форму элемента справочника.
+Перечень справочников:
+- меню
+- модификаторы
+- условия
+- типы скидок и наценок
+- рабочие центры
+- столы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Доданий новий інтерфейс "Спрощений". Для призначення користувачеві цього інтерфейсу, необхідно зайти в режимі конфігуратора і встановити відповідному користувачеві.
+2. Змінено спосіб установки/зняття прапора "Актуальність". Можливість редагування у формі списку відключена з метою помилкового натискання на відповідне поле. Для установки/зняття прапора необхідно відкрити форму елемента довідника. 
+Перелік довідників: 
+- меню
+- модифікатори
+- умови
+- типи знижок і націнок
+- робочі центри
+- столи</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>30</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типы скидок/наценок</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Типи знижок/націнок</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>31</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>На новые блюда, при загрузке данных из БК, не будут распространяться существующие типы скидок/наценок. Их нужно устанавливать вручную.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>На нові страви, при завантаженні даних з БК, не поширюватимуться існуючі типи знижок/націнок. Їх потрібно встановлювати вручну.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>32</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Права доступа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Права доступу</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>33</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Добавлена новая роль "Администратор", для которой справочники и документы доступны только на просмотр.
+2. Для роли "Управляющий" разработан механизм разграничения прав доступа по ресторанам. Чтобы предоставить/ограничить пользователю права доступа на чтение документов, формирование отчетов по определенным ресторанам, необходимо в карточке пользователя на закладке "Рестораны" включить/отключить флаги напротив соответствующих ресторанов.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Додана нова роль "Адміністратор", для якої довідники та документи доступні тільки на перегляд. 
+2. Для ролі "Керуючий" розроблений механізм розмежування прав доступу по ресторанах. Щоб надати/обмежити користувачеві права доступу на читання документів, формування звітів по певних ресторанах, необхідно в картці користувача на закладці "Ресторани" включити/відключити прапори навпроти відповідних ресторанів.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>34</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Звіти</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>35</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. В интерфейс "Упрощенный" добавлены новые отчеты по системе статистики(Exchange): Отчеты =&gt; Exchange.
+2. Во все отчеты добавлен фильтр по ресторану.
+3. В отчет "Продажи" добавлены новые варианты:
+- "По товарам на вынос"
+- "По категориям документов"
+4. В отчете "Скидки" изменен основной вариант, а также добавлен новый "Упрощенный".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. У інтерфейс "Спрощений" додано нові звіти по системі статистики(Exchange): Звіти =&gt; Exchange.
+2. У всі звіти доданий фільтр по ресторану.
+3. У звіт "Продажі" доданий новий варіант "По товарах на винос".
+4. У звіті "Знижки" змінений основний варіант, а також доданий новий "Спрощений".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>36</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка Козырных Карт</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Завантаження Козирних Карт</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>37</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автоматизирована загрузка базы козырных карт с ftp-ресурса. В настройках парамтеров учета на закладке "Обмен данными" добавлено 3 новых поля:
+- Адрес сервера обмена КК
+- Пользователь сервера обмена КК
+- Пароль сервера обмена КК</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Автоматизовано завантаження бази козирних карт з ftp-ресурсу. У налаштуваннях парамтеров обліку на закладці "Обмін даними" додано 3 нових поля: 
+- Адреса сервера обміну КК 
+- Користувач сервера обміну КК 
+- Пароль сервера обміну КК</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>38</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка Обмен данными с «2К:Бухгалтерия 7.7»</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Обмін даними з «2К: Бухгалтерія 7.7»</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>39</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Добавлен новый флаг "Загружать типы цен". При включенном флаге будут загружены типы цен для товаров.
+2. Добавлен реквизит "Ресторан". Выгрузка данных будет произведена только для ресторана выбранного в этом поле.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Додано новий прапор "Завантажувати типи цін". При включеному прапорі будуть завантажені типи цін для товарів. 
+2. Додано реквізит "Ресторан". Вивантаження даних буде проведено тільки для ресторану обраного в цьому полі.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>40</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление заказами</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Управління замовленнями</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>41</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлена возможность запроса на открытие нового стола с неуникальным номером("Настройки =&gt; Управление заказами =&gt; Создание заказа =&gt; Запрос на открытие стола с неуникальным номером")</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додана можливість запиту на відкриття нового столу з неунікальним номером ("Налаштування =&gt; Управління замовленнями =&gt; Створення замовлення =&gt; Запит на відкриття столу з неунікальним номером")</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>42</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Система скидок</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Система знижок</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>43</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Добавлен новый справочник "Причины ручных скидок"(Справочники =&gt; Классификаторы =&gt; Причины ручных скидок).
+2. Добавлена новая настройка "Запрашивать причину применения ручной скидки"(Настройки =&gt; Управление заказами =&gt; Изменение заказа =&gt; Запрашивать причину применения ручной скидки), которая позволяет включать/отключать запрос причины.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Додано новий довідник "Причини ручних знижок" (Довідники =&gt; Класифікатори =&gt; Причини ручних знижок). 
+2. Додана нова настройка "Запитувати причину застосування ручної знижки" (Настройки =&gt; Управління замовленнями =&gt; Зміна замовлення =&gt; Запитувати причину застосування ручної знижки), яка дозволяє вмикати/вимикати запит причини.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>44</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрационные карты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реєстраційні карти</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>45</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В справочник "Виды карт" добавлен новый реквизит "Тип карты" (дисконтная, регистрационная). Необходимо заполнить это поле для каждого элемента справочника.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>У довідник "Види карт" доданий новий реквізит "Тип карти" (дисконтна, реєстраційна). Необхідно заповнити це поле для кожного елемента довідника.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>46</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработки обслуживания ТО</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Обробки обслуговування ТО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>47</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Необходимо обновить обработки обслуживания торгового оборудования.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Необхідно оновити обробки обслуговування торгового устаткування.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>48</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть справочник "Обработки обслуживания торгового оборудования"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відкрити довідник "Обробки обслуговування торгового обладнання"</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ОбработкиОбслуживанияТО</detailParameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>49</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 2.0.3.34</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нове у версії 2.0.3.34</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>50</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервисные функции</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сервісні функції</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>51</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлена новая обработка "Очистка данных за период"(Операции =&gt; обработки =&gt; Очистка данных за период)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додана нова обробка "Очищення даних за період" (Операції =&gt; обробки =&gt; Очищення даних за період)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>52</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен данными с 2К:Бухгалтерия</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Обмін даними з 2К: Бухгалтерія</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>53</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Ставка НДС для новых товаров устанавливается согласно значения константы "Основная ставка НДС" при загрузке меню из бухгалтерии.
+2. Товар с нулевой ценой не будет загружаться из бухгалтерии.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Ставка ПДВ для нових товарів встановлюється згідно значення константи "Основна ставка ПДВ" при завантаженні меню з бухгалтерії.
+2. Товар з нульовою ціною не буде завантажуватися з бухгалтерії.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>54</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>55</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. При включенной настройке "Группировать номенклатуру в пречеке" блюда будут паковаться даже при наличии комментариев.
+2. Добавлена возможность выводить сумму скидки по каждой позиции("Настройки =&gt; Управление заказами =&gt; Закрытие заказа =&gt; Печать пречека =&gt; Выводить сумму скидки по каждой позиции").
+3. Округление сумм чаевых с точностью до сотых.
+4. Добавлена возможность вывода суммы НДС("Настройки =&gt; Управление заказами =&gt; Закрытие заказа =&gt; Печать пречека =&gt; Выводить сумму НДС").</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. При включеніому налаштуванні "Групувати номенклатуру в пречеків" страви будуть пакуватися навіть за наявності коментарів.
+2. Додана можливість виводити суму знижки по кожній позиції ("Налаштування =&gt; Управління замовленнями =&gt; Закриття замовлення =&gt; Друк пречеків =&gt; Виводити суму знижки по кожній позиції").
+3. Округлення сум чайових з точністю до сотих.
+4. Додана можливість виведення суми ПДВ ("Налаштування =&gt; Управління замовленнями =&gt; Закриття замовлення =&gt; Друк пречеків =&gt; Виводити суму ПДВ").</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>56</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Механизм расчета временных позиций</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Механізм розрахунку тимчасових позицій</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>57</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В карточку блюда добавлен новый реквизит "Минимальное время заказа", который отвечает за расчет суммы при завершении временной позиции. Если продолжительность временной позиции при ее завершении меньше времени указанного в реквизите "Минимальное время заказа", то сумма пересчитана не будет. Расчет сверх минимального времени будет производиться поминутно.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>У картку страви доданий новий реквізит "Мінімальний час замовлення", який відповідає за розрахунок суми при завершенні тимчасової позиції. Якщо тривалість тимчасової позиції при її завершенні менше часу зазначеного в реквізиті "Мінімальний час замовлення", то сума перерахована не буде. Розрахунок понад мінімальний часу буде проводитися похвилинно.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>58</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать чеков</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Друк чеків</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>59</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. В обработку обслуживания кассового аппарата "Мария-301 МТМ" добавлена настройка "Выводить фамилию кассира в чек", которая позволяет включать/отключать вывод ФИО кассира в чек.
+2. Для кассовых аппаратов "Datecs FP3530T" и "ИКС-483LT" реализована возможность регистрации кассира. Служит для этого кнопка "Регистрация кассира" в интерфейсе "ККМ", которая выполняет регистрацию кассира на смене и последующий вывод его ФИО в чек.
+3. В обработку обслуживания товарного чека добавлена настройка "Выводить скидку по каждой позиции", которая позволяет включать/отключать вывод скидки по каждой позиции в чек.
+4. В обработки обслуживания кассовых аппаратов "Datecs FP3530T", "ИКС-483LT", "Mini FP6" добавлена настройка "Выводить cкидку/наценку по каждой позиции", которая позволяет включать/отключать вывод скидки/наценки по каждой позиции в чек.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. У обробку обслуговування касового апарату "Марія-301 МТМ" додана настройка "Виводити прізвище касира в чек", яка дозволяє вмикати/вимикати виведення ПІБ касира в чек.
+2. Для касових апаратів "Datecs FP3530T" і "ІКС-483LT" реалізована можливість реєстрації касира. Служить для цього кнопка "Реєстрація касира" в інтерфейсі "ККМ", яка виконує реєстрацію касира на зміні і подальше виведення його ПІБ в чек.
+3. У обробку обслуговування товарного чека додана настройка "Виводити знижку по кожній позиції", яка дозволяє вмикати/вимикати виведення знижки по кожній позиції в чек.
+4. У обробки обслуговування касових апаратів "Datecs FP3530T", "ІКС-483LT", "Mini FP6" додана настройка "Виводити Знижку/націнку по кожній позиції", яка дозволяє вмикати/вимикати виведення знижки/націнки по кожній позиції в чек.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>60</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оптимизация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оптимізація</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>61</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оптимизирован механизм печати встречек.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оптимізовано механізм друку зустрічок.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>62</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Классификаторы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Класифікатори</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>63</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В справочнике "Типы столов" добавлена возможность вносить максимальное количество гостей 999.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>У довіднику "Типи столів" додана можливість вносити максимальну кількість гостей 999.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>64</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрационные карты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлені помилки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>65</index>
+		<row>
+			<formatIndex>17</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлен новый справочник "Регистрационные карты". Далее информация о регистрационных картах будет храниться в этом справочнике.
+При обновлении в справочник будут перенесены данные о регистрационных картах из справочника "Информационные карты".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>- Помилковий друк 2-х копій пречеків в документах "Замовлення" і "Списання"
+- Помилка при друку фіскального чека за податковою ставкою "Б" (0%) на ФР Марія-301 МТМ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>66</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка Козырных Карт</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Завантаження Козирних Карт</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>67</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлена возможность загружать базу Козырных Карт(Обработки =&gt; Загрузка КК). Для корректной загрузки данных необходимо добавить элементы справочника "Виды дисконтных карт" с указанием поля "Диск". Для настройки загрузки Козырных Карт по расписанию, необходимо настроить регламентное задание "Загрузка козырных карт".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додана можливість завантажувати базу Козирних Карт (Обробки =&gt; Завантаження КК). Для коректної завантаження даних необхідно додати елементи довідника "Види дисконтних карт" із зазначенням поля "Диск". Для налаштування завантаження Козирних Карт за розкладом, необхідно налаштувати регламентне завдання "Завантаження козирних карт".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>68</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Меню</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Меню</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>69</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлена возможность формирования автоматического меню на основании структуры справочника "Товары". Для этого служит константа "Использовать автоматическое меню"(Сервис =&gt; Настройка учета =&gt; Настройка параметров учета =&gt; закладка Обмен данными). При включенной константе, после загрузки товаров из бухгалтерии будет произведено создание/обновление автоматического меню.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додана можливість формування автоматичного меню на підставі структури довідника "Товари". Для цього служить константа "Використовувати автоматичне меню» (Сервіс =&gt; Налаштування обліку =&gt; Налаштування параметрів обліку =&gt; закладка Обмін даними). При включеній константі, після завантаження товарів з бухгалтерії буде вироблено створення/оновлення автоматичного меню.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>70</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработки обслуживания ТО</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Обробки обслуговування ТО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>71</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Необходимо обновить обработки обслуживания торгового оборудования.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Необхідно оновити обробки обслуговування торгового устаткування.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>72</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть справочник "Обработки обслуживания торгового оборудования"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відкрити довідник "Обробки обслуговування торгового обладнання"</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ОбработкиОбслуживанияТО</detailParameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>73</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправлены ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлені помилки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>74</index>
+		<row>
+			<formatIndex>18</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>- Ошибочная печать 2-х копий пречека в документах "Заказ" и "Списание"
+- Ошибка при печати фискального чека по налоговой ставке "Б" (0%) на ФР Мария-301 МТМ
+- Поиск в заказе производится не по всему меню, только по текущему виду меню
+- Ошибка при сохранении заказа после ввода существующего комментария
+- Отображение перечня всех карт при создании нового пользователя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>- Помилковий друк 2-х копій пречеків в документах "Замовлення" і "Списання"
+- Помилка при друку фіскального чека за податковою ставкою "Б" (0%) на ФР Марія-301 МТМ
+- Пошук в замовленні проводиться не по всьому меню, тільки з поточного виду меню
+- Помилка при збереженні замовлення після введення існуючого коментаря
+- Відображення переліку всіх карт при створенні нового користувача</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>75</index>
+		<row>
+			<formatIndex>16</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>76</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 2.0.2.59</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нове у версії 2.0.2.59</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>77</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оптимизация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оптимізація</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>78</index>
+		<row>
+			<formatIndex>19</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оптимизированы следующие механизмы:
+1. Видимость(доступность) пользовательских элементов в заказе.
+2. Авторизация пользователя картой.
+3. Чтение/запись таблиц при открытии/сохранении заказа.
+4. Печать пречека.
+5. Механизм расчета скидок.
+6. Загрузка интерфейсов в режиме Front-Office.
+7. Определение наличия модификаторов/условий приготовления для блюда, при смене активной строки заказа.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оптимізовано наступні механізми:
+1. Видимість(доступність) елементів користувача в замовленні.
+2. Авторизація користувача картою.
+3. Читання/запис таблиць при відкритті/збереженні замовлення.
+4. Друк пречеків.
+5. Механізм розрахунку знижок.
+6. Завантаження інтерфейсів в режимі Front-Office.
+7. Визначення наявності модифікаторів/умов приготування для страви, при зміні активного рядка замовлення.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>79</index>
+		<row>
+			<formatIndex>20</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Необходимо перезаписать регистрационные карты в справочнике "Информационные карты".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Необхідно перезаписати реєстраційні картки в довіднику "Інформаційні карти".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>80</index>
+		<row>
+			<formatIndex>21</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запустить обработку "Перезапись регистрационных карт"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Запустити обробку "Перезапис реєстраційних карт"</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ПерезаписьРегистрационныхКарт</detailParameter>
+				</c>
+			</c>
+			<c>
+				<i>5</i>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>81</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новый функционал для маркетингового отдела</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Новий функціонал для маркетингового відділу</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>82</index>
+		<row>
+			<formatIndex>19</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Добавлен новый справочник "Активности"(Справочники =&gt; Классификаторы =&gt; Активности).
+2. Добавлена новая настройка "Настройки =&gt; Управление заказами =&gt; Закрытие заказа =&gt; Печать пречека =&gt; Запрашивать активность при печати пречека".
+3. Добавлен новый отчет "Отчеты =&gt; Продажи =&gt; Маркетинг узнаваемость.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Додано новий довідник "Активності" (Довідники =&gt; Класифікатори =&gt; Активності).
+2. Додане нове налаштування "Налаштування =&gt; Управління замовленнями =&gt; Закриття замовлення =&gt; Друк пречеків =&gt; Запитувати активність при друку пречеків".
+3. Доданий новий звіт "Звіти =&gt; Продажі =&gt; Маркетинг впізнаваність.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>83</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Звіти</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>84</index>
+		<row>
+			<formatIndex>19</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлены новые отчеты:
+1. "Продажи в разрезе компьютеров и устройств"(Отчеты =&gt; Продажи =&gt; В разрезе компьютеров и устройств).
+2.  "Продажи по кассирам"(Отчеты =&gt; Продажи =&gt; По кассирам).
+3. "Продажи по категориям товаров"(Отчеты =&gt; Продажи =&gt; По категориям товаров). Необходимо назначить товарам категорию, например, Бар/Кухня/Суши. Операции =&gt; Справочники =&gt; Категории Товаров.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додано нові звіти:
+1. "Продажі в розрізі комп'ютерів і пристроїв" (Звіти =&gt; Продажі =&gt; В розрізі комп'ютерів і пристроїв).
+2. "Продажі по касирам" (Звіти =&gt; Продажі =&gt; По касирам).
+3. "Продажі по категоріях товарів" (Звіти =&gt; Продажі =&gt; По категоріях товарів). Необхідно призначити товарах категорію, наприклад, Бар/Кухня/Суші. Це необхідно для коректної роботи звіту за категоріями товарів. Операції =&gt; Довідники =&gt; Категорії Товарів.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>85</index>
+		<row>
+			<formatIndex>23</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Необходимо воспользоваться обработкой по переносу вариантов отчетов.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Необхідно скористатися обробкою з перенесення варіантів звітів.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>86</index>
+		<row>
+			<formatIndex>20</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запустить обработку "Перенос вариантов отчетов"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Запустити обробку "Перенесення варіантів звітів"</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ПереносВариантовОтчетов</detailParameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>87</index>
+		<row>
+			<formatIndex>24</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменены отчеты:
+1. "Сомнительные ситуации". Добавлена возможность расшифровки по пользователю.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Змінено звіти:
+1. "Сумнівні ситуації". Додана можливість розшифровки за користувачем.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>88</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ККМ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ККМ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>89</index>
+		<row>
+			<formatIndex>25</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. При печати краткого отчета за период пользователю будет задан вопрос о виде печатаемого отчета.
+2. При закрытии стола на форму №1 добавлена проверка на подключенность кассового аппарата к компьютеру, если кассовый аппарат не доступен, то программа не даст закрыть такой стол.
+3. В сводке добавлена возможность установки фильтра по дате.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. При друку короткого звіту за період користувачеві буде поставлено питання про вид друкуємого звіту.
+2. При закритті столу на форму № 1 додана перевірка на підключення касового апарата до комп'ютера, якщо касовий апарат не доступний, то програма не дасть закрити такий стіл.
+3. У зведенні додана можливість установки фільтра за датою.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>90</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>91</index>
+		<row>
+			<formatIndex>26</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Добавлена новая настройка "Настройки =&gt; Управление заказами =&gt; Закрытие заказа =&gt; Печать пречека =&gt; Выводить сумму блюда со скидкой при печати".
+При включенной настройке в пречек для каждого блюда будет выводиться сумма со скидкой, при выключенной настройке для каждого блюда  будет выводиться сумма без скидок(по умолчанию отключена).
+2. Изменен вывод шапки и итогов при печати пречека с включенной настройкой "Печать пречека с разбивкой блюд по организациям".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Додане нове налаштування "Налаштування =&gt; Управління замовленнями =&gt; Закриття замовлення =&gt; Друк пречеків =&gt; Виводити суму страви зі знижкою при друку".
+При включеній настройці в пречеків для кожної страви буде виводитися сума зі знижкою, при вимкненому налаштуванні для кожної страви буде виводитися сума без знижок (за замовчуванням відключена).
+2. Змінено виведення шапки і підсумків при друку пречеків з включеною налаштуванням "Друк пречеків з розбивкою страв по організаціях".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>92</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дисконтная система</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дисконтна система</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>93</index>
+		<row>
+			<formatIndex>27</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Временная скидка не будет применяться к заказу к моменту наступления заданного времени при добавлении блюда, даже если стол открыт до наступления заданного времени. Для этого служит соответствующий флаг "Расчет периода действия при добавлении блюда" в справочнике "Типы скидок и наценок".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Тимчасова знижка не буде застосовуватися до замовлення до моменту настання заданого часу при додаванні страви, навіть якщо стіл відкритий до настання заданого часу. Для цього служить відповідний прапор "Розрахунок періоду дії при додаванні страви" в довіднику "Типи знижок і націнок".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>94</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработки обслуживания ТО</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Обробки обслуговування ТО</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>95</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Необходимо обновить обработки обслуживания торгового оборудования.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Необхідно оновити обробки обслуговування торгового устаткування.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>96</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть справочник "Обработки обслуживания торгового оборудования"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відкрити довідник "Обробки обслуговування торгового обладнання"</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ОбработкиОбслуживанияТО</detailParameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>97</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сомнительные ситуации</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сумнівні ситуації</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>98</index>
+		<row>
+			<formatIndex>28</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Добавлены новые сомнительные ситуации в классификатор:
+- Удаление блюда в режиме Back-Office
+- Удаление блюда с распечатанным пречеком в режиме Back-Office
+для фиксирования соответствующих операций.
+2. В режиме Фаст-Фуд при включенной настройке "Регистрировать удаление блюда в открытом заказе" при попытке закрыть заказ, пользователю будет выведено соответствующий запрос.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Додано нові сумнівні ситуації в класифікатор:
+- Видалення страви в режимі Back-Office
+- Видалення страви з роздрукованим пречеком в режимі Back-Office
+для фіксування відповідних операцій.
+2. У режимі Фаст-Фуд при включеному налаштуванні "Реєструвати видалення страви у відкритому замовленні" при спробі закрити замовлення, користувачеві буде виведено відповідний запит.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>99</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправлены ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлені помилки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>100</index>
+		<row>
+			<formatIndex>17</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>- Заполнение поля "Скидка" в товарном чеке
+- Регистрация сотрудника на смене при прокатке карты
+- Отображение открытых столов в сводке и отчете "Реализация"(теперь отображаются все открытые столы, независимо от кассовой даты)
+- Авторизация официанта в чужом заказе
+- Некорректная печать пречека заказа в режиме Back-Office
+- Доступ к справочнику "Источники обращения клиентов" с правами "Управляющий"
+- Вычисление остатка блюд в черном/белом списке
+- Некорректный порядок вывода блюд при печати встречки
+- Автоматическое обновление кассовых дат при изменении кассового дня
+- Некорректное отображение данных в отчетах по продажам при наличии чеков на возврат
+- Загрузка данных с ftp в обработке Обмен данными с «2К:Бухгалтерия 7.7»
+- Некорректное отображение сомнительных ситуаций в статистике
+- Заполнение категории гостей при переносе блюд в новый стол
+- Снятие флага "Актуальность" при открытии элемента справочника "Компьютеры" из отчетов по продажам
+- Ошибка при закрытии чека на ФР DatecsFP</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>- Заповнення поля "Знижка" в товарному чеку
+- Реєстрація співробітника на зміні при прокатці картки
+- Відображення відкритих столів у зведенні і звіті "Реалізація" (тепер відображаються всі відкриті столи, незалежно від касової дати)
+- Авторизація офіціанта в чужому замовленні
+- Некоректний друк пречеків замовлень в режимі Back-Office
+- Доступ до довідника "Джерела звернення клієнтів" з правами "Керуючий"
+- Обчислення залишку страв в чорному/білому списку
+- Некоректний порядок виведення страв при друку зустрічки
+- Автоматичне оновлення касових дат при зміні касового дня
+- Некоректне відображення даних у звітах з продажів за наявності чеків на повернення
+- Завантаження даних з ftp в обробці Обмін даними з «2К:Бухгалтерія 7.7»
+- Некоректне відображення сумнівних ситуацій в статистиці
+- Заповнення категорії гостей при перенесенні страв у новий стіл
+- Зняття прапора "Актуальність" при відкритті елемента довідника "Комп'ютери" зі звітів з продажу
+- Помилка при закритті чека на ФР DatecsFP</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>101</index>
+		<row>
+			<formatIndex>29</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>102</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 2.0.2.1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нове у версії 2.0.2.1</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>103</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка Обмен данными с «2К:Бухгалтерия 7.7»</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Обмін даними з «2К: Бухгалтерія 7.7»</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>104</index>
+		<row>
+			<formatIndex>19</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>- При загрузке меню автоматически устанавливается флаг "Печатаемый" для новых элементов справочника
+- Флаги "Не обновлять наименование номенклатуры" и "Не обновлять номенклатурные группы номенклатуры" может установить только пользователь, которому доступна роль "Полные права", а остальные настройки обработки являются индивидуальными для каждого пользователя системы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>- При завантаженні меню автоматично встановлюється прапор "Друкуємий" для нових елементів довідника
+- Прапори "Не оновлювати найменування номенклатури" і "Не оновлювати номенклатурні групи номенклатури" може встановити тільки користувач, якому доступна роль "Повні права", а інші настройки обробки є індивідуальними для кожного користувача системи</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>105</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Константы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Константи</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>106</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>30</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлена новая константа "Использовать обмен данными с «2К:Бухгалтерия»"(Сервис =&gt; Настройка учета =&gt; Настройка параметров учета =&gt; Закладка "Общие"), которая отвечает за доступность полей в карточке элемента справочника "Товары".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додана нова константа "Використовувати обмін даними з «2К: Бухгалтерія»" (Сервіс =&gt; Налаштування обліку =&gt; Налаштування параметрів обліку =&gt; Закладка "Загальні"), яка відповідає за доступність полів у картці елемента довідника "Товари".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>107</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник "Товары"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Довідник "Товари"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>108</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>30</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При включенной константе "Использовать обмен данными с «2К:Бухгалтерия»" в форме элемента следующие поля будут недоступны для редактирования:
+- Наименование
+- Полное наименование
+- Краткое наименование
+- Единица измерения
+- НДС
+- Цена
+- Модифицируемый
+- Закладка "Модификаторы"
+Эти поля редактируются только в бухгалтерской базе данных.
+В форме списка будут недоступны кнопки "Создать", "Создать группу", "Скопировать", "Установить/снять пометку удаления".
+</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>При включеній константі "Використовувати обмін даними з «2К: Бухгалтерія»" у формі елемента наступні поля будуть недоступні для редагування:
+- Найменування
+- Повне найменування
+- Скорочене найменування
+- Одиниця виміру
+- ПДВ
+- Ціна
+- Модифікуються
+- Закладка "Модифікатори"
+Ці поля редагуються тільки в бухгалтерській базі даних.
+У формі списку будуть недоступні кнопки "Створити", "Створити групу", "Копіювати", "Встановити/зняти позначку видалення".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>109</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оптимизация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оптимізація</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>110</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оптимизирован механизм анализа действий над заказом.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оптимізовано механізм аналізу дій над замовленням.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>111</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправлены ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлені помилки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>112</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>30</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>- При печати пречека по организациям значение фирмы берется из поля "Полное наименование"
+- Некорректная работа поиска блюда по меню в документе "Заказ"
+- Выход встречек на отказ при удалении не приготовленных блюд из заказа
+- Загрузка меню в обработке Обмен данными с «2К:Бухгалтерия 7.7»</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>- При друку пречеків по організаціям значення фірми береться з поля "Повне найменування"
+- Некоректна робота пошуку страви за меню в документі "Замовлення"
+- Вихід зустрічок на відмову при видаленні не приготованих страв із замовлення
+- Завантаження меню в обробці Обмін даними з «2К: Бухгалтерія 7.7»</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>113</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 2.0.1.85</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нове у версії 2.0.1.85</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>114</index>
+		<row>
+			<formatIndex>31</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>115</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фискальные регистраторы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Фіскальні реєстратори</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>116</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для ФР Мария-301 МТМ реализована возможность печати нулевого Z-отчета сразу после Z-отчета. В обработке обслуживания появился флаг "Печатать нулевой Z-отчет после Z-отчета". Если флаг включен, то после Z-отчета будет напечатан нулевой Z-отчет.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Для ФР Марія-301 МТМ реалізована можливість друку нульового Z-звіту відразу після Z-звіту. В обробці обслуговування з'явився прапор "Друкувати нульовою Z-звіт після Z-звіту".
+Якщо прапор включений, то після Z-звіту буде надрукований нульовою Z-звіт.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>117</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Звіти</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>118</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Новый отчет "Отчет по категориям гостей"(Отчеты =&gt; Отчет по категориям гостей).</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Новий звіт "Звіт по категоріях гостей"(Звіти =&gt; Звіт по категоріях гостей).</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>119</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Встречка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Зустрічка</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>120</index>
+		<row>
+			<formatIndex>32</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась возможность вывода встречек на печать по подачам.
+Настройки =&gt; Управление заказами =&gt; Изменение заказа =&gt; Печать встречек по подачам.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася можливість виведення зустрічок на друк по подачах.
+Налаштування =&gt; Управління замовленнями =&gt; Зміна замовлення =&gt; Друк зустрічок по подачах.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>121</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>122</index>
+		<row>
+			<formatIndex>33</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась возможность вывода блюд по организациям("Настройки =&gt; Управление заказами =&gt; Закрытие заказа =&gt; Печать пречека =&gt; Печать пречека с разбивкой блюд по организациям")</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася можливість виведення страв по організаціям ("Налаштування =&gt; Управління замовленнями =&gt; Закриття замовлення =&gt; Друк пречеків =&gt; Друк пречеків з розбивкою страв по організаціям")</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>123</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заборные листы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Забірні листи</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>124</index>
+		<row>
+			<formatIndex>19</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Реализован механизм учета возвратов в разрезе вида операции(Настройки =&gt; Управление отчетами производства =&gt; Создание отчетов производства =&gt; Запрашивать вид операции).
+2. Реквизит "Вид операции" отображается в интерфейсе "Отчеты производства" для журналов:
+- Открытые
+- Закрытые
+- Текущие
+3. Реализован механизм изменения количества блюд для неподтвержденных документов.
+4. Разработана новая печатная форма заборного листа.
+5. Разработан новый отчет "Отчет производства за смену"(Отчеты =&gt; Отчет производства за смену).
+</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Реалізований механізм обліку повернень у розрізі виду операції (Налаштування =&gt; Керування звітами виробництва =&gt; Створення звітів виробництва =&gt; Запитувати вид операції).
+2. Реквізит "Вид операції" відображається в інтерфейсі "Звіти виробництва" для журналів:
+- Відкриті
+- Закриті
+- Поточні
+3. Реалізовано механізм зміни кількості страв для непідтверджених документів.
+4. Розроблена нова друкована форма забірного листа.
+5. Розроблено новий звіт "Звіт виробництва за зміну" (Звіти =&gt; Звіт виробництва за зміну).</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>125</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оптимизация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оптимізація</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>126</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оптимизирован механизм добавления блюда в заказ.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оптимізовано механізм додавання страви в замовлення.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>127</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сомнительные ситуации</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сумнівні ситуації</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>128</index>
+		<row>
+			<formatIndex>24</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В обработке "Подтверждение сомнительных ситуаций" реализована возможность раздельной печати подтвержденных и неподтвержденных сомнительных ситуаций.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>В обробці "Підтвердження сумнівних ситуацій" реалізована можливість роздільного друку підтверджених та непідтверджених сумнівних ситуацій.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>129</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Замовлення</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>130</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При повторном открытии заказа и добавлении блюд, они пробиваются в первую подачу.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>При повторному відкритті замовлення і додаванні страв, вони пробиваються в першу подачу.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>131</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправлены ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлені помилки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>132</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>- Изменение категории клиента в документе "Заказ"
+- Сводка(по типам оплат): заполнение полей "Организация" и "Касса" при печати; учтены возвраты при расчете сумм в кассе
+- При создании пользователя с уже существующем именем выводится соответствующее сообщение
+- Запись периода действия при создании элемента справочника "Типы скидок/наценок"
+- Удаление блюд при закрытии столов
+- Сомнительная ситуация "Стол закрыт необычно долго" изменена на "Стол открыт необычно долго"
+- Ошибка при передаче стола другому официанту
+- Удвоение данных в отчете "Продажи по блюдам"
+- Поиск блюда по наименованию в документе "Списание"
+- Загрузка и обновление меню
+- Работа механизма депозитов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>- Зміна категорії клієнта в документі "Замовлення"
+- Зведення(за типами оплат): заповнення полів "Організація" та "Каса" при друку; враховані повернення при розрахунку сум в касі
+- При створенні користувача з вже існуючим ім'ям виводиться відповідне повідомлення
+- Запис періоду дії при створенні елемента довідника "Типи знижок/націнок"
+- Видалення страв при закритті столів
+- Сумнівна ситуація "Стіл закритий незвично довго" змінена на "Стіл відкритий незвично довго"
+- Помилка при передачі столу іншому офіціантові
+- Подвоєння даних у звіті "Продажі по стравам"
+- Пошук страви по найменуванню в документі "Списання"
+- Завантаження та оновлення меню
+- Робота механізму депозитів</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>133</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 2.0.1.62</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нове у версії 2.0.1.62</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>134</index>
+		<row>
+			<formatIndex>34</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>35</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>135</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты
+</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Звіти</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>136</index>
+		<row>
+			<formatIndex>19</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Отчет "Продажи". Для варианта отчета "По сотрудникам" выведены колонки "Сумма без скидок", "Сумма к оплате".
+2. Добавлены отчеты из РС 7.7. Меню "Отчеты - Отчеты РС 7.7".
+3. Добавлен новый отчет "Отчеты - Состав заказов", который выводит состав заказов, в которых присутствуют хотя бы одно из выбранных блюд.
+4. Отчет "Прохождение дисконтных карт". В отчет выведены колонки "Сумма без скидок" и "Сумма скидки".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. Звіт "Продажі". Для варіанта звіту "За співробітниками" виведені колонки "Сума без знижок", "Сума до сплати".
+2. Додані звіти з РС 7.7. Меню "Звіти - Звіти РС 7.7".
+3. Доданий новий звіт "Звіти - Склад замовлень", який виводить склад замовлень, в яких присутня хоча б одна з вибраних страв.
+4. Звіт "Проходження дисконтних карт". У звіт виведені колонки "Сума без знижок" і "Сума знижки".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>137</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сводка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Зведення</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>138</index>
+		<row>
+			<formatIndex>19</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавлена новая форма сводки по кассе "По типам оплат" на соответствующей закладке.
+Для отражения кредитов в сводке, необходимо очистить тип оплат в соответствующих элементах справочника "Виды оплат чека ККМ".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додана нова форма зведення по касі "За типами оплат" на відповідній закладці.
+Для відображення кредитів у зведенні, необхідно очистити тип оплат у відповідних елементах довідника "Види оплат чека ККМ".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>139</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дисконтные карты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дисконтні картки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>140</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реализована возможность считывания карт с штрих кодом при помощи сканера. Для работы механизма необходимо назначить штрих коды в регистре сведений "Штрих коды" соответствующим картам.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реалізована можливість зчитування карт з штрих кодом за допомогою сканера. Для роботи механізму необхідно призначити штрих коди в регістрі відомостей "Штрих коди" відповідним картам.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>141</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Налаштування</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>142</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новые настройки:
+1. Управление заказами -&gt; Прочие настройки заказа -&gt; Переходить на страницу оплаты при прокатке карты
+2. Управление заказами -&gt; Закрытие заказа -&gt; Печать пречека -&gt; Запрашивать источник обращения клиента при печати пречека</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нові налаштування:
+1. Управління замовленнями -&gt; Інші настройки замовлення -&gt; Переходити на сторінку оплати при прокатці карти
+2. Управління замовленнями -&gt; Закриття замовлення -&gt; Друк пречеків -&gt; Запитувати джерело звернення клієнта при друку пречеків</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>143</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник "Меню"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Довідник "Меню"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>144</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась возможность вывода списка на печать в форме актуализации меню. Сделать это можно нажав кнопку "Вывести список".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася можливість виведення списку на друк у формі актуалізації меню. Зробити це можна натиснувши кнопку "Вивести список".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>145</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Система статистики</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Система статистики</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>146</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В обработку "Выгрузка чеков онлайн статистика" добавлена возможность выгрузки сомнительных ситуаций.
+</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>В обробку "Вивантаження чеків онлайн статистика" додана можливість вивантаження сумнівних ситуацій.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>147</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типы скидок/наценок</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Типи знижок/націнок</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>148</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась возможность применять автоматические скидки/наценки по группе пользователей/пользователю. В справочнике группы пользователей/пользователи на закладке "Доступность" при выключенном флаге напротив автоматической скидки/наценки, такая скидка/наценка не будет добавлена в заказ. Следует учитывать, что приоритетным является справочник "Пользователи". Такой механизм касается только автоматических скидок/наценок, остальные скидки/наценки работают по тому же принципу, что и ранее.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася можливість застосовувати автоматичні знижки/націнки по групі користувачів/користувачеві. У довіднику групи користувачів/користувачі на закладці "Доступність" при вимкненому прапорі навпроти автоматичної знижки/націнки, така знижка/націнка не буде додана до замовлення. Слід враховувати, що пріоритетним є довідник "Користувачі". Такий механізм стосується лише автоматичних знижок/націнок, решта знижок/націнок працюють за тим же принципом, що і раніше.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>149</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источники обращения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Джерела звернення</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>150</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новый справочник "Источники обращения клиентов"(Справочники =&gt; Классификаторы =&gt; Источники обращения клиентов).</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Новий довідник "Джерела звернення клієнтів" (Довідники =&gt; Класифікатори =&gt; Джерела звернення клієнтів).</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>151</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Замовлення</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>152</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась возможность указывать источник обращения клиента при печати пречека заказа. Для включения этой возможности необходимо установить флаг напротив соответствующей настройки пользователя/группы пользователей.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася можливість вказувати джерело звернення клієнта при друку пречеків замовлення. Для включення цієї можливості необхідно встановити прапор навпроти відповідної настройки користувача/групи користувачів.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>153</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сомнительные ситуации</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сумнівні ситуації</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>154</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась возможность запрещать пользователям подтверждение сомнительных ситуаций. Для этого служит право "Права пользователей =&gt; Back-office режим =&gt; Запретить подтверждение сомнительных ситуаций"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася можливість забороняти користувачам підтвердження сумнівних ситуацій. Для цього служить право "Права користувачів =&gt; Back-office режим =&gt; Заборонити підтвердження сумнівних ситуацій"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>155</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправлены ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлені помилки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>156</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>- Доступность калькулятора при вводе суммы оплаты заказа
+- Сообщение при прокатке дисконтной карты в заказе с установленным правом "Запретить сохранение заказов"
+- Повторная оплата заказа при наличии возврата по чеку
+- Ошибочное формирование полного Z-отчета вместо краткого для ФР Мария-301 МТМ
+- Ошибка при создании пользователя ИБ
+- Доступность переключателей проверки подлинности SMTP сервера в дополнительных настройках сервера почты элемента справочника "Учетные записи электронной почты"
+- Ошибка при удалении неактуальных позиций меню
+- Ошибка при оплате документа "Списание" с включенной настройкой "Печать пречека по организациям"
+- Некорректное заполнение колонки "Списано" в таблице "Текущие" интерфейста "Отчет производства"
+- Ошибочное определние сомнительной ситуации "Назначена ручная скидка (без дисконтной карты) после распечатанного пречека"
+- Отражение сомнительной ситуации при уменьшении количества блюда, не удаляя всю позицию
+- Печать пустой сводки при отключенном флаге отбора</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>- Доступність калькулятора при введенні суми оплати замовлення
+- Повідомлення при прокатці дисконтної картки в замовленні з встановленим правом "Заборонити збереження замовлень"
+- Повторна оплата замовлення при наявності повернення за чеком
+- Помилкове формування повного Z-звіту замість короткого для ФР Марія-301 МТМ
+- Помилка при створенні користувача ІБ
+- Доступність перемикачів перевірки автентичності SMTP сервера в додаткових настройках сервера пошти елемента довідника "Облікові записи електронної пошти"
+- Помилка при видаленні неактуальних позицій меню
+- Помилка при оплаті документа "Списання" з увімкненою настройкою "Друк пречеків по організаціям"
+- Некоректне заповнення колонки "Списано" в таблиці "Поточні" інтерфейста "Звіт виробництва"
+- Помилкове визначення сумнівної ситуації "Призначена ручна знижка (без дисконтної картки) після роздрукованого пречеку"
+- Відображення сумнівної ситуації при зменшенні кількості страви, не видаляючи всю позицію
+- Друк порожнього зведення при відключеному прапорі відбору</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>157</index>
+		<row>
+			<formatIndex>36</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>158</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 2.0.1.35</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нове у версії 2.0.1.35</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>159</index>
+		<row>
+			<formatIndex>34</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>35</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>160</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник "Информационные карты"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Довідник "Інформаційні карти"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>161</index>
+		<row>
+			<formatIndex>37</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появился механизм заполнения реквизитов "Телефон", "Адрес", "E-Mail" по кнопке "Заполнить". Данные для заполнения берутся из элемента справочника "Контрагенты", указанного в поле "Владелец".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явився механізм заповнення реквізитів "Телефон", "Адреса", "E-Mail" по кнопці "Заповнити". Дані для заповнення беруться з елемента довідника "Контрагенти", зазначеного в полі "Власник".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>162</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник "Типы скидок и наценок"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Довідник "Типи знижок і націнок"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>163</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В поле "Оплата" появилась возможность выбирать группы.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>У полі "Оплата" з'явилася можливість вибирати групи.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>164</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товарный чек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Товарний чек</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>165</index>
+		<row>
+			<formatIndex>38</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В печатную форму товарного чека внесены изменения согласно требованиям Положения о форме и содержании расчетного документа, утвержденного приказом ГНАУ от 01.12.2000 г. №614.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>1. В друковану форму товарного чека внесені зміни згідно з вимогами Положення про форму та зміст розрахункового документа, затвердженого наказом ДПАУ від 01.12.2000 р. № 614.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>166</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пречек</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>167</index>
+		<row>
+			<formatIndex>39</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась возможность устанавливать постоянную длину для пречека. Для включения данной опции необходимо открыть параметры обработки обслуживания печати пречеков и установить флаг "Постоянная длина пречеков", а также настроить все парамтеры вывода на печать.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася можливість встановлювати постійну довжину для пречеків. Для включення даної опції необхідно відкрити параметри обробки обслуговування друку пречеків і встановити прапор "Постійна довжина пречеків", а також налаштувати всі парамтери виводу на друк.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>168</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новая настройка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нова установка</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>169</index>
+		<row>
+			<formatIndex>20</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась новая настройка "Фискальные Регистраторы - Выводить на печать номер товарного чека"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася нова настройка "Фіскальні Реєстратори - Виводити на друк номер товарного чека"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>170</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сомнительные ситуации</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сумнівні ситуації</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>171</index>
+		<row>
+			<formatIndex>20</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В обработке "Подтверждение сомнительных ситуаций" появилась возможность печати.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>В обробці "Підтвердження сумнівних ситуацій" з'явилася можливість друку.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>172</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ "Отчет производства"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Документ "Звіт виробництва"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>173</index>
+		<row>
+			<formatIndex>40</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В режиме просмотра "Текущие" появилась колонка "Остаток", которая вычисляется как разница между количеством приготовленных и проданных блюд.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>У режимі перегляду "Поточні" з'явилася колонка "Залишок", яка обчислюється як різниця між кількістю приготованих і проданих страв.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>174</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фискальные регистраторы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Фіскальні реєстратори</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>175</index>
+		<row>
+			<formatIndex>41</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Для следующих моделей ФР реализован вывод ФИО кассира в фискальный чек:
+- Мария-301 МТМ
+- МИНИ-ФП4
+- МИНИ-ФП6
+В интерфейсе "ККМ" появилась новая кнопка "Регистрация кассира", которая выполняет регистрацию кассира на смене и последующий вывод его ФИО в чек(необходима только для МИНИ-ФП4/МИНИ-ФП6)
+2. Для ФР Мария-301 МТМ реализована печать чека для блюд по ставке "Без НДС"(налоговая группа Н). Для правильной работы механизма необходимо:
+1) в карточках товаров, которые не подлежат налогообложению установить ставку "Без НДС"
+2) в меню "Сервис - Настройка учета - Настройка параметров учета" на закладке "Налоговые группы" напротив ставки "Без НДС" выбрать группу "Н"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Для наступних моделей ФР реалізовано виведення ПІБ касира у фіскальний чек:
+- Марія-301 МТМ
+- МІНІ-ФП4
+- МІНІ-ФП6
+В інтерфейсі "ККМ" з'явилася нова кнопка "Реєстрація касира", яка виконує реєстрацію касира на зміні і подальше виведення його ПІБ в чек (необхідна тільки для МІНІ-ФП4/МІНІ-ФП6)
+Для ФР Марія-301 МТМ реалізовано друк чека для страв за ставкою "Без ПДВ" (податкова група Н). Для правильної роботи механізму необхідно:
+1) в картках товарів, які не підлягають оподаткуванню встановити ставку "Без ПДВ"
+2) в меню "Сервіс - Налаштування обліку - Налаштування параметрів обліку" на закладці "Податкові групи" навпроти ставки "Без ПДВ" вибрати групу "Н"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>176</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник "Меню"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Довідник "Меню"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>177</index>
+		<row>
+			<formatIndex>40</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась возможность удалять неактуальные позиции из справочника, для этого служит кнопка "Удалить неактуальные"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася можливість видаляти неактуальні позиції з довідника, для цього служить кнопка "Видалити неактуальні"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>178</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправлены ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлені помилки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>179</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>- Загрузка данных в обработке "Обмен данными с 2К:Бухгалтерия 7.7"
+- Зависание конфигурации в режиме Front-Office при работе с ФР Мария-301 МТМ
+- Заполнение поля "Вид оплаты" при выгрузке реализаций в обработке "Обмен данными с 2К:Бухгалтерия 7.7"
+- Печать встречки на отказ при паковке блюд в заказе
+- Удаление пользователя ИБ при записи элемента справочника "Пользователи"
+- Дублирование информационных карт при обмене с системой козырных карт
+- При удалении блюд из заказа, снятии всех флагов и последующем нажатии клавиши "Удалить", позиции не удаляются
+- При удалении блюд из заказа флаги можно проставлять/убирать двойным кликом
+- Проставление флага "Модифицируемый" при загрузке меню с помощью обработки "Обмен данными с 2К:Бухгалтерия 7.7"
+- В печатной форме встречки на отказ выводится не время открытия стола, а время печати отказа
+- Если скидка и наценка в заказе одинакового номинала, то на печать выводится и скидка и наценка
+- Ошибка при попытке выбора скидки/наценки в табличной части документа "Заказ"
+- Закрытие формы при двойном клике по элементу справочника "Организации"
+- Невозможность сохранения заказа при внесении комментариев к блюдам(с пробелами в конце строки)
+- Расчет суммовой скидки в заказе
+- Проставление флагов настройки правил в справочнике "Типы скидок/наценок" для суммовой скидки(наценки)
+- Периодически некорректная работа механизма действия скидки/наценки по периоду действия
+- Ошибка при создании группы в справочнике "Пользователи"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>- Завантаження даних в обробці "Обмін даними з 2К:Бухгалтерія 7.7"
+- Зависання конфігурації в режимі Front-Office при роботі з ФР Марія-301 МТМ
+- Заповнення поля "Вид оплати" при вивантаженні реалізацій в обробці "Обмін даними з 2К:Бухгалтерія 7.7"
+- Друк зустрічки на відмову при пакуванні страв у замовленні
+- Видалення користувача ІБ при записі елемента довідника "Користувачі"
+- Дублювання інформаційних карт при обміні з системою козирних карт
+- При видаленні страв із замовлення, зняття всіх прапорів і наступному натисканні клавіші "Видалити", позиції не видаляються
+- При видаленні страв із замовлення прапори можна проставляти/прибирати подвійним кліком
+- Проставлення прапора "Модифікованості" при завантаженні меню за допомогою обробки "Обмін даними з 2К:Бухгалтерія 7.7"
+- У друкованій формі зустрічки на відмову виводиться не час відкриття столу, а час друку відмови
+- Якщо знижка і націнка в замовленні однакового номіналу, то на друк виводиться і знижка і націнка
+- Помилка при спробі вибору знижки/націнки в табличній частині документа "Замовлення"
+- Закриття форми при подвійному кліку по елементу довідника "Організації"
+- Неможливість збереження замовлення при внесенні коментарів до страв(з пробілами в кінці рядка)
+- Розрахунок сумової знижки в замовленні
+- Проставлення прапорів налаштування правил в довіднику "Типи знижок/націнок" для сумової знижки(націнки)
+- Періодично некоректна робота механізму дії знижки/націнки по періоду дії
+- Помилка при створенні групи в довіднику "Користувачі"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>181</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 2.0.0.99</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нове у версії 2.0.0.99</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>182</index>
+		<row>
+			<formatIndex>34</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>35</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>183</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новая настройка для фастфудов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Нова установка для фастфудів</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>184</index>
+		<row>
+			<formatIndex>20</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Появилась настройка "Запрашивать печать пречека при приеме оплаты"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>З'явилася настройка "Запитувати друк пречеків при прийомі оплати"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>185</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новый механизм расчета скидок для депозитной дисконтной карты.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Новий механізм розрахунку знижок для депозитної дисконтної картки.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>186</index>
+		<row>
+			<formatIndex>42</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В справочнике "Типы скидок наценок" добавлен новый реквизит "Не распространяется на депозитную карту", который доступен только для типов скидок/наценок с условиями: "Ручная скидка" и "Без условий".
+При включенном флаге "Не распространяется на депозитную карту", в заказе для блюд будет рассчитываться "Сумма скидки" вместо "Сумма депозита".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>У довіднику "Типи знижок націнок" доданий новий реквізит "Не поширюється на депозитну картку", який доступний тільки для типів знижок/націнок з умовами: "Ручна знижка" і "Без умов".
+При включеному прапорі "Не поширюється на депозитну картку", в замовленні для страв буде розраховуватися "Сума знижки" замість "Сума депозиту".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>187</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Механизм автоматического изменения количества в черном/белом списке</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Механізм автоматичної зміни кількості в чорному/білому списку</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>188</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Если в ресторане ведется учет количества для элементов черного/белого списка, то:
+1) при добавлении блюда, которое находится в черном/белом списке, в заказ, автоматически уменьшится количество такого блюда в одном из списков соответственно
+2) при уменьшении количества блюда в черном/белом списке до 0(либо меньше 0), такое блюдо автоматически удалено из белого списка, а для черного списка останется с количеством равным 0
+</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Якщо в ресторані ведеться облік кількості для елементів чорного/білого списку, то:
+1) при додаванні страви, яка знаходиться в чорному/білому списку, в замовлення, автоматично зменшиться кількість такої страви в одному зі списків відповідно
+2) при зменшенні кількості страви в чорному/білому списку до 0 (або менше 0), така страва буде автоматично видалена з білого списку, а для чорного списку залишиться з кількістю рівною 0</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>189</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новый механизм разграничения прав доступа к справочнику "Типы скидок и наценок"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Новий механізм розмежування прав доступу до довідника "Типи знижок і націнок"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>190</index>
+		<row>
+			<formatIndex>42</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В справочниках "Группы пользователей" и "Пользователи" на закладке "Доступность" можно разрешать/запрещать использование определенного типа скидки/наценки в заказе для группы пользователей или пользователя соответственно.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>У довідниках "Групи користувачів" і "Користувачі" на закладці "Доступність" можна дозволяти/забороняти використання певного типу знижки/націнки в замовленні для групи користувачів або користувача відповідно.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>191</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сводка. Печатная форма</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Зведення. Форма друку</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>192</index>
+		<row>
+			<formatIndex>42</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Увеличена ширина колонки "Сумма" в печатной форме.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Збільшена ширина колонки "Сума" у формі для друку.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>193</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Звіти</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>194</index>
+		<row>
+			<formatIndex>42</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В предопределенные варианты отчетов по продажам и расходу блюд добавлена новая группировка и отбор по реквизиту "Стол".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>В зумовлені варіанти звітів по продажах і витраті страв додано нове угруповання і відбір за реквізитом "Стіл".</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>195</index>
+		<row>
+			<formatIndex>8</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новый отчет "Анализ действий"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Новий звіт "Аналіз дій"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>196</index>
+		<row>
+			<formatIndex>13</formatIndex>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты - Анализ действий</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Звіти - Аналіз дій</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>197</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправлены ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправлені помилки</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>198</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>- Восстановлены предопределенные варианты отчетов
+- При закрытии модифицированного заказа пользователем, у которого нет прав на сохранение заказа, система сообщит об этом пользователю и не разрешит его сохранить
+- При выборе условия для блюда в заказе меню будет оставаться в последней активной папке
+- При загрузке меню из бухгалтерии флаг "Актуальность" не сбивается
+- Некорректное отображение суммы скидки в табличной части заказа "Скидки"
+- Расчет сумм при одновременной скидке и наценке в заказе
+- Расчет наценки в заказе для примененной дисконтной карты с видом "Накопительная"
+- Установка отбора по кассе в сводке</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>- Відновлено зумовлені варіанти звітів
+- При закритті модифікованого замовлення користувачем, у якого немає прав на збереження замовлення, система повідомить про це користувачеві і не дозволить його зберегти
+- При виборі умови для страви в замовленні меню буде залишатися в останньої активної папці
+- При завантаженні меню з бухгалтерії прапорець "Актуальність" не збивається
+- Некоректне відображення суми знижки в табличній частині замовлення "Знижки"
+- Розрахунок сум при одночасній знижці і націнці в замовленні
+- Розрахунок націнки в замовленні для застосованої дисконтної картки з видом "Накопичувальна"
+- Установка відбору по касі у зведенні</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>6</defaultFormatIndex>
+	<height>199</height>
+	<vgRows>199</vgRows>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия20099</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>182</beginRow>
+			<endRow>198</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия20135</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>159</beginRow>
+			<endRow>179</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия20162</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>134</beginRow>
+			<endRow>156</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия20185</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>114</beginRow>
+			<endRow>132</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия202</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>77</beginRow>
+			<endRow>101</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия2021</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>103</beginRow>
+			<endRow>112</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия203</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>50</beginRow>
+			<endRow>74</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия204</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>24</beginRow>
+			<endRow>48</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия205</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>2</beginRow>
+			<endRow>21</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Отступ</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>0</beginRow>
+			<endRow>0</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка20099</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>181</beginRow>
+			<endRow>181</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка20135</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>158</beginRow>
+			<endRow>158</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка20162</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>133</beginRow>
+			<endRow>133</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка20185</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>113</beginRow>
+			<endRow>113</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка202</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>76</beginRow>
+			<endRow>76</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка2021</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>102</beginRow>
+			<endRow>102</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка203</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>49</beginRow>
+			<endRow>49</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка204</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>23</beginRow>
+			<endRow>23</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка205</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>1</beginRow>
+			<endRow>1</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<font faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<format>
+		<width>8</width>
+	</format>
+	<format>
+		<width>640</width>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>false</hyperLink>
+	</format>
+	<format>
+		<height>36</height>
+	</format>
+	<format>
+		<width>72</width>
+		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<width>0</width>
+	</format>
+	<format>
+		<width>72</width>
+	</format>
+	<format>
+		<font>0</font>
+		<width>432</width>
+		<backColor>#C0C0C0</backColor>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>false</hyperLink>
+	</format>
+	<format>
+		<height>0</height>
+	</format>
+	<format>
+		<font>1</font>
+		<height>60</height>
+		<borderColor>style:FieldBackColor</borderColor>
+		<width>432</width>
+		<backColor>#E0D8E7</backColor>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>false</hyperLink>
+	</format>
+	<format>
+		<height>0</height>
+		<width>72</width>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>false</hyperLink>
+	</format>
+	<format>
+		<borderColor>style:FieldBackColor</borderColor>
+	</format>
+	<format>
+		<font>2</font>
+		<height>255</height>
+		<width>640</width>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>false</hyperLink>
+	</format>
+	<format>
+		<font>3</font>
+		<height>48</height>
+	</format>
+	<format>
+		<font>2</font>
+		<height>255</height>
+		<width>640</width>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<font>4</font>
+		<height>60</height>
+		<width>432</width>
+		<textColor>style:FieldSelectionBackColor</textColor>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>true</hyperLink>
+	</format>
+	<format>
+		<height>0</height>
+		<width>0</width>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-800</height>
+	</format>
+	<format>
+		<font>3</font>
+	</format>
+	<format>
+		<font>3</font>
+		<height>0</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>51</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>45</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-48</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>54</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-160</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-400</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-320</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-200</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-280</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>18</height>
+	</format>
+	<format>
+		<height>0</height>
+		<width>640</width>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>false</hyperLink>
+	</format>
+	<format>
+		<height>24</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-99</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-132</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-32</height>
+	</format>
+	<format>
+		<font>0</font>
+		<height>60</height>
+		<width>432</width>
+		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<height>27</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>90</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>96</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>132</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>87</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>468</height>
+	</format>
+	<format>
+		<font>3</font>
+		<height>-255</height>
+	</format>
+</document>

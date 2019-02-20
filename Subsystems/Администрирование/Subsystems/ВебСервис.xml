@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Subsystem uuid="185ec32d-698a-4740-b6b8-1ef89d3f9615">
+		<Properties>
+			<Name>ВебСервис</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Web-сервис</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Web-сервіс</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление web-сервисом и сервером печати</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Управління web-сервісом і сервером друку</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.__СостояниеСеансовВебСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.__СостояниеЗаданийСервераПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ПередачаДанныхСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ВебСервисСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Touch</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаСервераПечати</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__СерверПечатиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.__НастройкаВебСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Server</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.Sales</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.Core</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.Users</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьВебСервис</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.Goods</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.__Apache</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.Catalogs</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.__Настройки</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

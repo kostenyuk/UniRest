@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<CheckBoxField name="СостояниеУдаления" id="3">
+			<DataPath>Запись.СостояниеУдаления</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СостояниеУдаленияКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="СостояниеУдаленияРасширеннаяПодсказка" id="32"/>
+		</CheckBoxField>
+		<InputField name="ВидыОбъектовОбмена" id="5">
+			<DataPath>Запись.ВидыОбъектовОбмена</DataPath>
+			<ContextMenu name="ВидыОбъектовОбменаКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ВидыОбъектовОбменаРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="ИмяФайла" id="7">
+			<DataPath>Запись.ИмяФайла</DataPath>
+			<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<InputField name="КоличествоПопыток" id="9">
+			<DataPath>Запись.КоличествоПопыток</DataPath>
+			<ContextMenu name="КоличествоПопытокКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="КоличествоПопытокРасширеннаяПодсказка" id="35"/>
+		</InputField>
+		<InputField name="СостояниеФайла" id="11">
+			<DataPath>Запись.СостояниеФайла</DataPath>
+			<ContextMenu name="СостояниеФайлаКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="СостояниеФайлаРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ПолноеИмяФайла" id="13">
+			<DataPath>Запись.ПолноеИмяФайла</DataPath>
+			<ContextMenu name="ПолноеИмяФайлаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПолноеИмяФайлаРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="ВремяИзменения" id="15">
+			<DataPath>Запись.ВремяИзменения</DataPath>
+			<ContextMenu name="ВремяИзмененияКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ВремяИзмененияРасширеннаяПодсказка" id="38"/>
+		</InputField>
+		<InputField name="Размер" id="17">
+			<DataPath>Запись.Размер</DataPath>
+			<ContextMenu name="РазмерКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="РазмерРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="КоментарииФайла" id="19">
+			<DataPath>Запись.КоментарииФайла</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КоментарииФайлаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КоментарииФайлаРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="Пользователь" id="21">
+			<DataPath>Запись.Пользователь</DataPath>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="41"/>
+		</InputField>
+		<InputField name="КоличествоВсего" id="23">
+			<DataPath>Запись.КоличествоВсего</DataPath>
+			<ContextMenu name="КоличествоВсегоКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="КоличествоВсегоРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="Новых" id="25">
+			<DataPath>Запись.Новых</DataPath>
+			<ContextMenu name="НовыхКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="НовыхРасширеннаяПодсказка" id="43"/>
+		</InputField>
+		<InputField name="Удаленных" id="27">
+			<DataPath>Запись.Удаленных</DataPath>
+			<ContextMenu name="УдаленныхКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="УдаленныхРасширеннаяПодсказка" id="44"/>
+		</InputField>
+		<InputField name="КоличествоСОшибкой" id="29">
+			<DataPath>Запись.КоличествоСОшибкой</DataPath>
+			<ContextMenu name="КоличествоСОшибкойКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="КоличествоСОшибкойРасширеннаяПодсказка" id="45"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.СписокФайловПриОбмене</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="128"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПериод" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="129"/>
+					<ChildItems>
+						<InputField name="Периодичность" id="2">
+							<DataPath>Периодичность</DataPath>
+							<Width>15</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ChoiceButton>false</ChoiceButton>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.Периодичность.EnumValue.День</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.Периодичность.EnumValue.ДеньНедели</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.Периодичность.EnumValue.Неделя</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.Периодичность.EnumValue.Месяц</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.Периодичность.EnumValue.Год</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ПериодичностьКонтекстноеМеню" id="3"/>
+							<ExtendedTooltip name="ПериодичностьРасширеннаяПодсказка" id="130"/>
+							<Events>
+								<Event name="OnChange">ПериодичностьПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Период1" id="6">
+							<DataPath>Период1</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период предыдущий</v8:content>
+								</v8:item>
+							</Title>
+							<Width>30</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="Период1КонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="Период1РасширеннаяПодсказка" id="131"/>
+							<Events>
+								<Event name="OnChange">Период1ПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Период2" id="8">
+							<DataPath>Период2</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период текущий</v8:content>
+								</v8:item>
+							</Title>
+							<Width>30</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="Период2КонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="Период2РасширеннаяПодсказка" id="132"/>
+							<Events>
+								<Event name="OnChange">Период2ПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Button name="Обновить" id="17">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Обновить</CommandName>
+							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="133"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАналитика" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа аналитика</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа аналитика</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАналитикаРасширеннаяПодсказка" id="134"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАналитикаЛево" id="80">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбор KPI</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа аналитика лево</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаАналитикаЛевоРасширеннаяПодсказка" id="135"/>
+							<ChildItems>
+								<CheckBoxField name="КЦП" id="86">
+									<DataPath>КЦП</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КЦПКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="КЦПРасширеннаяПодсказка" id="136"/>
+									<Events>
+										<Event name="OnChange">КЦППриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="Цена" id="88">
+									<DataPath>Цена</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЦенаКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="137"/>
+									<Events>
+										<Event name="OnChange">ЦенаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="СебестоимостьПроцент" id="90">
+									<DataPath>СебестоимостьПроцент</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СебестоимостьПроцентКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="СебестоимостьПроцентРасширеннаяПодсказка" id="138"/>
+									<Events>
+										<Event name="OnChange">СебестоимостьПроцентПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ВаловыйДоходПроцент" id="92">
+									<DataPath>ВаловыйДоходПроцент</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВаловыйДоходПроцентКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ВаловыйДоходПроцентРасширеннаяПодсказка" id="139"/>
+									<Events>
+										<Event name="OnChange">ВаловыйДоходПроцентПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАналитикаПраво" id="107">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно для сервиса</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа аналитика право</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаАналитикаПравоРасширеннаяПодсказка" id="140"/>
+							<ChildItems>
+								<CheckBoxField name="СредняяТранзакция" id="108">
+									<DataPath>СредняяТранзакция</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СредняяТранзакцияКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="СредняяТранзакцияРасширеннаяПодсказка" id="141"/>
+									<Events>
+										<Event name="OnChange">СредняяТранзакцияПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="КЦПТранзакция" id="122">
+									<DataPath>КЦПТранзакция</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КЦПТранзакцияКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="КЦПТранзакцияРасширеннаяПодсказка" id="142"/>
+									<Events>
+										<Event name="OnChange">КЦПТранзакцияПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаЗакладки" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа закладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа закладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаЗакладкиРасширеннаяПодсказка" id="143"/>
+			<ChildItems>
+				<Page name="ГруппаОтборы" id="106">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отборы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отборы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="144"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтборыВерх" id="73">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбор фильтров</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отборы верх</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаОтборыВерхРасширеннаяПодсказка" id="145"/>
+							<ChildItems>
+								<InputField name="Ресторан" id="22">
+									<DataPath>Ресторан</DataPath>
+									<ContextMenu name="РесторанКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="РесторанРасширеннаяПодсказка" id="146"/>
+									<Events>
+										<Event name="StartChoice">РесторанНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="Оплата" id="24">
+									<DataPath>Оплата</DataPath>
+									<ContextMenu name="ОплатаКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ОплатаРасширеннаяПодсказка" id="147"/>
+									<Events>
+										<Event name="StartChoice">ОплатаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="Номенклатура" id="58">
+									<DataPath>Номенклатура</DataPath>
+									<ContextMenu name="НоменклатураКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="148"/>
+									<Events>
+										<Event name="StartChoice">НоменклатураНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОтборыНиз" id="60">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отборы низ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отборы низ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборыНизРасширеннаяПодсказка" id="149"/>
+							<ChildItems>
+								<InputField name="ЦенаВидСравнения" id="61">
+									<DataPath>ЦенаВидСравнения</DataPath>
+									<ContextMenu name="ЦенаВидСравненияКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ЦенаВидСравненияРасширеннаяПодсказка" id="150"/>
+								</InputField>
+								<InputField name="ЦенаЗначениеСравнения" id="63">
+									<DataPath>ЦенаЗначениеСравнения</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ЦенаЗначениеСравненияКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ЦенаЗначениеСравненияРасширеннаяПодсказка" id="151"/>
+								</InputField>
+								<CheckBoxField name="УчитыватьКоэффициентПересчета" id="65">
+									<DataPath>УчитыватьКоэффициентПересчета</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="УчитыватьКоэффициентПересчетаКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="УчитыватьКоэффициентПересчетаРасширеннаяПодсказка" id="152"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПланФакт" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>План-факт</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа план факт</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаПланФактРасширеннаяПодсказка" id="153"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПланФактЛево" id="124">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа план факт лево</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа план факт лево</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПланФактЛевоРасширеннаяПодсказка" id="154"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаТекущаяДата" id="39">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа текущая дата</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа текущая дата</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаТекущаяДатаРасширеннаяПодсказка" id="155"/>
+									<ChildItems>
+										<SpreadSheetDocumentField name="ТабличноеПолеТекущаяДата" id="47">
+											<DataPath>ТабличноеПолеТекущаяДата</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Height>3</Height>
+											<VerticalScrollBar>false</VerticalScrollBar>
+											<HorizontalScrollBar>false</HorizontalScrollBar>
+											<ContextMenu name="ТабличноеПолеТекущаяДатаКонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="ТабличноеПолеТекущаяДатаРасширеннаяПодсказка" id="156"/>
+										</SpreadSheetDocumentField>
+										<UsualGroup name="ГруппаВыполнениеПлана" id="101">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнение плана</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа выполнение плана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ChildItemsWidth>Equal</ChildItemsWidth>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВыполнениеПланаРасширеннаяПодсказка" id="157"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаВыполнениеПланаСумма" id="102">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ТО, % (Выполнение плана)</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа выполнение плана сумма</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ExtendedTooltip name="ГруппаВыполнениеПланаСуммаРасширеннаяПодсказка" id="158"/>
+													<ChildItems>
+														<ChartField name="ДиаграммаВыполнениеПланаСумма" id="74">
+															<DataPath>ДиаграммаВыполнениеПланаСумма</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Height>7</Height>
+															<ContextMenu name="ДиаграммаВыполнениеПланаСуммаКонтекстноеМеню" id="75"/>
+															<ExtendedTooltip name="ДиаграммаВыполнениеПланаСуммаРасширеннаяПодсказка" id="159"/>
+														</ChartField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВыполнениеПланаВаловыйДоход" id="103">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ВП, % (Выполнение плана)</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа выполнение плана валовый доход</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ExtendedTooltip name="ГруппаВыполнениеПланаВаловыйДоходРасширеннаяПодсказка" id="160"/>
+													<ChildItems>
+														<ChartField name="ДиаграммаВыполнениеПланаВаловыйДоход" id="99">
+															<DataPath>ДиаграммаВыполнениеПланаВаловыйДоход</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Height>7</Height>
+															<ContextMenu name="ДиаграммаВыполнениеПланаВаловыйДоходКонтекстноеМеню" id="100"/>
+															<ExtendedTooltip name="ДиаграммаВыполнениеПланаВаловыйДоходРасширеннаяПодсказка" id="161"/>
+														</ChartField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<SpreadSheetDocumentField name="ТабличноеПолеВыполнениеПлана" id="49">
+											<DataPath>ТабличноеПолеВыполнениеПлана</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Height>3</Height>
+											<VerticalScrollBar>false</VerticalScrollBar>
+											<HorizontalScrollBar>false</HorizontalScrollBar>
+											<ContextMenu name="ТабличноеПолеВыполнениеПланаКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="ТабличноеПолеВыполнениеПланаРасширеннаяПодсказка" id="162"/>
+										</SpreadSheetDocumentField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПланФактТаблица" id="44">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа план факт таблица</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа план факт таблица</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПланФактТаблицаРасширеннаяПодсказка" id="163"/>
+									<ChildItems>
+										<SpreadSheetDocumentField name="ТабличноеПолеПланФакт" id="51">
+											<DataPath>ТабличноеПолеПланФакт</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<VerticalScrollBar>false</VerticalScrollBar>
+											<HorizontalScrollBar>false</HorizontalScrollBar>
+											<ContextMenu name="ТабличноеПолеПланФактКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="ТабличноеПолеПланФактРасширеннаяПодсказка" id="164"/>
+										</SpreadSheetDocumentField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПланФактПраво" id="125">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа план факт право</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа план факт право</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПланФактПравоРасширеннаяПодсказка" id="165"/>
+							<ChildItems>
+								<ChartField name="ДиаграммаПланФакт" id="95">
+									<DataPath>ДиаграммаПланФакт</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ДиаграммаПланФактКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ДиаграммаПланФактРасширеннаяПодсказка" id="166"/>
+								</ChartField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСравнениеПериодов" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сравнение периодов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сравнение периодов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаСравнениеПериодовРасширеннаяПодсказка" id="167"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСравнениеПериодовЛево" id="113">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа сравнение периодов лево</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа сравнение периодов лево</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСравнениеПериодовЛевоРасширеннаяПодсказка" id="168"/>
+							<ChildItems>
+								<SpreadSheetDocumentField name="ТабличноеПолеСравнениеПериодов" id="45">
+									<DataPath>ТабличноеПолеСравнениеПериодов</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<VerticalScrollBar>false</VerticalScrollBar>
+									<HorizontalScrollBar>false</HorizontalScrollBar>
+									<ContextMenu name="ТабличноеПолеСравнениеПериодовКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ТабличноеПолеСравнениеПериодовРасширеннаяПодсказка" id="169"/>
+								</SpreadSheetDocumentField>
+								<UsualGroup name="ГруппаИзменениеПоказателей" id="104">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отклонения, % (текущий период к предыдущему периоду)</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа изменение показателей</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="ГруппаИзменениеПоказателейРасширеннаяПодсказка" id="170"/>
+									<ChildItems>
+										<ChartField name="ДиаграммаИзменениеПоказателей" id="97">
+											<DataPath>ДиаграммаИзменениеПоказателей</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="ДиаграммаИзменениеПоказателейКонтекстноеМеню" id="98"/>
+											<ExtendedTooltip name="ДиаграммаИзменениеПоказателейРасширеннаяПодсказка" id="171"/>
+										</ChartField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСравнениеПериодовПраво" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа сравнение периодов право</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа сравнение периодов право</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСравнениеПериодовПравоРасширеннаяПодсказка" id="172"/>
+							<ChildItems>
+								<ChartField name="ДиаграммаСравнениеПериодов" id="76">
+									<DataPath>ДиаграммаСравнениеПериодов</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ДиаграммаСравнениеПериодовКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ДиаграммаСравнениеПериодовРасширеннаяПодсказка" id="173"/>
+								</ChartField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСервис" id="115">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервис</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сервис</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаСервисРасширеннаяПодсказка" id="174"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСреднийЧек" id="116">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Средний чек</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа средний чек</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаСреднийЧекРасширеннаяПодсказка" id="175"/>
+							<ChildItems>
+								<ChartField name="ДиаграммаСреднийЧек" id="118">
+									<DataPath>ДиаграммаСреднийЧек</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ДиаграммаСреднийЧекКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="ДиаграммаСреднийЧекРасширеннаяПодсказка" id="176"/>
+								</ChartField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоказатели" id="117">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>KPI (выбор)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа показатели</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаПоказателиРасширеннаяПодсказка" id="177"/>
+							<ChildItems>
+								<ChartField name="ДиаграммаПоказатели" id="126">
+									<DataPath>ДиаграммаПоказатели</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ДиаграммаПоказателиКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ДиаграммаПоказателиРасширеннаяПодсказка" id="178"/>
+								</ChartField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.МониторМоментальныхПоказателей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Период1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период2" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Периодичность" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Периодичность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.Периодичность</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТабличноеПолеСравнениеПериодов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличное поле сравнение периодов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Ресторан" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ресторан</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>Ресторан</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Оплата" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оплата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>Оплата</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЦенаВидСравнения" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыСравнения</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ЦенаВидСравнения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЦенаЗначениеСравнения" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена значение сравнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ЦенаЗначениеСравнения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="УчитыватьКоэффициентПересчета" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать коэффициент пересчета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>УчитыватьКоэффициентПересчета</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТабличноеПолеТекущаяДата" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличное поле текущая дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТабличноеПолеВыполнениеПлана" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличное поле выполнение плана</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТабличноеПолеПланФакт" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличное поле план факт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Номенклатура" id="7">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>Номенклатура</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДиаграммаВыполнениеПланаСумма" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диаграмма выполнение плана сумма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДиаграммаСравнениеПериодов" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диаграмма сравнение периодов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КЦП" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>КЦП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Цена" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ср. цена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СебестоимостьПроцент" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>FC %</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВаловыйДоходПроцент" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВП %</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДиаграммаПланФакт" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диаграмма план факт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДиаграммаИзменениеПоказателей" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диаграмма изменение показателей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДиаграммаВыполнениеПланаВаловыйДоход" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диаграмма выполнение плана валовый доход</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СредняяТранзакция" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ср. транз</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КЦПТранзакция" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>КЦП на транзакцию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДиаграммаСреднийЧек" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диаграмма средний чек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДиаграммаПоказатели" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диаграмма показатели</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

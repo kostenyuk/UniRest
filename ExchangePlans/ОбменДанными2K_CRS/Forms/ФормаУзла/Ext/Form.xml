@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<InputField name="Ресторан" id="5">
+			<DataPath>Объект.Ресторан</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РесторанКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="РесторанРасширеннаяПодсказка" id="38"/>
+		</InputField>
+		<InputField name="НомерОтправленного" id="32">
+			<DataPath>Объект.SentNo</DataPath>
+			<ContextMenu name="НомерОтправленногоКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="НомерОтправленногоРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="НомерПринятого" id="34">
+			<DataPath>Объект.ReceivedNo</DataPath>
+			<ContextMenu name="НомерПринятогоКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="НомерПринятогоРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<Table name="НастройкиСвязейМеждуБазамиРС" id="7">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.НастройкиСвязейМеждуБазамиРС</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор источника для данных каждого вида</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="НастройкиСвязейМеждуБазамиРСКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="НастройкиСвязейМеждуБазамиРСКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="НастройкиСвязейМеждуБазамиРСРасширеннаяПодсказка" id="41"/>
+			<SearchStringAddition name="НастройкиСвязейМеждуБазамиРССтрокаПоиска" id="42">
+				<AdditionSource>
+					<Item>НастройкиСвязейМеждуБазамиРС</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НастройкиСвязейМеждуБазамиРССтрокаПоискаКонтекстноеМеню" id="43"/>
+				<ExtendedTooltip name="НастройкиСвязейМеждуБазамиРССтрокаПоискаРасширеннаяПодсказка" id="44"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НастройкиСвязейМеждуБазамиРССостояниеПросмотра" id="45">
+				<AdditionSource>
+					<Item>НастройкиСвязейМеждуБазамиРС</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НастройкиСвязейМеждуБазамиРССостояниеПросмотраКонтекстноеМеню" id="46"/>
+				<ExtendedTooltip name="НастройкиСвязейМеждуБазамиРССостояниеПросмотраРасширеннаяПодсказка" id="47"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НастройкиСвязейМеждуБазамиРСУправлениеПоиском" id="48">
+				<AdditionSource>
+					<Item>НастройкиСвязейМеждуБазамиРС</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="НастройкиСвязейМеждуБазамиРСУправлениеПоискомКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="НастройкиСвязейМеждуБазамиРСУправлениеПоискомРасширеннаяПодсказка" id="50"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="НастройкиСвязейМеждуБазамиРСИдентификаторОбъектаНастройки" id="18">
+					<DataPath>Объект.НастройкиСвязейМеждуБазамиРС.ИдентификаторОбъектаНастройки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НастройкиСвязейМеждуБазамиРСИдентификаторОбъектаНастройкиКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="НастройкиСвязейМеждуБазамиРСИдентификаторОбъектаНастройкиРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="НастройкиСвязейМеждуБазамиРСВидЗначимостиОбъекта" id="22">
+					<DataPath>Объект.НастройкиСвязейМеждуБазамиРС.ВидЗначимостиОбъекта</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content> - </v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Общеструктурный</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Локальный</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ChoiceListButton>true</ChoiceListButton>
+					<ContextMenu name="НастройкиСвязейМеждуБазамиРСВидЗначимостиОбъектаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НастройкиСвязейМеждуБазамиРСВидЗначимостиОбъектаРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="НастройкиСвязейМеждуБазамиРСИсточникДанныхОбъекта" id="25">
+					<DataPath>Объект.НастройкиСвязейМеждуБазамиРС.ИсточникДанныхОбъекта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>false</ChoiceButton>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ВидыБазИсточниковПриОбменеЦРС.EnumValue.АвтономнаяРабота</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ВидыБазИсточниковПриОбменеЦРС.EnumValue.ЛокальнаяБазаРесторана</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ВидыБазИсточниковПриОбменеЦРС.EnumValue.ЦентральнаяБазаРестораннойСистемы</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ChoiceListButton>true</ChoiceListButton>
+					<ContextMenu name="НастройкиСвязейМеждуБазамиРСИсточникДанныхОбъектаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="НастройкиСвязейМеждуБазамиРСИсточникДанныхОбъектаРасширеннаяПодсказка" id="53"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="КоличествоОбъектов" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество объектов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество объектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КоличествоОбъектовРасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<TrackBarField name="КоличествоОбъектовВПакете" id="27">
+					<DataPath>Объект.КоличествоОбъектовВПакете</DataPath>
+					<Width>39</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<MaxValue>999</MaxValue>
+					<Step>10</Step>
+					<LargeStep>50</LargeStep>
+					<MarkingStep>25</MarkingStep>
+					<MarkingAppearance>BothSides</MarkingAppearance>
+					<ContextMenu name="КоличествоОбъектовВПакетеКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="КоличествоОбъектовВПакетеРасширеннаяПодсказка" id="55"/>
+				</TrackBarField>
+				<InputField name="КоличествоОбъектовВПакетеЧислом" id="29">
+					<DataPath>Объект.КоличествоОбъектовВПакете</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>..</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<TitleHeight>2</TitleHeight>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<SpinButton>true</SpinButton>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН='"Нет ограничения"'</v8:content>
+						</v8:item>
+					</EditFormat>
+					<MinValue xsi:type="xs:decimal">0</MinValue>
+					<MaxValue xsi:type="xs:decimal">999</MaxValue>
+					<ContextMenu name="КоличествоОбъектовВПакетеЧисломКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КоличествоОбъектовВПакетеЧисломРасширеннаяПодсказка" id="56"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ОткрытьОбщуюФорму" id="24">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОткрытьОбщуюФорму</CommandName>
+			<ExtendedTooltip name="ОткрытьОбщуюФормуРасширеннаяПодсказка" id="57"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExchangePlanObject.ОбменДанными2K_CRS</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КоличествоОбъектовВПакете</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Ресторан</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьОбщуюФорму" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть общую форму</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть упр форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьОбщуюФорму</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,142 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv=Content-Type></meta>
+  <title>Схема</title>
+  <style>
+    html, body {
+      background-color: #fcfaeb;
+      height: 100%;
+      margin: 0;
+      width: 100%;
+    }
+    html {
+      display: table;
+    }
+    body {
+      color: #413003;
+      display: table-cell;
+      font-family: 'MS Sans Serif', Arial, Verdana, sans-serif;
+      font-size: 12px;
+      line-height: normal;
+      text-align: center;
+      vertical-align: middle;
+    }
+    #scheme-tables-position {
+      margin: 0 auto;
+      text-align: center;
+      }
+    #scheme-tables-list {
+      display: inline-table;
+      height: 200px;
+      position: relative;
+      width: 300px;
+    }
+    .scheme-table-body {
+      background-color: white;
+      border: 1px solid #b3ac86;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      overflow: hidden;
+      position: absolute;
+      text-align: center;
+    }
+    .scheme-table-title {
+      background-color: #b3ac86;
+      cursor: pointer;
+      font-weight: bold;
+      text-align: center;
+    }
+    .scheme-table-number {
+      font-size: 14px;
+      height: auto !important;
+      height: 17px;
+      min-height: 17px;
+    }
+    .scheme-table-number.checkbox-mode {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAGpJREFUOE9j+P//PwOlmGIDQA6AGzJzUrYAEB8A4v9EYJA6AZgPkA05cObkVqA4YQBSB7IQmyGEdSOpALl21BDUIBsNE8wkhCtMDuzfvZioBAdShyvFgvLOAiLyDcgAkDrMvENJcUCVogAAL267uIU0wl4AAAAASUVORK5CYII=) left no-repeat;
+    }
+    .scheme-table-number.checkbox-mode:hover {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAJxJREFUOE+t1E0KwjAQhuEeocf2GNVLCK6yVhBEEEQoSKVixb8TvM0Ili4y9IO4eHbDSwKZFECRKztgBxgis0VdRiFCYHPl7wbjSFiuX7QfJtlcjFSpCM0bmZ02GTk/QeVG6geo3MjpDio3cuxA5UYON1C5kf0VVG5k14LKjWwvoPIiYb7q2DRMsjnvxdruVMLefAPJ3cn5Dv7yFfRtd7ZT+H9rnQAAAABJRU5ErkJggg==) left no-repeat;
+    }
+    .scheme-table-number.checkbox-mode:active {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAMlJREFUOE+l1D8LglAUh2E/gh/bpKBoKELC/hhYQlQohRHiUlNTLQ3hKC1ndvrlFYogjx1SeDd57r1wz9UAaHWrDagNvBFjfNfzojwIUv/prxN8IgVgBSncmCprzhK1kF2GwPJTHBP8LLxmxW5LkemBEN0gikVGIWF3gSgWGW4JmzNEscjAJ3gniGKR3prgxBDFIt0lYbiHKBZpe4R+AFEs0poTOiuI4pDImCQw3QzmApU1nAd7Y9Xs2IK5KYDS2dH++L6ufZ035QmSjGUGxDjKlQAAAABJRU5ErkJggg==) left no-repeat;
+    }
+    .scheme-table-number.checkbox-mode.checked {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAALhJREFUOE9j+P//PwOlmGIDQA6AGzJzUrYAEB8A4v9EYJA6AZgPkA05cObkVqA4YQBSB7IQmyGEdSOpALmWLEPq6+vhxpBlCMgAY2Nj4g1BthGkC2YASYaAFMMMQjZg06ZNxLvE3t4e7HQfHx8wDcLIBoBMIhgmN2/e/A8zCJsBRBkCUgQzCN0FMP8QdAlM4adPn3CmHVyGHNi/ezFRCQ6kDleKBeWdBUTkG5ABIHWYeYeS4oAqRQEA2l6K7KNN6y0AAAAASUVORK5CYII=) left no-repeat;
+    }
+    .scheme-table-number.checkbox-mode.checked:hover {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAQtJREFUOE+tlLtqAkEUhn0En0MlKdYU2qxNujyKQZvEcltrg6T18gaLIFgtRJsEAiEQFEEQRVGiubzAn/knzDLCHl1Yi4+Zc5mPWdgzKQCppCQW8AKhpN6ZpRWBAjFgX9p8gS0J+s9fWP3gJOxTklaUBMtvxIa3jZTM98AxqjUvrIuS2Q6QqNx7yF06YV2UTD8BcqsOmL2JKSAmL0omW4BkVXP5ztN7rozJY9fXOSJKPjYAuSq6+lDp+iYUNJXA1LmKkvc1QHqjCfIFF5kLR/PQ9nXeRpS8rQCDP/wXNZTAzpu9KHldAjZP49+D2K5JkqA92OJlgZOwT/pjOTutGHOjBZGzk+Q5OMtT8Aev+ImBk52rnwAAAABJRU5ErkJggg==) left no-repeat;
+    }
+    .scheme-table-number.checkbox-mode.checked:active {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAUFJREFUOE+tlLFKA0EQhvMIeQQVTYwgKtvZ3AtYCxaChSAExMLGbhGExCMBBUHRoIkaMZpCTzzEoBxpxMZKi6SQK4PNgl2q38zALSfcxsBZfMzNzPHtLuxsAkAiLrEFtAEtyZ9+Jnt4PTAA9F8yOEFYwoKS20GtqfpSuPBpoXKUBKX7Dl58/Enjo8u7jZScPyt4bRhZWpW6Z5RUGgqP74hkMSsxNiF0zyg5flC4ewMWViTHAMpHM4IJakbJoatQfwVGxgXmlyV/U6Sc2Cg4XCOMkn1HodoEMtMWhtMCM7NzHIn1nMO9AKNk70bh5AnIVVpIT1kYSglmbcvhehijZKeucOCC2TxqITVpISsdXQt6FI2S4pXC7i009uX3rzzcM0m8/JkPu9aFfY2+bFe/jDeWZqc8wNywIHJ24jwH//IU/ADO/WRckULEWQAAAABJRU5ErkJggg==) left no-repeat;
+    }
+    .scheme-plan-element {
+      background-color: black;
+      font-size: 0px;
+      height: 0px;
+      position: absolute;
+      width: 0px;
+    }
+    .scheme-plan-wall {
+      background-color: #b3ac86;
+    }
+    .scheme-plan-block {
+      background-color: #f7efde;
+      border: #b3ac86 solid 2px;
+    }
+    ins.scheme-reserve-ins {
+      color: #413003;
+      display: inline-block;
+      text-decoration: none;
+    }
+    div.scheme-reserve-div {
+      cursor: pointer;
+      float: left;
+      width: 7em;
+    }
+    span.scheme-reserve-left {
+      display: inline;
+      float: left;
+      margin: 0;
+      text-align: right;
+      width: 3em;
+    }
+    span.scheme-reserve-center {
+      display: inline;
+      float: left;
+      margin: 0;
+      text-align: center;
+      width: 1em;
+    }
+    span.scheme-reserve-right {
+      display: inline;
+      float: left;
+      margin: 0;
+      text-align: left;
+    }
+  </style>
+  <!--[if gt IE 6]>
+  <style>
+    #scheme-tables-position {
+      margin-top: expression( this . parentNode . offsetHeight > this . offsetHeight ?(( this . parentNode . offsetHeight-this . offsetHeight ) / 2 + "px" ) : "0" );
+    }
+  </style>
+  <![endif]<!-->
+  <style type="text/css">
+    {Style}
+  </style>
+  <style type="text/css">
+    {CSS}
+  </style>
+</head>
+<body>
+  <div id=scheme-tables-position class="[Class]" style="[Style]">
+    <div id=scheme-tables-list>
+      {Items}
+    </div>
+  </div>
+</body>
+</html>

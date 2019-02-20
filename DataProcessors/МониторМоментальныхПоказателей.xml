@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<DataProcessor uuid="bb08dd4e-4d5a-42ad-896c-42222fe3064b">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.МониторМоментальныхПоказателей" category="Object">
+				<xr:TypeId>ba9ec8fb-186e-492f-bd77-37ee0e07b0c7</xr:TypeId>
+				<xr:ValueId>db446834-a6b5-4d7f-b1f0-cc558346f52b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.МониторМоментальныхПоказателей" category="Manager">
+				<xr:TypeId>7e8b069d-5fe2-49b7-952e-22da9ad1317c</xr:TypeId>
+				<xr:ValueId>4169948d-4591-4688-88c6-e1979ff31e25</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МониторМоментальныхПоказателей</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Монитор моментальных показателей</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.МониторМоментальныхПоказателей.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ФормаВыбора</Form>
+			<Template>ЭлементыСправочникаДерево</Template>
+			<Template>МакетПоказатели</Template>
+			<Template>МакетПоказателиТекущаяДата</Template>
+			<Template>МакетПоказателиВыполнениеПлана</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

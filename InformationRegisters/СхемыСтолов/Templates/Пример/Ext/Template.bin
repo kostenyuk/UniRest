@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<type>2KRestaurant.HallScheme</type> <!-- Тип данных. -->
+	<scheme>
+		<css> <!-- Секция пользовательских стилей. Может отсутствовать. -->
+			<item> <!-- Пользовательский стиль. -->
+				<selector>.block</selector> <!-- CSS селектор стиля. -->
+				<description>Колонна</description> <!-- Описание. Может отсутствовать. -->
+				<style> <!-- Секция описания стиля. Где: имя тега - CSS свойство, значение тега - значение CSS свойства. -->
+					<background-color>#b3ac86</background-color>
+					<border>#b3ac86 solid 2px</border>
+				</style>
+			</item>
+			<item>
+				<selector>.table</selector>
+				<description>Стол</description>
+				<style>
+					<font-style>italic</font-style>
+				</style>
+			</item>
+		</css>
+		<area> <!-- Секция параметров схемы. -->
+			<item> <!-- Параметров схемы. Может присутствовать в единственном екземпляре. -->
+				<style>
+					<width>300px</width> <!-- Ширина. Не может быть указана в процентах. -->
+					<height>200px</height> <!-- Высота. Не может быть указана в процентах. -->
+				</style>
+			</item>
+		</area>
+		<tables> <!-- Секция размеченных столов. -->
+			<item> <!-- Стол. -->
+				<number>1</number> <!-- Номер стола. -->
+				<class>table</class> <!-- Пользовательский стиль. Может отсутствовать. -->
+				<description>Стол N. 1</description> <!-- Описание. Может отсутствовать. -->
+				<style> <!-- Секция описания стиля и размера стола. Где: имя тега - CSS свойство, значение тега - значение CSS свойства. -->
+					<left>60px</left> <!-- Лево. -->
+					<top>10px</top> <!-- Верх. -->
+					<width>85px</width> <!-- Ширина. -->
+					<height>40px</height> <!-- Высота. -->
+				</style>
+			</item>
+			<item>
+				<number>2</number>
+				<class>table</class>
+				<description>Стол N. 2</description>
+				<style>
+					<left>155px</left>
+					<top>10px</top>
+					<width>85px</width>
+					<height>40px</height>
+				</style>
+			</item>
+			<item>
+				<number>3</number>
+				<class>table</class>
+				<description>Стол N. 3</description>
+				<style>
+					<left>10px</left>
+					<top>60px</top>
+					<width>75px</width>
+					<height>80px</height>
+				</style>
+			</item>
+			<item>
+				<number>4</number>
+				<class>table</class>
+				<description>Стол N. 4</description>
+				<style>
+					<left>215px</left>
+					<top>60px</top>
+					<width>75px</width>
+					<height>80px</height>
+				</style>
+			</item>
+		</tables>
+		<plan> <!-- Секция плана зала. Может отсутствовать. -->
+			<item> <!-- Элемент плана. -->
+				<type>wall</type> <!-- Предопределенный тип элемента плана: wall, block. -->
+				<class>wall</class> <!-- Пользовательский стиль. Может отсутствовать. -->
+				<description>Северная стена</description> <!-- Описание. Может отсутствовать. -->
+				<style> <!-- Секция описания стиля и размера элемента плана. Где: имя тега - CSS свойство, значение тега - значение CSS свойства. -->
+					<left>0%</left> <!-- Лево. -->
+					<top>0%</top> <!-- Верх. -->
+					<width>100%</width> <!-- Ширина. -->
+					<height>2px</height> <!-- Высота. -->
+				</style>
+			</item>
+			<item>
+				<type>wall</type>
+				<class>wall</class>
+				<description>Восточная стена</description>
+				<style>
+					<left>100%</left>
+					<top>0%</top>
+					<width>2px</width>
+					<height>100%</height>
+					<margin-left>-2px</margin-left>
+				</style>
+			</item>
+			<item>
+				<type>wall</type>
+				<class>wall</class>
+				<description>Южная стена</description>
+				<style>
+					<left>0%</left>
+					<top>100%</top>
+					<width>100%</width>
+					<height>2px</height>
+					<margin-top>-2px</margin-top>
+				</style>
+			</item>
+			<item>
+				<type>wall</type>
+				<class>wall</class>
+				<description>Западная стена</description>
+				<style>
+					<left>0%</left>
+					<top>0%</top>
+					<width>2px</width>
+					<height>100%</height>
+				</style>
+			</item>
+			<item>
+				<type>block</type>
+				<class>block</class>
+				<description>Северо-западная колонна</description>
+				<style>
+					<left>0px</left>
+					<top>0px</top>
+					<width>50px</width>
+					<height>50px</height>
+				</style>
+			</item>
+			<item>
+				<type>block</type>
+				<class>block</class>
+				<description>Северо-восточная колонна</description>
+				<style>
+					<left>250px</left>
+					<top>0px</top>
+					<width>50px</width>
+					<height>50px</height>
+				</style>
+			</item>
+			<item>
+				<type>block</type>
+				<class>block</class>
+				<description>Южно-восточная колонна</description>
+				<style>
+					<left>250px</left>
+					<top>150px</top>
+					<width>50px</width>
+					<height>50px</height>
+				</style>
+			</item>
+			<item>
+				<type>block</type>
+				<class>block</class>
+				<description>Южно-западная колонна</description>
+				<style>
+					<left>0px</left>
+					<top>150px</top>
+					<width>50px</width>
+					<height>50px</height>
+				</style>
+			</item>
+		</plan>
+	</scheme>
+</data>

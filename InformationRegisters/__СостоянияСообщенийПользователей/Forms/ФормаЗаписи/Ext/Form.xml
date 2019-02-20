@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСообщение" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сообщение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаСообщениеРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<InputField name="Получатель" id="1">
+					<DataPath>Запись.Получатель</DataPath>
+					<ContextMenu name="ПолучательКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПолучательРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="Сообщение" id="3">
+					<DataPath>Запись.Сообщение</DataPath>
+					<ContextMenu name="СообщениеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="СообщениеРасширеннаяПодсказка" id="32"/>
+					<Events>
+						<Event name="AutoComplete">СообщениеАвтоПодбор</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметры" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<LabelField name="Отправитель" id="11">
+					<DataPath>Запись.Отправитель</DataPath>
+					<ContextMenu name="ОтправительКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ОтправительРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<InputField name="Документ" id="9">
+					<DataPath>Запись.Документ</DataPath>
+					<ContextMenu name="ДокументКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ДокументРасширеннаяПодсказка" id="35"/>
+					<Events>
+						<Event name="OnChange">ДокументПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСостояние" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<LabelField name="ДатаНачалаПериода" id="13">
+					<DataPath>Запись.ДатаНачалаПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаНачалаПериодаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДатаНачалаПериодаРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<LabelDecoration name="НадписьПериод" id="20">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>–</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>–</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьПериодКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="НадписьПериодРасширеннаяПодсказка" id="38"/>
+				</LabelDecoration>
+				<LabelField name="ДатаОкончанияПериода" id="15">
+					<DataPath>Запись.ДатаОкончанияПериода</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ДатаОкончанияПериодаКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ДатаОкончанияПериодаРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<LabelField name="Прочитано" id="7">
+					<DataPath>Запись.Прочитано</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ='Не прочитано'; БИ=Прочитано</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ПрочитаноКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПрочитаноРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="Получено" id="5">
+					<DataPath>Запись.Получено</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ='Не получено'; БИ=Получено</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ПолученоКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ПолученоРасширеннаяПодсказка" id="41"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="Получено1" id="26">
+			<DataPath>Запись.Получено</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Получено1КонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="Получено1РасширеннаяПодсказка" id="42"/>
+		</CheckBoxField>
+		<CheckBoxField name="Прочитано1" id="28">
+			<DataPath>Запись.Прочитано</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Прочитано1КонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="Прочитано1РасширеннаяПодсказка" id="43"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.__СостоянияСообщенийПользователей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Получено</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Запись.Получено</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Прочитано</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Запись.Прочитано</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>

@@ -1,0 +1,864 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ГруппаЧерныйБелыйСписокНоменклатуры" id="33">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>«Черный» и «белый» список</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>«Чорний» та «білий» список</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>CommonPicture.ЧерныйБелыйСписокНоменклатуры</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ГруппаЧерныйБелыйСписокНоменклатурыРасширеннаяПодсказка" id="62"/>
+				<ChildItems>
+					<Button name="БелыйСписокНоменклатуры" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>InformationRegister.БелыйСписокНоменклатуры.Command.ИзменитьВхождение</CommandName>
+						<DataPath>Items.Список.CurrentData.Номенклатура</DataPath>
+						<ExtendedTooltip name="БелыйСписокНоменклатурыРасширеннаяПодсказка" id="63"/>
+					</Button>
+					<Button name="ЧерныйСписокНоменклатуры" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>InformationRegister.ЧерныйСписокНоменклатуры.Command.ИзменитьВхождение</CommandName>
+						<DataPath>Items.Список.CurrentData.Номенклатура</DataPath>
+						<ExtendedTooltip name="ЧерныйСписокНоменклатурыРасширеннаяПодсказка" id="64"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<ButtonGroup name="ГруппаПодробныйРежим" id="22">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Разделитель</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Роздільник</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ГруппаПодробныйРежимРасширеннаяПодсказка" id="65"/>
+				<ChildItems>
+					<Button name="ПодробныйРежим" id="23">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПодробныйРежим</CommandName>
+						<ExtendedTooltip name="ПодробныйРежимРасширеннаяПодсказка" id="66"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Button name="ПереносНоменклатуры" id="35">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ПереносНоменклатуры</CommandName>
+				<ExtendedTooltip name="ПереносНоменклатурыРасширеннаяПодсказка" id="67"/>
+			</Button>
+			<Button name="СоздатьОбновитьСтруктуруМеню" id="59">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.СоздатьОбновитьСтруктуруМеню</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.ЗначокСтруктураПодчиненности</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+					<xr:TransparentPixel x="1" y="5"/>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать/обновить структуру меню</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="СоздатьОбновитьСтруктуруМенюРасширеннаяПодсказка" id="68"/>
+			</Button>
+			<Button name="АктуальзироватьНоменклатуруМеню" id="52">
+				<Type>CommandBarButton</Type>
+				<CommandName>InformationRegister.НоменклатураМеню.Command.Актуальзировать</CommandName>
+				<ExtendedTooltip name="АктуальзироватьНоменклатуруМенюРасширеннаяПодсказка" id="69"/>
+			</Button>
+			<Button name="СохранитьНастройки" id="55">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>InformationRegister.НастройкаАктуальности.Command.СохранитьНастройки</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сохранить настройки</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Зберегти налаштування</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="70"/>
+			</Button>
+			<Button name="ВосстановитьНастройки" id="56">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>InformationRegister.НастройкаАктуальности.Command.ВосстановитьНастройки</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Восстановить настройки</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Відновити налаштування</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ВосстановитьНастройкиРасширеннаяПодсказка" id="71"/>
+			</Button>
+			<Button name="УдалитьНеактуальные" id="57">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.Command.УдалитьНеактуальные</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Delete</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Удалить неактуальные</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Видалити неактуальні</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="УдалитьНеактуальныеРасширеннаяПодсказка" id="72"/>
+			</Button>
+			<Button name="ОбновитьАвтоматическоеМеню" id="58">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.Command.ОбновитьАвтоматическоеМеню</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Refresh</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать/обновить автоматическое меню</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Створити/оновити автоматичне меню</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ОбновитьАвтоматическоеМенюРасширеннаяПодсказка" id="73"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВладелец" id="46">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид меню</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вид меню</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВладелецРасширеннаяПодсказка" id="74"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияВладелец" id="50">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид меню</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вид меню</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.Владелец</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ДекорацияВладелецКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ДекорацияВладелецРасширеннаяПодсказка" id="75"/>
+				</PictureDecoration>
+				<InputField name="Владелец" id="47">
+					<DataPath>Владелец</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="76"/>
+					<Events>
+						<Event name="OnChange">ВладелецПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Период" id="60">
+					<DataPath>Период</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="77"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСписок" id="49">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<Table name="Список" id="1">
+					<CommandBarLocation>None</CommandBarLocation>
+					<DefaultItem>true</DefaultItem>
+					<ChoiceMode>true</ChoiceMode>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<InitialTreeView>ExpandTopLevel</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Список</DataPath>
+					<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="79"/>
+					<SearchStringAddition name="СписокСтрокаПоиска" id="80">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="81"/>
+						<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="82"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокСостояниеПросмотра" id="83">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="84"/>
+						<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="85"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокУправлениеПоиском" id="86">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="87"/>
+						<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="88"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="DragCheck">СписокПроверкаПеретаскивания</Event>
+						<Event name="Selection">СписокВыбор</Event>
+						<Event name="Drag">СписокПеретаскивание</Event>
+						<Event name="OnActivateCell">СписокПриАктивизацииЯчейки</Event>
+					</Events>
+					<ChildItems>
+						<PictureField name="ИндексАктуальности" id="12">
+							<DataPath>Список.ИндексАктуальности</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Актуальность</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Актуальність</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<FixingInTable>Left</FixingInTable>
+							<HeaderPicture>
+								<xr:Ref>CommonPicture.Актуальность</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:TransparentPixel x="11" y="3"/>
+							</HeaderPicture>
+							<Width>2</Width>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.__СостоянияАктуальности</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ИндексАктуальностиКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ИндексАктуальностиРасширеннаяПодсказка" id="89"/>
+						</PictureField>
+						<LabelField name="Наименование" id="4">
+							<DataPath>Список.Description</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="90"/>
+						</LabelField>
+						<LabelField name="Артикул" id="53">
+							<DataPath>Список.Номенклатура.Артикул</DataPath>
+							<Width>10</Width>
+							<ContextMenu name="АртикулКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="АртикулРасширеннаяПодсказка" id="91"/>
+						</LabelField>
+						<PictureField name="ИндексЧерногоБелогоСписка" id="30">
+							<DataPath>Список.ИндексЧерногоБелогоСписка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>«Черный» и «белый» список</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>«Чорний» та «білий» список</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<HeaderPicture>
+								<xr:Ref>CommonPicture.ЧерныйБелыйСписокНоменклатуры</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</HeaderPicture>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.СостоянияЧерногоБелогоСписокаНоменклатуры</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ИндексЧерногоБелогоСпискаКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ИндексЧерногоБелогоСпискаРасширеннаяПодсказка" id="92"/>
+						</PictureField>
+						<LabelField name="БазоваяЕдиницаИзмерения" id="17">
+							<DataPath>Список.Номенклатура.БазоваяЕдиницаИзмерения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ед.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Од.</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<ContextMenu name="БазоваяЕдиницаИзмеренияКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="БазоваяЕдиницаИзмеренияРасширеннаяПодсказка" id="93"/>
+						</LabelField>
+						<LabelField name="Цена" id="26">
+							<DataPath>Список.Цена</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Цена</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ціна</v8:content>
+								</v8:item>
+							</Title>
+							<Width>6</Width>
+							<ContextMenu name="ЦенаКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="94"/>
+						</LabelField>
+						<LabelField name="ПериодДействия" id="28">
+							<DataPath>Список.ПериодДействия</DataPath>
+							<ContextMenu name="ПериодДействияКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ПериодДействияРасширеннаяПодсказка" id="95"/>
+						</LabelField>
+						<LabelField name="НоменклатурнаяГруппа" id="24">
+							<DataPath>Список.Номенклатура.НоменклатурнаяГруппа</DataPath>
+							<ContextMenu name="НоменклатурнаяГруппаКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="НоменклатурнаяГруппаРасширеннаяПодсказка" id="96"/>
+						</LabelField>
+						<LabelField name="Комментарий" id="19">
+							<DataPath>~Список.Номенклатура.Комментарий</DataPath>
+							<Width>24</Width>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="97"/>
+						</LabelField>
+						<LabelField name="Код" id="6">
+							<DataPath>Список.Code</DataPath>
+							<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="98"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="Перенос" id="36">
+					<Visible>false</Visible>
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<Width>70</Width>
+					<ChoiceMode>true</ChoiceMode>
+					<SelectionMode>SingleRow</SelectionMode>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<HorizontalStretch>false</HorizontalStretch>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Перенос</DataPath>
+					<RowPictureDataPath>Перенос.DefaultPicture</RowPictureDataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ПереносКонтекстноеМеню" id="37"/>
+					<AutoCommandBar name="ПереносКоманднаяПанель" id="38"/>
+					<ExtendedTooltip name="ПереносРасширеннаяПодсказка" id="99"/>
+					<SearchStringAddition name="ПереносСтрокаПоиска" id="100">
+						<AdditionSource>
+							<Item>Перенос</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПереносСтрокаПоискаКонтекстноеМеню" id="101"/>
+						<ExtendedTooltip name="ПереносСтрокаПоискаРасширеннаяПодсказка" id="102"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПереносСостояниеПросмотра" id="103">
+						<AdditionSource>
+							<Item>Перенос</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПереносСостояниеПросмотраКонтекстноеМеню" id="104"/>
+						<ExtendedTooltip name="ПереносСостояниеПросмотраРасширеннаяПодсказка" id="105"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПереносУправлениеПоиском" id="106">
+						<AdditionSource>
+							<Item>Перенос</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПереносУправлениеПоискомКонтекстноеМеню" id="107"/>
+						<ExtendedTooltip name="ПереносУправлениеПоискомРасширеннаяПодсказка" id="108"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="ValueChoice">ПереносВыборЗначения</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ПереносНаименование" id="39">
+							<DataPath>Перенос.Description</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Товар</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Товар</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПереносНаименованиеКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ПереносНаименованиеРасширеннаяПодсказка" id="109"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.IsFolder</Field>
+				<Field>Список.Неактуализированна</Field>
+				<Field>Список.Номенклатура</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СправочникМеню.Ссылка,
+	СправочникМеню.ВерсияДанных,
+	СправочникМеню.ПометкаУдаления,
+	СправочникМеню.Предопределенный,
+	СправочникМеню.Владелец,
+	СправочникМеню.Родитель,
+	СправочникМеню.ЭтоГруппа,
+	СправочникМеню.Код,
+	СправочникМеню.Наименование,
+	СправочникМеню.Актуальность,
+	СправочникМеню.Номенклатура,
+	ЦеныНоменклатуры.Цена,
+	СправочникМеню.ПериодДействия,
+	СправочникМеню.Изображение,
+	СправочникМеню.Миниатюра,
+	СправочникМеню.Иконка,
+	ВЫБОР
+		КОГДА СправочникМеню.Актуальность
+			ТОГДА 2
+		ИНАЧЕ 1
+	КОНЕЦ КАК ИндексАктуальности,
+	ВЫБОР
+		КОГДА СправочникМеню.Номенклатура В (&amp;ЧерныйСписок)
+			ТОГДА 2
+		ИНАЧЕ ВЫБОР
+				КОГДА СправочникМеню.Номенклатура В (&amp;БелыйСписок)
+					ТОГДА 1
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК ИндексЧерногоБелогоСписка,
+	ВЫБОР
+		КОГДА СправочникМеню.Номенклатура В (&amp;НеактуализированныйСписок)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Неактуализированна
+ИЗ
+	Справочник.Меню КАК СправочникМеню
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЦеныНоменклатурыСрезПоследних.Номенклатура КАК Номенклатура,
+			МАКСИМУМ(ЦеныНоменклатурыСрезПоследних.Цена) КАК Цена
+		ИЗ
+			РегистрСведений.ЦеныНоменклатуры.СрезПоследних КАК ЦеныНоменклатурыСрезПоследних
+		ГДЕ
+			ЦеныНоменклатурыСрезПоследних.ТипЦены = &amp;ТипЦены
+		
+		СГРУППИРОВАТЬ ПО
+			ЦеныНоменклатурыСрезПоследних.Номенклатура) КАК ЦеныНоменклатуры
+		ПО СправочникМеню.Номенклатура = ЦеныНоменклатуры.Номенклатура</QueryText>
+				<MainTable>Catalog.Меню</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПодробныйРежим" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Докладний режим</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ПодробныйРежим</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПредотвратитьУстановкуАктуальности" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предотвратить установку актуальности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийЭлементСписка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий элемент списка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Перенос" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підбір</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Номенклатура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ИспользуетсяТоварами</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Владелец" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид меню</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вид меню</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыМеню</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПериодДействия</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НоменклатурнаяГруппа</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>Комментарий</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПодробныйРежим</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.Неактуализированна</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПодробныйРежим" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Докладний режим</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Докладний режим</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодробныйРежим</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодробныйРежим</Action>
+		</Command>
+		<Command name="ПереносНоменклатуры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підбір</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор товаров</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підбір товарів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Пользователь">true</xr:Value>
+				<xr:Value name="Role.Управляющий">true</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>CommonPicture.Перенос</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПереносНоменклатуры</Action>
+		</Command>
+		<Command name="УдалитьНеактуальные" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить неактуальные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить неактуальные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьНеактуальные</Action>
+		</Command>
+		<Command name="ОбновитьАвтоматическоеМеню" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить автоматическое меню</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить автоматическое меню</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьАвтоматическоеМеню</Action>
+		</Command>
+		<Command name="СоздатьОбновитьСтруктуруМеню" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать обновить структуру меню</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать обновить структуру меню</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьОбновитьСтруктуруМеню</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="РежимПереносаНоменклатуры">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="45">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ОК</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>ОК</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="66"/>
+			</Button>
+			<Button name="ФормаОтмена" id="23">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="67"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВебСервис" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки web-сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаВебСервисРасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<CheckBoxField name="ВебСервисИспользовать" id="1">
+					<DataPath>Запись.ВебСервисИспользовать</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВебСервисИспользоватьКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ВебСервисИспользоватьРасширеннаяПодсказка" id="69"/>
+					<Events>
+						<Event name="OnChange">ВебСервисИспользоватьПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ВебСервисРежимРаботы" id="46">
+					<DataPath>Запись.ВебСервисРежимРаботы</DataPath>
+					<ContextMenu name="ВебСервисРежимРаботыКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ВебСервисРежимРаботыРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ВебСервисВидМеню" id="64">
+					<DataPath>Запись.ВебСервисВидМеню</DataPath>
+					<ContextMenu name="ВебСервисВидМенюКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ВебСервисВидМенюРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="ВебСервисПароль" id="33">
+					<DataPath>ВебСервисПароль</DataPath>
+					<Width>16</Width>
+					<PasswordMode>true</PasswordMode>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ВебСервисПарольКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ВебСервисПарольРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="ВебСервисПериодНеактивностиСеансов" id="36">
+					<DataPath>Запись.ВебСервисПериодНеактивностиСеансов</DataPath>
+					<ContextMenu name="ВебСервисПериодНеактивностиСеансовКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ВебСервисПериодНеактивностиСеансовРасширеннаяПодсказка" id="73"/>
+					<Events>
+						<Event name="OnChange">ВебСервисПериодНеактивностиСеансовПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ВебСервисПериодХраненияНеактивнныхСеансов" id="20">
+					<DataPath>Запись.ВебСервисПериодХраненияНеактивнныхСеансов</DataPath>
+					<ContextMenu name="ВебСервисПериодХраненияНеактивнныхСеансовКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ВебСервисПериодХраненияНеактивнныхСеансовРасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="OnChange">ВебСервисПериодХраненияНеактивнныхСеансовПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВебСервер" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки web-сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаВебСерверРасширеннаяПодсказка" id="75"/>
+			<ChildItems>
+				<InputField name="ВебСервер" id="51">
+					<DataPath>Запись.ВебСервер</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Apache 2.2</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Apache 2.2</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">apache2.2</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Apache 2.4</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Apache 2.2</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">apache2.4</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>IIS</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>IIS</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">iis</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ВебСерверКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ВебСерверРасширеннаяПодсказка" id="76"/>
+					<Events>
+						<Event name="OnChange">ВебСерверПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelField name="Публикация" id="62">
+					<DataPath>Публикация</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПубликацияКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ПубликацияРасширеннаяПодсказка" id="77"/>
+				</LabelField>
+				<UsualGroup name="ГруппаВебСерверКаталог" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВебСерверКаталогРасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<InputField name="ВебСерверКаталог" id="53">
+							<DataPath>Запись.ВебСерверКаталог</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ВебСерверКаталогКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ВебСерверКаталогРасширеннаяПодсказка" id="79"/>
+							<Events>
+								<Event name="StartChoice">ВебСерверКаталогНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<Button name="Опубликовать" id="59">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.Опубликовать</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.__Apache</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОпубликоватьРасширеннаяПодсказка" id="80"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСерверПечати" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки сервера печати</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаСерверПечатиРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<InputField name="СерверПечатиПароль" id="38">
+					<DataPath>Запись.СерверПечатиПароль</DataPath>
+					<Width>32</Width>
+					<PasswordMode>true</PasswordMode>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="СерверПечатиПарольКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СерверПечатиПарольРасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="СерверПечатиПериодИнтервалаПечати" id="28">
+					<DataPath>Запись.СерверПечатиПериодИнтервалаПечати</DataPath>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Width>10</Width>
+					<ContextMenu name="СерверПечатиПериодИнтервалаПечатиКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СерверПечатиПериодИнтервалаПечатиРасширеннаяПодсказка" id="83"/>
+					<Events>
+						<Event name="OnChange">СерверПечатиПериодИнтервалаПечатиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СерверПечатиПериодХраненияЗаданий" id="30">
+					<DataPath>Запись.СерверПечатиПериодХраненияЗаданий</DataPath>
+					<ContextMenu name="СерверПечатиПериодХраненияЗаданийКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СерверПечатиПериодХраненияЗаданийРасширеннаяПодсказка" id="84"/>
+					<Events>
+						<Event name="OnChange">СерверПечатиПериодХраненияЗаданийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СерверПечатиПериодРегламентногоЗадания" id="48">
+					<DataPath>СерверПечатиПериодРегламентногоЗадания</DataPath>
+					<ContextMenu name="СерверПечатиПериодРегламентногоЗаданияКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="СерверПечатиПериодРегламентногоЗаданияРасширеннаяПодсказка" id="85"/>
+					<Events>
+						<Event name="OnChange">СерверПечатиПериодРегламентногоЗаданияПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаУправление" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаУправлениеРасширеннаяПодсказка" id="86"/>
+			<ChildItems>
+				<CheckBoxField name="СерверПечатиПриостановить" id="26">
+					<DataPath>Запись.СерверПечатиПриостановить</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СерверПечатиПриостановитьКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СерверПечатиПриостановитьРасширеннаяПодсказка" id="87"/>
+				</CheckBoxField>
+				<LabelDecoration name="Состояние" id="41">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<ContextMenu name="СостояниеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="88"/>
+					<Events>
+						<Event name="Click">СостояниеНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Отступ" id="43">
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="ОтступКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ОтступРасширеннаяПодсказка" id="89"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.__НастройкиВебСервиса</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВебСервисПароль" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Оригинал" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оригинал</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.__НастройкиВебСервиса</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СерверПечатиПериодРегламентногоЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интервал регламентного задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ИмяКомпьютера" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя компьютера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Публикация" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Публикация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Публікація</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Fixed</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Опубликовать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Опубликовать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Опублікувати</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Опубликовать на web-сервере</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Опублікувати на web-сервері</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.__ВебСервер</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Опубликовать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

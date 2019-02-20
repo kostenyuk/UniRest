@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Width>80</Width>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ЗаписатьКарту" id="33">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗаписатьКарту</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Записать</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ЗаписатьКартуРасширеннаяПодсказка" id="36"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="32">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="37"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПоиск" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа поиск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаПоискРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="КодКарты" id="1">
+					<DataPath>Объект.КодКарты</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер карты</v8:content>
+						</v8:item>
+					</Title>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="КодКартыКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодКартыРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="OnChange">КодКартыПриИзменении</Event>
+						<Event name="Clearing">КодКартыОчистка</Event>
+					</Events>
+				</InputField>
+				<Button name="НайтиКарту" id="31">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.НайтиКарту</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Find</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Найти</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НайтиКартуРасширеннаяПодсказка" id="40"/>
+				</Button>
+				<InputField name="Ссылка" id="34">
+					<DataPath>Объект.Ссылка</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="41"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВладелецКарты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Владелец карты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа владелец карты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаВладелецКартыРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<InputField name="ВладелецКарты" id="4">
+					<DataPath>Объект.ВладелецКарты</DataPath>
+					<ContextMenu name="ВладелецКартыКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ВладелецКартыРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ДатаРождения" id="8">
+					<DataPath>Объект.ДатаРождения</DataPath>
+					<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="Пол" id="6">
+					<DataPath>Объект.Пол</DataPath>
+					<ContextMenu name="ПолКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="45"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКонтактнаяИнформация" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контактная информация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа контактная информация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаКонтактнаяИнформацияРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКонтактнаяИнформацияЛево" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контактная информация лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контактная информация лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКонтактнаяИнформацияЛевоРасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<InputField name="Телефон" id="13">
+							<DataPath>Объект.Телефон</DataPath>
+							<ContextMenu name="ТелефонКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<InputField name="EMail" id="15">
+							<DataPath>Объект.EMail</DataPath>
+							<ContextMenu name="EMailКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="EMailРасширеннаяПодсказка" id="49"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКонтактнаяИнформацияПраво" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контактная информация право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контактная информация право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКонтактнаяИнформацияПравоРасширеннаяПодсказка" id="50"/>
+					<ChildItems>
+						<InputField name="Адресс" id="17">
+							<DataPath>Объект.Адресс</DataPath>
+							<ContextMenu name="АдрессКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="АдрессРасширеннаяПодсказка" id="51"/>
+						</InputField>
+						<InputField name="Компания" id="19">
+							<DataPath>Объект.Компания</DataPath>
+							<ContextMenu name="КомпанияКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="КомпанияРасширеннаяПодсказка" id="52"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ЧленыСемьи" id="22">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ЧленыСемьи</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЧленыСемьиКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="ЧленыСемьиКоманднаяПанель" id="24"/>
+			<ExtendedTooltip name="ЧленыСемьиРасширеннаяПодсказка" id="53"/>
+			<SearchStringAddition name="ЧленыСемьиСтрокаПоиска" id="54">
+				<AdditionSource>
+					<Item>ЧленыСемьи</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЧленыСемьиСтрокаПоискаКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="ЧленыСемьиСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЧленыСемьиСостояниеПросмотра" id="57">
+				<AdditionSource>
+					<Item>ЧленыСемьи</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЧленыСемьиСостояниеПросмотраКонтекстноеМеню" id="58"/>
+				<ExtendedTooltip name="ЧленыСемьиСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЧленыСемьиУправлениеПоиском" id="60">
+				<AdditionSource>
+					<Item>ЧленыСемьи</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЧленыСемьиУправлениеПоискомКонтекстноеМеню" id="61"/>
+				<ExtendedTooltip name="ЧленыСемьиУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЧленыСемьиНомерСтроки" id="25">
+					<DataPath>Объект.ЧленыСемьи.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЧленыСемьиНомерСтрокиКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ЧленыСемьиНомерСтрокиРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<InputField name="ЧленыСемьиФИО" id="27">
+					<DataPath>Объект.ЧленыСемьи.ФИО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЧленыСемьиФИОКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ЧленыСемьиФИОРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ЧленыСемьиДатаРождения" id="29">
+					<DataPath>Объект.ЧленыСемьи.ДатаРождения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЧленыСемьиДатаРожденияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ЧленыСемьиДатаРожденияРасширеннаяПодсказка" id="65"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВводИнформацииОВладельцахДисконтныхКарт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НайтиКарту" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти карту</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти карту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиКарту</Action>
+		</Command>
+		<Command name="ЗаписатьКарту" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать карту</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать карту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьКарту</Action>
+		</Command>
+	</Commands>
+</Form>

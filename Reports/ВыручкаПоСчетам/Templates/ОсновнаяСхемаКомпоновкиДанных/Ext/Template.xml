@@ -1,0 +1,962 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Продажи</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<role>
+				<dcscom:periodNumber>2</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаБлюда</dataPath>
+			<field>ГруппаБлюда</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПродажи</dataPath>
+			<field>ДокументПродажи</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КатегорияДокумента</dataPath>
+			<field>КатегорияДокумента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоБлюд</dataPath>
+			<field>КоличествоБлюд</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКлиентов</dataPath>
+			<field>КоличествоКлиентов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество гостей</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Компьютер</dataPath>
+			<field>Компьютер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаВынос</dataPath>
+			<field>НаВынос</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатурнаяГруппа</dataPath>
+			<field>НоменклатурнаяГруппа</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оплата</dataPath>
+			<field>Оплата</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтражатьВБухгалтерскомУчете</dataPath>
+			<field>ОтражатьВБухгалтерскомУчете</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПенсионныйФонд</dataPath>
+			<field>ПенсионныйФонд</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодМесяц</dataPath>
+			<field>ПериодМесяц</field>
+			<role>
+				<dcscom:periodNumber>4</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ресторан</dataPath>
+			<field>Ресторан</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сделка</dataPath>
+			<field>Сделка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Себестоимость</dataPath>
+			<field>Себестоимость</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДС</dataPath>
+			<field>СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаБезСкидок</dataPath>
+			<field>СуммаБезСкидок</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНаценки</dataPath>
+			<field>СуммаНаценки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наценка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСкидки</dataPath>
+			<field>СуммаСкидки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скидка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипАкции</dataPath>
+			<field>ТипАкции</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипКонтрагента</dataPath>
+			<field>ТипКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодДень</dataPath>
+			<field>ПериодДень</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ='dd.MM.yyyy ddd'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодЧас</dataPath>
+			<field>ПериодЧас</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДЛФ=T</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодДеньНедели</dataPath>
+			<field>ПериодДеньНедели</field>
+			<role>
+				<dcscom:periodNumber>3</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДеньНедели</dataPath>
+			<field>ДеньНедели</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Месяц</dataPath>
+			<field>Месяц</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПродажиОбороты.Период,
+	ДЕНЬНЕДЕЛИ(ПродажиОбороты.Период) КАК ПериодДеньНедели,
+	НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, МЕСЯЦ) КАК ПериодМесяц,
+	НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, ДЕНЬ) КАК ПериодДень,
+	ДОБАВИТЬКДАТЕ(ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0), ЧАС, ЧАС(ПродажиОбороты.Период)) КАК ПериодЧас,
+	МесяцаГода.Ссылка КАК Месяц,
+	ДниНедели.Ссылка КАК ДеньНедели,
+	ПродажиОбороты.Регистратор,
+	ПродажиОбороты.ДокументПродажи,
+	ПродажиОбороты.Ресторан,
+	ПродажиОбороты.Оплата,
+	ПродажиОбороты.Регистратор.КатегорияДокумента КАК КатегорияДокумента,
+	ПродажиОбороты.Сотрудник,
+	ПродажиОбороты.Номенклатура,
+	ПродажиОбороты.НоменклатурнаяГруппа,
+	СУММА(ПродажиОбороты.Регистратор.КоличествоКлиентов) КАК КоличествоКлиентов,
+	СУММА(ПродажиОбороты.КоличествоОборот) КАК КоличествоБлюд,
+	СУММА(ПродажиОбороты.КоличествоОборот * СебестоимостьНоменклатуры.Себестоимость) КАК Себестоимость,
+	СУММА(ПродажиОбороты.СтоимостьБезСкидокОборот) КАК СуммаБезСкидок,
+	СУММА(ПродажиОбороты.СуммаНаценкиОборот) КАК СуммаНаценки,
+	СУММА(ПродажиОбороты.СуммаСкидкиОборот) КАК СуммаСкидки,
+	СУММА(ПродажиОбороты.СтоимостьОборот) КАК Сумма
+ИЗ
+	РегистрНакопления.Продажи.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, Номенклатура.ТипНоменклатуры &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Условие)) КАК ПродажиОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СебестоимостьНоменклатуры КАК СебестоимостьНоменклатуры
+		ПО ПродажиОбороты.Ресторан = СебестоимостьНоменклатуры.Ресторан
+			И ПродажиОбороты.Номенклатура = СебестоимостьНоменклатуры.Номенклатура
+			И (НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, МЕСЯЦ) = СебестоимостьНоменклатуры.Период)
+		ЛЕВОЕ СОЕДИНЕНИЕ Перечисление.МесяцаГода КАК МесяцаГода
+		ПО (МЕСЯЦ(ПродажиОбороты.Период) - 1 = МесяцаГода.Порядок)
+		ЛЕВОЕ СОЕДИНЕНИЕ Перечисление.ДниНедели КАК ДниНедели
+		ПО (ДЕНЬНЕДЕЛИ(ПродажиОбороты.Период) - 1 = ДниНедели.Порядок)
+
+СГРУППИРОВАТЬ ПО
+	ПродажиОбороты.Ресторан,
+	ПродажиОбороты.Оплата,
+	ПродажиОбороты.Номенклатура,
+	ПродажиОбороты.НоменклатурнаяГруппа,
+	ПродажиОбороты.Сотрудник,
+	ПродажиОбороты.Регистратор.КатегорияДокумента,
+	ПродажиОбороты.Регистратор,
+	ПродажиОбороты.Период,
+	НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, МЕСЯЦ),
+	ДЕНЬНЕДЕЛИ(ПродажиОбороты.Период),
+	НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, ДЕНЬ),
+	ДОБАВИТЬКДАТЕ(ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0), ЧАС, ЧАС(ПродажиОбороты.Период)),
+	МесяцаГода.Ссылка,
+	ДниНедели.Ссылка,
+	ПродажиОбороты.ДокументПродажи</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ПродажиРесторан</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПродажи</dataPath>
+			<field>ДокументПродажи</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Компьютер</dataPath>
+			<field>Компьютер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаВынос</dataPath>
+			<field>НаВынос</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатурнаяГруппа</dataPath>
+			<field>НоменклатурнаяГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оплата</dataPath>
+			<field>Оплата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтражатьВБухгалтерскомУчете</dataPath>
+			<field>ОтражатьВБухгалтерскомУчете</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПенсионныйФонд</dataPath>
+			<field>ПенсионныйФонд</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ресторан</dataPath>
+			<field>Ресторан</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сделка</dataPath>
+			<field>Сделка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДС</dataPath>
+			<field>СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипАкции</dataPath>
+			<field>ТипАкции</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипКонтрагента</dataPath>
+			<field>ТипКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКлиентовРесторан</dataPath>
+			<field>КоличествоКлиентовРесторан</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество гостей</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДокументовРесторан</dataPath>
+			<field>КоличествоДокументовРесторан</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество документов</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоТранзакцийРесторан</dataPath>
+			<field>КоличествоТранзакцийРесторан</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество транзакций</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаБлюда</dataPath>
+			<field>ГруппаБлюда</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодМесяц</dataPath>
+			<field>ПериодМесяц</field>
+			<role>
+				<dcscom:periodNumber>2</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодДеньНедели</dataPath>
+			<field>ПериодДеньНедели</field>
+			<role>
+				<dcscom:periodNumber>3</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодДень</dataPath>
+			<field>ПериодДень</field>
+			<role>
+				<dcscom:periodNumber>4</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодЧас</dataPath>
+			<field>ПериодЧас</field>
+			<role>
+				<dcscom:periodNumber>5</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПродажиОбороты.Ресторан КАК Ресторан,
+	НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, МЕСЯЦ) КАК ПериодМесяц,
+	ДЕНЬНЕДЕЛИ(ПродажиОбороты.Период) КАК ПериодДеньНедели,
+	НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, ДЕНЬ) КАК ПериодДень,
+	ДОБАВИТЬКДАТЕ(ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0), ЧАС, ЧАС(ПродажиОбороты.Период)) КАК ПериодЧас,
+	КОЛИЧЕСТВО(ПродажиОбороты.Регистратор) КАК КоличествоДокументовРесторан,
+	СУММА(ВЫБОР
+			КОГДА ПродажиОбороты.Регистратор.КоличествоКлиентов = 0
+				ТОГДА 0
+			ИНАЧЕ 1
+		КОНЕЦ) КАК КоличествоТранзакцийРесторан,
+	СУММА(ПродажиОбороты.Регистратор.КоличествоКлиентов) КАК КоличествоКлиентовРесторан,
+	ПродажиОбороты.ДокументПродажи
+ИЗ
+	РегистрНакопления.Продажи.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, ) КАК ПродажиОбороты
+
+СГРУППИРОВАТЬ ПО
+	ПродажиОбороты.Ресторан,
+	НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, МЕСЯЦ),
+	ДЕНЬНЕДЕЛИ(ПродажиОбороты.Период),
+	НАЧАЛОПЕРИОДА(ПродажиОбороты.Период, ДЕНЬ),
+	ДОБАВИТЬКДАТЕ(ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0), ЧАС, ЧАС(ПродажиОбороты.Период)),
+	ПродажиОбороты.ДокументПродажи</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ПродажиСотрудник</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПродажи</dataPath>
+			<field>ДокументПродажи</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКлиентовСотрудник</dataPath>
+			<field>КоличествоКлиентовСотрудник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество гостей сотрудник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Компьютер</dataPath>
+			<field>Компьютер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаВынос</dataPath>
+			<field>НаВынос</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатурнаяГруппа</dataPath>
+			<field>НоменклатурнаяГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оплата</dataPath>
+			<field>Оплата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтражатьВБухгалтерскомУчете</dataPath>
+			<field>ОтражатьВБухгалтерскомУчете</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПенсионныйФонд</dataPath>
+			<field>ПенсионныйФонд</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ресторан</dataPath>
+			<field>Ресторан</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сделка</dataPath>
+			<field>Сделка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДС</dataPath>
+			<field>СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипАкции</dataPath>
+			<field>ТипАкции</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипКонтрагента</dataPath>
+			<field>ТипКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДокументовСотрудник</dataPath>
+			<field>КоличествоДокументовСотрудник</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоТранзакцийСотрудник</dataPath>
+			<field>КоличествоТранзакцийСотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаБлюда</dataPath>
+			<field>ГруппаБлюда</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПродажиОбороты.Сотрудник,
+	КОЛИЧЕСТВО(ПродажиОбороты.Регистратор) КАК КоличествоДокументовСотрудник,
+	СУММА(ВЫБОР
+			КОГДА ПродажиОбороты.Регистратор.КоличествоКлиентов = 0
+				ТОГДА 0
+			ИНАЧЕ 1
+		КОНЕЦ) КАК КоличествоТранзакцийСотрудник,
+	СУММА(ПродажиОбороты.Регистратор.КоличествоКлиентов) КАК КоличествоКлиентовСотрудник,
+	ПродажиОбороты.ДокументПродажи
+ИЗ
+	РегистрНакопления.Продажи.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, ) КАК ПродажиОбороты
+
+СГРУППИРОВАТЬ ПО
+	ПродажиОбороты.Сотрудник,
+	ПродажиОбороты.ДокументПродажи</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>Продажи</sourceDataSet>
+		<destinationDataSet>ПродажиРесторан</destinationDataSet>
+		<sourceExpression>Ресторан</sourceExpression>
+		<destinationExpression>Ресторан</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Продажи</sourceDataSet>
+		<destinationDataSet>ПродажиСотрудник</destinationDataSet>
+		<sourceExpression>Сотрудник</sourceExpression>
+		<destinationExpression>Сотрудник</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Продажи</sourceDataSet>
+		<destinationDataSet>ПродажиРесторан</destinationDataSet>
+		<sourceExpression>ПериодМесяц</sourceExpression>
+		<destinationExpression>ПериодМесяц</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Продажи</sourceDataSet>
+		<destinationDataSet>ПродажиРесторан</destinationDataSet>
+		<sourceExpression>ПериодДеньНедели</sourceExpression>
+		<destinationExpression>ПериодДеньНедели</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Продажи</sourceDataSet>
+		<destinationDataSet>ПродажиРесторан</destinationDataSet>
+		<sourceExpression>ПериодДень</sourceExpression>
+		<destinationExpression>ПериодДень</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Продажи</sourceDataSet>
+		<destinationDataSet>ПродажиРесторан</destinationDataSet>
+		<sourceExpression>ПериодЧас</sourceExpression>
+		<destinationExpression>ПериодЧас</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Продажи</sourceDataSet>
+		<destinationDataSet>ПродажиРесторан</destinationDataSet>
+		<sourceExpression>ДокументПродажи</sourceExpression>
+		<destinationExpression>ДокументПродажи</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Продажи</sourceDataSet>
+		<destinationDataSet>ПродажиСотрудник</destinationDataSet>
+		<sourceExpression>ДокументПродажи</sourceExpression>
+		<destinationExpression>ДокументПродажи</destinationExpression>
+	</dataSetLink>
+	<calculatedField>
+		<dataPath>КЦП</dataPath>
+		<expression>ВЫБОР КОГДА КоличествоКлиентовРесторан = 0 ТОГДА 0 ИНАЧЕ КоличествоБлюд / КоличествоКлиентовРесторан КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>КЦП</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КЦПСотрудник</dataPath>
+		<expression>ВЫБОР КОГДА КоличествоКлиентовСотрудник = 0 ТОГДА 0 ИНАЧЕ КоличествоБлюд / КоличествоКлиентовСотрудник КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>КЦП Сотрудник</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СреднийЧек</dataPath>
+		<expression>ВЫБОР КОГДА КоличествоКлиентовРесторан = 0 ТОГДА 0 ИНАЧЕ Сумма / КоличествоКлиентовРесторан КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Средний чек</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СреднийЧекСотрудник</dataPath>
+		<expression>ВЫБОР КОГДА КоличествоКлиентовСотрудник = 0 ТОГДА 0 ИНАЧЕ Сумма / КоличествоКлиентовСотрудник КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Средний чек сотрудник</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоКлиентовСреднее</dataPath>
+		<expression>ВЫБОР КОГДА КоличествоТранзакцийРесторан = 0 ТОГДА 0 ИНАЧЕ КоличествоКлиентовРесторан / КоличествоТранзакцийРесторан  КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество гостей среднее в чеке</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоКлиентовСреднееСотрудник</dataPath>
+		<expression>ВЫБОР КОГДА КоличествоТранзакцийСотрудник = 0 ТОГДА 0 ИНАЧЕ КоличествоКлиентовСотрудник / КоличествоТранзакцийСотрудник  КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество гостей среднее в чеке сотрудник</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СредняяТранзакция</dataPath>
+		<expression>ВЫБОР КОГДА КоличествоТранзакцийРесторан = 0 ТОГДА 0 ИНАЧЕ Сумма / КоличествоТранзакцийРесторан КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Средняя транзакция</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СредняяТранзакцияСотрудник</dataPath>
+		<expression>ВЫБОР КОГДА КоличествоТранзакцийСотрудник = 0 ТОГДА 0 ИНАЧЕ Сумма / КоличествоТранзакцийСотрудник КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Средняя транзакция сотрудник</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СкидкаПроцент</dataPath>
+		<expression>ВЫБОР КОГДА СуммаБезСкидок = 0 ТОГДА 0 ИНАЧЕ (СуммаСкидки / СуммаБезСкидок) * 100 КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Скидка, %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СебестоимостьПроцент</dataPath>
+		<expression>ВЫБОР КОГДА Сумма = 0 ТОГДА 0 ИНАЧЕ (Себестоимость / Сумма) * 100 КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Себестоимость, %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ВаловыйДоход</dataPath>
+		<expression>Сумма - Себестоимость</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Валовый доход</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=12; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Час</dataPath>
+		<expression>Час(Период)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Час</v8:content>
+			</v8:item>
+		</title>
+		<presentationExpression>Формат(Час(Период),"ЧЦ=2; ЧДЦ=0; ЧН=00; ЧВН=")+":00 - "+Формат(Час(Период),"ЧЦ=2; ЧДЦ=0; ЧН=00; ЧВН=")+":59"</presentationExpression>
+	</calculatedField>
+	<totalField>
+		<dataPath>КоличествоДокументовРесторан</dataPath>
+		<expression>Сумма(КоличествоДокументовРесторан)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоДокументовСотрудник</dataPath>
+		<expression>Сумма(КоличествоДокументовСотрудник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоТранзакцийРесторан</dataPath>
+		<expression>Сумма(КоличествоТранзакцийРесторан)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоТранзакцийСотрудник</dataPath>
+		<expression>Сумма(КоличествоТранзакцийСотрудник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКлиентовРесторан</dataPath>
+		<expression>Сумма(КоличествоКлиентовРесторан)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКлиентовСотрудник</dataPath>
+		<expression>Сумма(КоличествоКлиентовСотрудник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКлиентовСреднее</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(КоличествоТранзакцийРесторан) = 0 ТОГДА 0 ИНАЧЕ Сумма(КоличествоКлиентовРесторан) / Сумма(КоличествоТранзакцийРесторан) КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКлиентовСреднееСотрудник</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(КоличествоТранзакцийСотрудник) = 0 ТОГДА 0 ИНАЧЕ Сумма(КоличествоКлиентовСотрудник) / Сумма(КоличествоТранзакцийСотрудник) КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднийЧек</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(КоличествоКлиентовРесторан) = 0 ТОГДА 0 ИНАЧЕ Сумма(Сумма)/Сумма(КоличествоКлиентовРесторан) КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднийЧекСотрудник</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(КоличествоКлиентовСотрудник) = 0 ТОГДА 0 ИНАЧЕ Сумма(Сумма)/Сумма(КоличествоКлиентовСотрудник) КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СредняяТранзакция</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(КоличествоТранзакцийРесторан) = 0 ТОГДА 0 ИНАЧЕ Сумма(Сумма) / Сумма(КоличествоТранзакцийРесторан) КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СредняяТранзакцияСотрудник</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(КоличествоТранзакцийСотрудник) = 0 ТОГДА 0 ИНАЧЕ Сумма(Сумма) / Сумма(КоличествоТранзакцийСотрудник) КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоБлюд</dataPath>
+		<expression>Сумма(КоличествоБлюд)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КЦП</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(КоличествоКлиентовРесторан) = 0 ТОГДА 0 ИНАЧЕ Сумма(КоличествоБлюд)/Сумма(КоличествоКлиентовРесторан) КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КЦПСотрудник</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(КоличествоКлиентовСотрудник) = 0 ТОГДА 0 ИНАЧЕ Сумма(КоличествоБлюд)/Сумма(КоличествоКлиентовСотрудник) КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаБезСкидок</dataPath>
+		<expression>Сумма(СуммаБезСкидок)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаНаценки</dataPath>
+		<expression>Сумма(СуммаНаценки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСкидки</dataPath>
+		<expression>Сумма(СуммаСкидки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СкидкаПроцент</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(СуммаБезСкидок) = 0  ТОГДА 0 ИНАЧЕ Сумма(СуммаСкидки) / Сумма(СуммаБезСкидок) * 100 КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Сумма</dataPath>
+		<expression>Сумма(Сумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Себестоимость</dataPath>
+		<expression>Сумма(Себестоимость)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СебестоимостьПроцент</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(Сумма) = 0 ТОГДА 0 ИНАЧЕ Сумма(Себестоимость) / Сумма(Сумма) * 100  КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВаловыйДоход</dataPath>
+		<expression>Сумма(Сумма) - Сумма(Себестоимость)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">SpecialPosition</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеРесурсов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionResourcesPlacement">Vertically</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

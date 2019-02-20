@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка параметров учета</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Налаштування параметрів обліку</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="19">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ОК</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>ОК</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="55"/>
+			</Button>
+			<Button name="ФормаОтмена" id="20">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="56"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<Page name="ГруппаНоменклатура" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Товари</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаНоменклатураРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<CheckBoxField name="НоменклатураМаксимальноСокращатьНаименованиеСокращенное" id="22">
+							<DataPath>Запись.НоменклатураМаксимальноСокращатьНаименованиеСокращенное</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НоменклатураМаксимальноСокращатьНаименованиеСокращенноеКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="НоменклатураМаксимальноСокращатьНаименованиеСокращенноеРасширеннаяПодсказка" id="59"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаМеню" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Меню</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Меню</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаМенюРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЧерныйБелыйСписокНоменклатуры" id="11">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>«Черный» и «белый» список меню</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>«Чорний» і «білий» список меню</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаЧерныйБелыйСписокНоменклатурыРасширеннаяПодсказка" id="61"/>
+							<ChildItems>
+								<CheckBoxField name="БелыйСписокНоменклатурыИспользовать" id="1">
+									<DataPath>Запись.БелыйСписокНоменклатурыИспользовать</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Использовать «Белый» список</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Використовувати «Білий» список</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="БелыйСписокНоменклатурыИспользоватьКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="БелыйСписокНоменклатурыИспользоватьРасширеннаяПодсказка" id="62"/>
+									<Events>
+										<Event name="OnChange">ПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаБелыйСписокНоменклатурыУчетКоличества" id="13">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>«Черный» и «белый» список меню</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>«Чорний» і «білий» список меню</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаБелыйСписокНоменклатурыУчетКоличестваРасширеннаяПодсказка" id="63"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияБелыйСписокНоменклатурыУчетКоличества" id="14">
+											<Width>1</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Учет количества</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Облік кількості</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ДекорацияБелыйСписокНоменклатурыУчетКоличестваКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="ДекорацияБелыйСписокНоменклатурыУчетКоличестваРасширеннаяПодсказка" id="64"/>
+										</PictureDecoration>
+										<CheckBoxField name="БелыйСписокНоменклатурыУчетКоличества" id="3">
+											<DataPath>Запись.БелыйСписокНоменклатурыУчетКоличества</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Учет количества</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Облік кількості</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="БелыйСписокНоменклатурыУчетКоличестваКонтекстноеМеню" id="4"/>
+											<ExtendedTooltip name="БелыйСписокНоменклатурыУчетКоличестваРасширеннаяПодсказка" id="65"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<CheckBoxField name="ЧерныйСписокНоменклатурыИспользовать" id="5">
+									<DataPath>Запись.ЧерныйСписокНоменклатурыИспользовать</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Использовать «Черный» список</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Використовувати «Чорний» список</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЧерныйСписокНоменклатурыИспользоватьКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="ЧерныйСписокНоменклатурыИспользоватьРасширеннаяПодсказка" id="66"/>
+									<Events>
+										<Event name="OnChange">ПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаЧерныйСписокНоменклатурыУчетКоличества" id="16">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>«Черный» и «белый» список меню</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>«Чорний» і «білий» список меню</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЧерныйСписокНоменклатурыУчетКоличестваРасширеннаяПодсказка" id="67"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияЧерныйСписокНоменклатурыУчетКоличества" id="17">
+											<Width>1</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Учет количества</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Облік кількості</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ДекорацияЧерныйСписокНоменклатурыУчетКоличестваКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ДекорацияЧерныйСписокНоменклатурыУчетКоличестваРасширеннаяПодсказка" id="68"/>
+										</PictureDecoration>
+										<CheckBoxField name="ЧерныйСписокНоменклатурыУчетКоличества" id="7">
+											<DataPath>Запись.ЧерныйСписокНоменклатурыУчетКоличества</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Учет количества</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Облік кількості</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЧерныйСписокНоменклатурыУчетКоличестваКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="ЧерныйСписокНоменклатурыУчетКоличестваРасширеннаяПодсказка" id="69"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<CheckBoxField name="ОрганизацииИспользовать" id="24">
+			<DataPath>Запись.ОрганизацииИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОрганизацииИспользоватьКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ОрганизацииИспользоватьРасширеннаяПодсказка" id="70"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОрганизацииУчетРабочегоВремениИспользовать" id="26">
+			<DataPath>Запись.УчетРабочегоВремениИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОрганизацииУчетРабочегоВремениИспользоватьКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ОрганизацииУчетРабочегоВремениИспользоватьРасширеннаяПодсказка" id="71"/>
+			<Events>
+				<Event name="OnChange">ОрганизацииУчетРабочегоВремениИспользоватьПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаУчетРабочегоВремени" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа учет рабочего времени</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа учет рабочего времени</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаУчетРабочегоВремениРасширеннаяПодсказка" id="72"/>
+			<ChildItems>
+				<CheckBoxField name="ОрганизацииУчетРабочегоВремениУчетРабочихСмен" id="28">
+					<DataPath>Запись.УчетРабочегоВремениУчетРабочихСмен</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОрганизацииУчетРабочегоВремениУчетРабочихСменКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ОрганизацииУчетРабочегоВремениУчетРабочихСменРасширеннаяПодсказка" id="73"/>
+				</CheckBoxField>
+				<InputField name="УчетРабочегоВремениКоэффициентОкругленияПериода" id="53">
+					<DataPath>Запись.УчетРабочегоВремениКоэффициентОкругленияПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэф окр периода регистрации сотрудника</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="УчетРабочегоВремениКоэффициентОкругленияПериодаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="УчетРабочегоВремениКоэффициентОкругленияПериодаРасширеннаяПодсказка" id="74"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="МестаХраненияИспользовать" id="30">
+			<DataPath>Запись.МестаХраненияИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="МестаХраненияИспользоватьКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="МестаХраненияИспользоватьРасширеннаяПодсказка" id="75"/>
+		</CheckBoxField>
+		<CheckBoxField name="КатегорииКонтрагентовИспользовать" id="32">
+			<DataPath>Запись.КатегорииКонтрагентовИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КатегорииКонтрагентовИспользоватьКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="КатегорииКонтрагентовИспользоватьРасширеннаяПодсказка" id="76"/>
+		</CheckBoxField>
+		<CheckBoxField name="КатегорииДокументовИспользовать" id="34">
+			<DataPath>Запись.КатегорииДокументовИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КатегорииДокументовИспользоватьКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="КатегорииДокументовИспользоватьРасширеннаяПодсказка" id="77"/>
+		</CheckBoxField>
+		<CheckBoxField name="КатегорииНоменклатурыИспользовать" id="36">
+			<DataPath>Запись.КатегорииНоменклатурыИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КатегорииНоменклатурыИспользоватьКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="КатегорииНоменклатурыИспользоватьРасширеннаяПодсказка" id="78"/>
+		</CheckBoxField>
+		<CheckBoxField name="КассовыеДатыИспользовать" id="38">
+			<DataPath>Запись.КассовыеДатыИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КассовыеДатыИспользоватьКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="КассовыеДатыИспользоватьРасширеннаяПодсказка" id="79"/>
+		</CheckBoxField>
+		<CheckBoxField name="КонтактнаяИнформацияИспользовать" id="40">
+			<DataPath>Запись.КонтактнаяИнформацияИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КонтактнаяИнформацияИспользоватьКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="КонтактнаяИнформацияИспользоватьРасширеннаяПодсказка" id="80"/>
+		</CheckBoxField>
+		<CheckBoxField name="КонтактнаяИнформацияСтраныМираИспользовать" id="42">
+			<DataPath>Запись.КонтактнаяИнформацияСтраныМираИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КонтактнаяИнформацияСтраныМираИспользоватьКонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="КонтактнаяИнформацияСтраныМираИспользоватьРасширеннаяПодсказка" id="81"/>
+		</CheckBoxField>
+		<CheckBoxField name="КонтактнаяИнформацияГородаИспользовать" id="44">
+			<DataPath>Запись.КонтактнаяИнформацияГородаИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КонтактнаяИнформацияГородаИспользоватьКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="КонтактнаяИнформацияГородаИспользоватьРасширеннаяПодсказка" id="82"/>
+		</CheckBoxField>
+		<CheckBoxField name="АналитическиеГруппыИспользовать" id="46">
+			<DataPath>Запись.АналитическиеГруппыИспользовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="АналитическиеГруппыИспользоватьКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="АналитическиеГруппыИспользоватьРасширеннаяПодсказка" id="83"/>
+		</CheckBoxField>
+		<InputField name="ИнтервалОпросаВременныхПозиций" id="48">
+			<DataPath>Запись.ИнтервалОпросаВременныхПозиций</DataPath>
+			<Width>5</Width>
+			<ContextMenu name="ИнтервалОпросаВременныхПозицийКонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="ИнтервалОпросаВременныхПозицийРасширеннаяПодсказка" id="84"/>
+		</InputField>
+		<InputField name="РежимыНастройкиРабочихЦентров" id="50">
+			<DataPath>Запись.РежимыНастройкиРабочихЦентров</DataPath>
+			<ContextMenu name="РежимыНастройкиРабочихЦентровКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="РежимыНастройкиРабочихЦентровРасширеннаяПодсказка" id="85"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.НастройкаПараметровУчета</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

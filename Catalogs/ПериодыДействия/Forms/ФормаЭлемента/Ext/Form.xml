@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Родитель" id="31">
+			<DataPath>Объект.Parent</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<UsualGroup name="ГруппаНаименованиеКод" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование и код</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Найменування і код</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеКодРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<InputField name="Наименование" id="34">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>32</Width>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="Код" id="36">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПериодические" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Периодические</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаПериодическиеРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<Table name="Периодические" id="17">
+					<Representation>List</Representation>
+					<Width>64</Width>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.Периодические</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПериодическиеКонтекстноеМеню" id="18"/>
+					<AutoCommandBar name="ПериодическиеКоманднаяПанель" id="19"/>
+					<ExtendedTooltip name="ПериодическиеРасширеннаяПодсказка" id="45"/>
+					<SearchStringAddition name="ПериодическиеСтрокаПоиска" id="46">
+						<AdditionSource>
+							<Item>Периодические</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПериодическиеСтрокаПоискаКонтекстноеМеню" id="47"/>
+						<ExtendedTooltip name="ПериодическиеСтрокаПоискаРасширеннаяПодсказка" id="48"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПериодическиеСостояниеПросмотра" id="49">
+						<AdditionSource>
+							<Item>Периодические</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПериодическиеСостояниеПросмотраКонтекстноеМеню" id="50"/>
+						<ExtendedTooltip name="ПериодическиеСостояниеПросмотраРасширеннаяПодсказка" id="51"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПериодическиеУправлениеПоиском" id="52">
+						<AdditionSource>
+							<Item>Периодические</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПериодическиеУправлениеПоискомКонтекстноеМеню" id="53"/>
+						<ExtendedTooltip name="ПериодическиеУправлениеПоискомРасширеннаяПодсказка" id="54"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeEditEnd">ПериодическиеПередОкончаниемРедактирования</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ПериодическиеМесяцГода" id="22">
+							<DataPath>Объект.Периодические.МесяцГода</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>8</Width>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ПериодическиеМесяцГодаКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПериодическиеМесяцГодаРасширеннаяПодсказка" id="55"/>
+						</InputField>
+						<InputField name="ПериодическиеДеньНедели" id="24">
+							<DataPath>Объект.Периодические.ДеньНедели</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>8</Width>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ПериодическиеДеньНеделиКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ПериодическиеДеньНеделиРасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<ColumnGroup name="ПериодическиеГруппаВремя" id="30">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Время</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Час</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.SetTime</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<ExtendedTooltip name="ПериодическиеГруппаВремяРасширеннаяПодсказка" id="57"/>
+							<ChildItems>
+								<InputField name="ПериодическиеВремяНачала" id="26">
+									<DataPath>Объект.Периодические.ВремяНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>8</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="ПериодическиеВремяНачалаКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ПериодическиеВремяНачалаРасширеннаяПодсказка" id="58"/>
+									<Events>
+										<Event name="OnChange">ПериодическиеВремяНачалаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПериодическиеВремяОкончания" id="28">
+									<DataPath>Объект.Периодические.ВремяОкончания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>8</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="ПериодическиеВремяОкончанияКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ПериодическиеВремяОкончанияРасширеннаяПодсказка" id="59"/>
+									<Events>
+										<Event name="OnChange">ПериодическиеВремяОкончанияПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАстрономические" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Астрономические</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаАстрономическиеРасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<Table name="Астрономические" id="3">
+					<Representation>List</Representation>
+					<Width>64</Width>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.Астрономические</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="АстрономическиеКонтекстноеМеню" id="4"/>
+					<AutoCommandBar name="АстрономическиеКоманднаяПанель" id="5"/>
+					<ExtendedTooltip name="АстрономическиеРасширеннаяПодсказка" id="61"/>
+					<SearchStringAddition name="АстрономическиеСтрокаПоиска" id="62">
+						<AdditionSource>
+							<Item>Астрономические</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="АстрономическиеСтрокаПоискаКонтекстноеМеню" id="63"/>
+						<ExtendedTooltip name="АстрономическиеСтрокаПоискаРасширеннаяПодсказка" id="64"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="АстрономическиеСостояниеПросмотра" id="65">
+						<AdditionSource>
+							<Item>Астрономические</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="АстрономическиеСостояниеПросмотраКонтекстноеМеню" id="66"/>
+						<ExtendedTooltip name="АстрономическиеСостояниеПросмотраРасширеннаяПодсказка" id="67"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="АстрономическиеУправлениеПоиском" id="68">
+						<AdditionSource>
+							<Item>Астрономические</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="АстрономическиеУправлениеПоискомКонтекстноеМеню" id="69"/>
+						<ExtendedTooltip name="АстрономическиеУправлениеПоискомРасширеннаяПодсказка" id="70"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnEditEnd">АстрономическиеПриОкончанииРедактирования</Event>
+					</Events>
+					<ChildItems>
+						<ColumnGroup name="АстрономическиеГруппаДата" id="39">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Астрономические группа дата</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<ExtendedTooltip name="АстрономическиеГруппаДатаРасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<InputField name="АстрономическиеДатаНачала" id="8">
+									<DataPath>Объект.Астрономические.ДатаНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>8</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="АстрономическиеДатаНачалаКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="АстрономическиеДатаНачалаРасширеннаяПодсказка" id="72"/>
+								</InputField>
+								<InputField name="АстрономическиеДатаОкончания" id="10">
+									<DataPath>Объект.Астрономические.ДатаОкончания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>8</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="АстрономическиеДатаОкончанияКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="АстрономическиеДатаОкончанияРасширеннаяПодсказка" id="73"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="АстрономическиеГруппаВремя" id="38">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Время</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Час</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.SetTime</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<ExtendedTooltip name="АстрономическиеГруппаВремяРасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<InputField name="АстрономическиеВремяНачала" id="12">
+									<DataPath>Объект.Астрономические.ВремяНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>8</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="АстрономическиеВремяНачалаКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="АстрономическиеВремяНачалаРасширеннаяПодсказка" id="75"/>
+									<Events>
+										<Event name="OnChange">АстрономическиеВремяНачалаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="АстрономическиеВремяОкончания" id="14">
+									<DataPath>Объект.Астрономические.ВремяОкончания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>8</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="АстрономическиеВремяОкончанияКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="АстрономическиеВремяОкончанияРасширеннаяПодсказка" id="76"/>
+									<Events>
+										<Event name="OnChange">АстрономическиеВремяОкончанияПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПериодыДействия</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
