@@ -4,8 +4,8 @@
 **Как начать разработку.**
 1. Скачать(https://git-scm.com/downloads) и установить Git.
 2. Установить глобальные настройки Git.
-	1. Открыть Git Bash.
-	- 2.2. Установить имя пользователя:
+	2.1. Открыть Git Bash.
+	2.2. Установить имя пользователя:
 			git config --global user.name "John Doe"
 	- 2.3. Установить адрес электронной почты:
 			git config --global user.email johndoe@example.com
